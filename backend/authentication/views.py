@@ -7,7 +7,8 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from utils.email import send_email
 
-from .serializers import LoginSerializer, RegisterSerializer
+from .serializers import (LoginSerializer, RegisterSerializer,
+                          ResendEmailSerialiazer)
 
 User = get_user_model()
 
@@ -74,3 +75,18 @@ class EmailVerificationView(APIView):
                 "data": []
             }
             return Response(data, status=status.HTTP_400_BAD_REQUEST)
+
+
+class ResendEmailVerificationView(generics.GenericAPIView):
+    serializer_class = ResendEmailSerialiazer
+
+    def post(self, request):
+        serializer = self.serializer_class(data=request.data, context={"request": request})
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        data = {
+            'status': 'success',
+            'message': 'Email account verification mail sent',
+            'data': serializer.data,
+        }
+        return Response(data, status.HTTP_200_OK)

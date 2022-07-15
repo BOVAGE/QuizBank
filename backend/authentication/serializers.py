@@ -1,5 +1,7 @@
 from django.contrib.auth import authenticate, get_user_model
 from rest_framework import serializers
+from django.urls import reverse_lazy
+from utils.email import send_email
 
 User = get_user_model()
 
@@ -42,3 +44,23 @@ class RegisterSerializer(serializers.ModelSerializer):
         if attrs['password'] != attrs['password2']:
             raise serializers.ValidationError("Password must match")
         return super().validate(attrs)
+
+
+class ResendEmailSerialiazer(serializers.Serializer):
+    email = serializers.EmailField()
+
+    def validate_email(self, email):
+        try:
+            user = User.objects.get(email=email)
+        except User.DoesNotExist:
+            raise serializers.ValidationError("User with this email does not exist")
+        return email
+
+    def save(self):
+        email_address = self.validated_data.get('email')
+        user = User.objects.get(email=email_address)
+        if not user.is_verified:
+            activation_link = self.context['request'].build_absolute_uri(reverse_lazy("authentication:email-verify"))
+            activation_link += f'?token={user.get_tokens_for_user()["access"]}'
+            print("sending mail")
+            send_email('authentication/activate_mail.html', email_address, activation_link, 'QuizBank')
