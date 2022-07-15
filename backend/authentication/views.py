@@ -2,11 +2,12 @@ import jwt
 from django.conf import settings
 from django.contrib.auth import get_user_model
 from django.contrib.auth.tokens import PasswordResetTokenGenerator
+from django.shortcuts import get_object_or_404
 from django.urls import reverse_lazy
 from django.utils.encoding import smart_str
 from django.utils.http import urlsafe_base64_decode
 from rest_framework import exceptions, generics, status
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAdminUser, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework_simplejwt.authentication import JWTAuthentication
@@ -14,8 +15,8 @@ from utils.email import send_email
 
 from .serializers import (ChangePasswordSerializer,
                           EmailPasswordResetSerialiazer, LoginSerializer,
-                          RegisterSerializer, ResendEmailSerialiazer,
-                          UserSerializer, NewPasswordSerializer)
+                          NewPasswordSerializer, RegisterSerializer,
+                          ResendEmailSerialiazer, UserSerializer)
 
 User = get_user_model()
 
@@ -211,3 +212,54 @@ class SetNewPasswordView(generics.GenericAPIView):
             "data": []
         }
         return Response(data, status.HTTP_200_OK)
+
+
+class UserStaff(APIView):
+    authentication_classes = [JWTAuthentication]
+    permission_classes = [IsAdminUser]
+
+    def post(self, request, id):
+        """
+            make a user whose ID is passed in URL a staff
+        """
+        user = get_object_or_404(User, id=id)
+        if user.is_staff:
+            data = {
+                "status": "failed",
+                "message": f"{user.username} is a staff user",
+                "data": []
+            }
+            return Response(data, status=status.HTTP_400_BAD_REQUEST)
+        user.is_staff = True
+        user.save()
+        # send `you are now a staff` email
+        send_email('authentication/now_staff_mail.html', user.email, link="", site_name='QuizBank')
+        data = {
+            "status": "success",
+            "message": f"{user.username} has been made a staff and an email has been sent to {user.email}",
+            "data": []
+        }
+        return Response(data, status=status.HTTP_200_OK)
+
+    def delete(self, request, id):
+        """
+            make a user whose ID is passed in URL a non-staff
+        """
+        user = get_object_or_404(User, id=id)
+        if user.is_staff:
+            user.is_staff = False
+            user.save()
+            # send `you are no longer a staff` email
+            send_email('authentication/no_longer_staff_mail.html', user.email, link="", site_name='QuizBank')
+            data = {
+                "status": "success",
+                "message": f"{user.username} is no longer a staff and an email has been sent to {user.email}",
+                "data": []
+            }
+            return Response(data, status=status.HTTP_200_OK)
+        data = {
+            "status": "success",
+            "message": f"{user.username} is not a staff",
+            "data": []
+        }
+        return Response(data, status=status.HTTP_400_BAD_REQUEST)
