@@ -1,6 +1,10 @@
 from django.contrib.auth import authenticate, get_user_model
-from rest_framework import serializers
+from django.contrib.auth.tokens import PasswordResetTokenGenerator
 from django.urls import reverse_lazy
+from django.utils.encoding import smart_bytes, smart_str
+from django.utils.http import urlsafe_base64_decode, urlsafe_base64_encode
+from rest_framework import serializers
+from rest_framework.exceptions import AuthenticationFailed, NotFound
 from utils.email import send_email
 
 User = get_user_model()
@@ -96,3 +100,52 @@ class UserSerializer(serializers.ModelSerializer):
             setattr(instance, key, validated_data[key])
         instance.save()
         return instance
+
+
+class EmailPasswordResetSerialiazer(serializers.Serializer):
+    email = serializers.EmailField()
+
+    def validate_email(self, email):
+        try:
+            user = User.objects.get(email=email)
+        except User.DoesNotExist:
+            raise serializers.ValidationError("User with this email does not exist")
+        return email
+
+    def save(self):
+        email_address = self.validated_data.get('email')
+        user = User.objects.get(email=email_address)
+        if user.is_verified:
+            uidb64 = urlsafe_base64_encode(smart_bytes(user.id))
+            token = PasswordResetTokenGenerator().make_token(user)
+            reset_link = self.context['request'].build_absolute_uri(
+                reverse_lazy("authentication:verify-password-token", args=(uidb64, token)))
+            send_email('authentication/resetpw_mail.html', email_address, reset_link, "QuizBank")
+
+
+class NewPasswordSerializer(serializers.Serializer):
+    
+    new_password1 = serializers.CharField(required=True, min_length=6, write_only=True)
+    new_password2 = serializers.CharField(required=True, min_length=6, write_only = True)
+    token = serializers.CharField(required=True)
+    uidb64 = serializers.CharField(required=True)
+
+    def validate(self, attrs):
+        if attrs['new_password1'] != attrs['new_password2']:
+            raise serializers.ValidationError("Password must match")
+        try:
+            id = int(smart_str(urlsafe_base64_decode(attrs['uidb64'])))
+            user = User.objects.get(id=id)
+        except ValueError:
+            raise AuthenticationFailed("This token is invalid")
+        except User.DoesNotExist:
+            raise NotFound("User does not exist")
+        if not PasswordResetTokenGenerator().check_token(user, attrs['token']):
+            raise AuthenticationFailed("This token is invalid")
+        super().validate(attrs)['user'] = user
+        return super().validate(attrs)
+        
+    def save(self):
+        self.validated_data.get('user').set_password(self.validated_data.get('new_password1'))
+        self.validated_data.get('user').save()
+        

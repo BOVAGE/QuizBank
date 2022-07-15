@@ -1,7 +1,10 @@
 import jwt
 from django.conf import settings
 from django.contrib.auth import get_user_model
+from django.contrib.auth.tokens import PasswordResetTokenGenerator
 from django.urls import reverse_lazy
+from django.utils.encoding import smart_str
+from django.utils.http import urlsafe_base64_decode
 from rest_framework import exceptions, generics, status
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
@@ -9,9 +12,10 @@ from rest_framework.views import APIView
 from rest_framework_simplejwt.authentication import JWTAuthentication
 from utils.email import send_email
 
-from .serializers import (ChangePasswordSerializer, LoginSerializer,
+from .serializers import (ChangePasswordSerializer,
+                          EmailPasswordResetSerialiazer, LoginSerializer,
                           RegisterSerializer, ResendEmailSerialiazer,
-                          UserSerializer)
+                          UserSerializer, NewPasswordSerializer)
 
 User = get_user_model()
 
@@ -138,5 +142,72 @@ class UserView(generics.GenericAPIView):
             'status': 'success',
             'message': 'Profile Updated Successfully',
             'data': serializer.data,
+        }
+        return Response(data, status.HTTP_200_OK)
+
+
+class ResetPasswordView(generics.GenericAPIView):
+    serializer_class = EmailPasswordResetSerialiazer
+
+    def post(self, request):
+        serializer = self.serializer_class(data=request.data, context={"request": request})
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        data = {
+            'status': 'success',
+            'message': 'Password reset mail sent',
+            'data': serializer.data
+        }
+        return Response(data, status.HTTP_200_OK)
+
+
+class VerifyPasswordTokenView(APIView):
+    
+    def get(self,request, uidb64, token):
+        try:
+            id = int(smart_str(urlsafe_base64_decode(uidb64)))
+            user = User.objects.get(id=id)
+        except ValueError:
+            data = {
+                "status": "failed",
+                "message": "This token is invalid",
+                "data": []
+            }
+            return Response(data, status=status.HTTP_401_UNAUTHORIZED)
+        except User.DoesNotExist:
+            data = {
+                "status": "failed",
+                "message": "User does not exist",
+                "data": []
+            }
+            return Response(data, status=status.HTTP_404_NOT_FOUND)
+        if not PasswordResetTokenGenerator().check_token(user, token):
+            data = {
+                "status": "failed",
+                "message": "This token is invalid",
+                "data": []
+            }
+            return Response(data, status=status.HTTP_401_UNAUTHORIZED)
+        data = {
+            'status': 'success',
+            'message': 'Token is valid',
+            'data': {
+                'token': token,
+                'uidb64': uidb64
+            }
+        }
+        return Response(data, status.HTTP_200_OK)
+
+class SetNewPasswordView(generics.GenericAPIView):
+    serializer_class = NewPasswordSerializer
+
+    def post(self, request):
+        serializer = self.serializer_class(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        data = {
+            "status": "success",
+            "message": "Password Reset Done successfully",
+            "data": []
         }
         return Response(data, status.HTTP_200_OK)
