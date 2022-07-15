@@ -11,6 +11,7 @@ from rest_framework.permissions import IsAdminUser, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework_simplejwt.authentication import JWTAuthentication
+from rest_framework_simplejwt.views import TokenRefreshView
 from utils.email import send_email
 
 from .serializers import (AdminUserSerializer, ChangePasswordSerializer,
@@ -278,4 +279,17 @@ class UserListView(generics.ListAPIView):
             "message": "Details about all users",
             'data': data
         }
+        return Response(data, status=status.HTTP_200_OK)
+
+
+class CustomTokenRefreshView(TokenRefreshView):
+    
+    def post(self, request, *args, **kwargs):
+        data = super().post(request, *args, **kwargs).data
+        data = {
+            "status": "success",
+            "message": "New access token",
+            "data": data
+        }
+
         return Response(data, status=status.HTTP_200_OK)
