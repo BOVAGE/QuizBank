@@ -13,7 +13,7 @@ from rest_framework.views import APIView
 from rest_framework_simplejwt.authentication import JWTAuthentication
 from utils.email import send_email
 
-from .serializers import (ChangePasswordSerializer,
+from .serializers import (AdminUserSerializer, ChangePasswordSerializer,
                           EmailPasswordResetSerialiazer, LoginSerializer,
                           NewPasswordSerializer, RegisterSerializer,
                           ResendEmailSerialiazer, UserSerializer)
@@ -263,3 +263,19 @@ class UserStaff(APIView):
             "data": []
         }
         return Response(data, status=status.HTTP_400_BAD_REQUEST)
+
+
+class UserListView(generics.ListAPIView):
+    serializer_class = AdminUserSerializer
+    permission_classes = [IsAdminUser]
+    authentication_classes = [JWTAuthentication]
+    queryset = User.objects.all()
+
+    def list(self, request, *args, **kwargs):
+        data = super().list(request, *args, **kwargs).data
+        data = {
+            "status": "success",
+            "message": "Details about all users",
+            'data': data
+        }
+        return Response(data, status=status.HTTP_200_OK)

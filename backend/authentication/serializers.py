@@ -149,3 +149,9 @@ class NewPasswordSerializer(serializers.Serializer):
         self.validated_data.get('user').set_password(self.validated_data.get('new_password1'))
         self.validated_data.get('user').save()
         
+
+class AdminUserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ["id", "username", "email", "bio", "is_verified",
+        "is_staff","is_superuser", "date_joined", "avatar"]
