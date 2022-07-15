@@ -3,12 +3,15 @@ from django.conf import settings
 from django.contrib.auth import get_user_model
 from django.urls import reverse_lazy
 from rest_framework import exceptions, generics, status
+from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
+from rest_framework_simplejwt.authentication import JWTAuthentication
 from utils.email import send_email
 
-from .serializers import (LoginSerializer, RegisterSerializer,
-                          ResendEmailSerialiazer)
+from .serializers import (ChangePasswordSerializer, LoginSerializer,
+                          RegisterSerializer, ResendEmailSerialiazer,
+                          UserSerializer)
 
 User = get_user_model()
 
@@ -87,6 +90,53 @@ class ResendEmailVerificationView(generics.GenericAPIView):
         data = {
             'status': 'success',
             'message': 'Email account verification mail sent',
+            'data': serializer.data,
+        }
+        return Response(data, status.HTTP_200_OK)
+
+class ChangePasswordView(generics.GenericAPIView):
+    serializer_class = ChangePasswordSerializer
+    authentication_classes = [JWTAuthentication]
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request):
+        user = request.user
+        serializer = self.serializer_class(user, data=request.data)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        data = {
+            'status': 'success',
+            'message': 'Password Updated Successfully',
+            'data': []
+        }
+        return Response(data, status.HTTP_200_OK)
+
+
+class UserView(generics.GenericAPIView):
+    """
+        get user authenticated user profile and update it.
+    """
+    serializer_class = UserSerializer
+    authentication_classes = [JWTAuthentication]
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        serializer = self.serializer_class(request.user)
+        data = {
+            'status': 'success',
+            'message': 'Authenticated User Profile',
+            'data': serializer.data,
+        }
+        return Response(data, status.HTTP_200_OK)
+
+
+    def patch(self, request):
+        serializer = self.serializer_class(request.user, data=request.data, partial=True)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        data = {
+            'status': 'success',
+            'message': 'Profile Updated Successfully',
             'data': serializer.data,
         }
         return Response(data, status.HTTP_200_OK)

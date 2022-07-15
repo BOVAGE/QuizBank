@@ -64,3 +64,35 @@ class ResendEmailSerialiazer(serializers.Serializer):
             activation_link += f'?token={user.get_tokens_for_user()["access"]}'
             print("sending mail")
             send_email('authentication/activate_mail.html', email_address, activation_link, 'QuizBank')
+
+
+class ChangePasswordSerializer(serializers.Serializer):
+    
+    def __init__(self, user=None, *args, **kwargs):
+        self.user = user
+        super().__init__(*args, **kwargs)
+    
+    old_password = serializers.CharField(required=True, min_length=6)
+    new_password = serializers.CharField(required=True, min_length=6)
+
+    def validate_old_password(self, old_password):
+        if not self.user.check_password(old_password):
+            raise serializers.ValidationError("Old password is wrong")
+        return old_password
+
+    def save(self):
+        self.user.set_password(self.validated_data.get('new_password'))
+        self.user.save()
+
+
+class UserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ['id','username', 'first_name', 'last_name', 'bio', 'avatar']
+
+    def update(self, instance, validated_data):
+        #bulk update the only fields that are supplied using the key
+        for key in validated_data.keys():
+            setattr(instance, key, validated_data[key])
+        instance.save()
+        return instance
