@@ -23,8 +23,8 @@ class QuestionPublicSerializer(serializers.ModelSerializer):
         return obj.incorrect_answers.values_list('option', flat=True)
 
     def validate(self, data):
-        if data['type'] == "True / False" and len(
-            data['incorrect_answer_fields']) > 1:
+        if data.get('type') == "True / False" and len(
+            data.get('incorrect_answer_fields')) > 1:
             raise serializers.ValidationError({"incorrect_answer_fields": 
             "True/False questions can have only one incorrect answer"})
         return data
