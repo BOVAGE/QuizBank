@@ -1,0 +1,500 @@
+[
+    {
+        "question": "What is Microbiology?",
+        "incorrect answers": [
+            "Study of molecules that are visible to human eyes",
+            "Study of animals and their family",
+            "Study of microscope"
+        ],
+        "correct_answer": "Study of organisms that are not visible to naked eyes",
+        "explanation": "Study of organisms that are not visible to naked eyes is known as Microbiology. A special device known as a microscope is required to view these organisms. Example: Bacteria, viruses, fungi, etc."
+    },
+    {
+        "question": "Who is known as the father of Microbiology?",
+        "incorrect answers": [
+            "Edwin John Butler",
+            "Ferdinand Cohn",
+            "Robert Koch"
+        ],
+        "correct_answer": "Antoni van Leeuwenhoek",
+        "explanation": "Antoni van Leeuwenhoek, a Delft cloth merchant, is considered the father of microbiology. He discovered the invisible world of microorganisms using homemade microscopes."
+    },
+    {
+        "question": "Which microorganism(s) among the following perform photosynthesis by utilizing light?",
+        "incorrect answers": [
+            "Cyanobacteria, Fungi and Viruses",
+            "Viruses",
+            "Fungi"
+        ],
+        "correct_answer": "Cyanobacteria",
+        "explanation": "Cyanobacteria require light as a source of energy to perform photosynthesis. Fungi and viruses are unable to perform photosynthesis and are heterotrophic."
+    },
+    {
+        "question": "Which part of the compound microscope helps in gathering and focusing light rays on the specimen to be viewed?",
+        "incorrect answers": [
+            "Magnifying lens",
+            "Objective lens",
+            "Eyepiece lens"
+        ],
+        "correct_answer": "Condenser lens",
+        "explanation": "Compound microscope contains three separate lens systems. The condenser lens is placed between the light source and the specimen and it gathers and focuses the light rays in the plane of the microscopic field to view the specimen."
+    },
+    {
+        "question": "Which of the following are produced by microorganisms?",
+        "incorrect answers": [
+            "Alcoholic beverages",
+            "Fermented dairy products",
+            "Breads"
+        ],
+        "correct_answer": "All of the mentioned",
+        "explanation": "Microorganisms are used in many industries for the production of food we eat, like fermented dairy products (sour cream, yogurt), as well as fermented foods as pickles, breads and alcoholic beverages."
+    },
+    {
+        "question": "What is the approximate size of the bacterial cell?",
+        "incorrect answers": [
+            "1mm in diameter",
+            "2mm in diameter",
+            "2 micrometer in diameter"
+        ],
+        "correct_answer": "0.5 to 1.0 micrometer in diameter",
+        "explanation": "Bacteria are very small, most being approximately 0.5 to 1.0 micrometer in diameter. This is the reason why they cannot be seen by naked eyes and can be observed under the microscope."
+    },
+    {
+        "question": "The greatest resolution in light microscopy can be obtained with ___________",
+        "incorrect answers": [
+            "Shortest wavelength of visible light used",
+            "Longest wavelength of visible light used",
+            "An objective with minimum numerical aperture"
+        ],
+        "correct_answer": "Shortest wavelength of visible light used and an objective with the maximum numerical aperture",
+        "explanation": "The relationship between numerical aperture (NA) and resolution is:-"
+    },
+    {
+        "question": "Which of the following is used in electron microscope?",
+        "incorrect answers": [
+            "light waves",
+            "magnetic fields",
+            "electron beams"
+        ],
+        "correct_answer": "electron beams and magnetic fields",
+        "explanation": "Electron Microscope uses electron beams and magnetic fields to produce the image, whereas the light microscope uses light waves and glass lenses. In electron microscopy, a much higher resolution is obtained with extremely short wavelength of the electron beam."
+    },
+    {
+        "question": "Which among the following are \u201cSpirochetes\u201d?",
+        "incorrect answers": [
+            "Streptomyces sp.",
+            "Spirillum volutans",
+            "Corynebacterium diphtheriae"
+        ],
+        "correct_answer": "Treponema pallidum",
+        "explanation": "Spirochetes are flexible and can twist and contort their shape, whereas spirilla are relatively rigid. Treponema palldium belongs to the spirochetes group and Spirillum volutans belong to the spirilla group."
+    },
+    {
+        "question": "Bacteria having clusters of flagella at both poles of cells are known as?",
+        "incorrect answers": [
+            "Monotrichous",
+            "Peritrichous",
+            "Lophotrichous"
+        ],
+        "correct_answer": "Amphitrichous",
+        "explanation": "In amphitrichous, flagella occur either singly or in clusters at both cell poles. Lophotrichous refers to a cluster of polar flagella, peritrichous is surrounded by lateral flagella and monotrichous is for a single polar flagella."
+    },
+    {
+        "question": "The respiratory chain of bacteria is associated with the _____________",
+        "incorrect answers": [
+            "cell wall",
+            "cytoplasm",
+            "mitochondrial membrane"
+        ],
+        "correct_answer": "cytoplasmic membrane",
+        "explanation": "The respiratory chain of bacteria is associated with the cytoplasmic membrane and that of eukaryotes is present in the mitochondrial membrane."
+    },
+    {
+        "question": "Glycolysis can occur in ___________",
+        "incorrect answers": [
+            "anaerobic cells",
+            "aerobic cells",
+            "neither aerobic and anaerobic cells"
+        ],
+        "correct_answer": "both aerobic and anaerobic cells",
+        "explanation": "Glycolysis does not require the presence of oxygen and therefore can occur in both aerobic and anaerobic cells. In anaerobic cells glucose is degraded into fermentation products and in aerobic cells glucose is degraded into carbon dioxide and water."
+    },
+    {
+        "question": "Which of the following enzyme removes the RNA primer with its 5\u2019-nuclease activity?",
+        "incorrect answers": [
+            "DNA polymerase III",
+            "RNA polymerase",
+            "DNA polymerase II"
+        ],
+        "correct_answer": "DNA polymerase I",
+        "explanation": "DNA polymerase I remove the RNA primer with its 5\u201d-nuclease activity; simultaneously it fills in the gap with DNA via its 3\u2019-polymerase activity."
+    },
+    {
+        "question": "Phosphorus is essential component of __________",
+        "incorrect answers": [
+            "phospholipids",
+            "teichoic acid",
+            "nucleotides"
+        ],
+        "correct_answer": "All of the mentioned",
+        "explanation": "Phosphorus, usually supplied in the form of phosphate, is an essential component of nucleotides, nucleic acids, phospholipids, teichoic acids, and other components."
+    },
+    {
+        "question": "The bacterium Staphylococcus aureus is which type of bacteria?",
+        "incorrect answers": [
+            "Mesophile and psychrophile",
+            "Psychrophile",
+            "Thermophile"
+        ],
+        "correct_answer": "Mesophile",
+        "explanation": "Staphylococcus aureus is a mesophilic bacteria which can grow in the temperature range of 6.5-46 degree Celsius and has an optimum temperature at 30-37 degree Celsius."
+    },
+    {
+        "question": "Growth of bacteria or microorganisms refer to __________________",
+        "incorrect answers": [
+            "changes in the total population",
+            "an increase in the size of an individual organism",
+            "an increase in the mass of an individual organism"
+        ],
+        "correct_answer": "an increase in number of cells",
+        "explanation": "Growth denotes the increase in number of cells beyond that present in the original inoculum. It does not refer to an increase in size or mass of an individual organism."
+    },
+    {
+        "question": "Which of the following method can be used to determine the number of bacteria quantitatively?",
+        "incorrect answers": [
+            "Spread-plate",
+            "Streak-plate",
+            "Pour plate"
+        ],
+        "correct_answer": "Pour-plate and spread plate",
+        "explanation": "Due to a higher degree of dilution, pour-plate and spread-plate techniques may be performed in a quantitative manner to determine the number of bacteria present in a specimen."
+    },
+    {
+        "question": "Which among the following are microaerophilic bacteria?",
+        "incorrect answers": [
+            "Treponema",
+            "Spirochaeta",
+            "Cristispira"
+        ],
+        "correct_answer": "Borrelia",
+        "explanation": "Borrelia is the genus of bacteria belonging to the class Spirochaetaceae and are microaerophilic."
+    },
+    {
+        "question": "Penicillin causes inhibition of Mycoplasmas",
+        "incorrect answers": [
+            "True"
+        ],
+        "correct_answer": "False",
+        "explanation": "Because of the lack of a cell wall, mycoplasmas are not inhibited by even high levels of penicillin; however, they can be inhibited by antibiotics that affect protein synthesis, such as tetracyclines or chloramphenicol."
+    },
+    {
+        "question": "What are the cell wall structural components of fungi?",
+        "incorrect answers": [
+            "peptidoglycan",
+            "cellulose",
+            "chitin"
+        ],
+        "correct_answer": "chitin, cellulose, or hemicellulose",
+        "explanation": "The cell wall structural components of fungi are chitin, cellulose, or hemicellulose whereas the bacterial cell wall is composed of peptidoglycan."
+    },
+    {
+        "question": "Cryptococcosis is a disease of ________________",
+        "incorrect answers": [
+            "viral infection",
+            "parasitic infection",
+            "bacterial infection"
+        ],
+        "correct_answer": "mycotic infection",
+        "explanation": "Cryptococcus neoformans is an important basidiomycetous pathogen of humans, causing cryptococcosis, a generalized mycotic infection involving the bloodstream as well as lungs, central nervous system and other organs."
+    },
+    {
+        "question": "Which among the following is a pathogenic algae for humans?",
+        "incorrect answers": [
+            "Cephaleuros",
+            "Acanthopeltis",
+            "Chlorella"
+        ],
+        "correct_answer": "Prototheca",
+        "explanation": "Prototheca has been found to be a probable pathogen of humans. It has been found in systemic and subcutaneous infections, as well as in bursitis."
+    },
+    {
+        "question": "Chrysolaminarin is the reserved food of ___________________",
+        "incorrect answers": [
+            "Bacillariophycophyta",
+            "Chlorophycophyta",
+            "Phaeophycophyta"
+        ],
+        "correct_answer": "Xanthophycophyta",
+        "explanation": "Chrysolaminarin is the reserved food of Xanthophycophyta which is the yellow-green algae along with oils."
+    },
+    {
+        "question": "Protozoa that eat other organisms are known as _______________",
+        "incorrect answers": [
+            "parasitic",
+            "mutualistic",
+            "saprophytic"
+        ],
+        "correct_answer": "holozoic",
+        "explanation": "Holozoic protozoa are protozoa that eat other organisms. Species of Paramecium are holozoic and they must have a supply of bacteria or other protozoa."
+    },
+    {
+        "question": "Plasmodium divides by which of the following method most commonly?",
+        "incorrect answers": [
+            "Regeneration",
+            "Budding",
+            "Binary fission"
+        ],
+        "correct_answer": "Multiple fission",
+        "explanation": "The malarial parasite, Plasmodium divides by the process of multiple fission where it is known as schizogony and serves to spread the parasite quickly in the host."
+    },
+    {
+        "question": "Which of the following is a family of lambda phage viruses?",
+        "incorrect answers": [
+            "Corticoviridae",
+            "Microviridae",
+            "Pedoviridae"
+        ],
+        "correct_answer": "Styloviridae",
+        "explanation": "Styloviridae is a family of lambda phage viruses that are non-enveloped and has dsDNA."
+    },
+    {
+        "question": "What does a viral DNA becomes after being associated with the bacterial chromosome?",
+        "incorrect answers": [
+            "plasmid",
+            "plaque",
+            "gene"
+        ],
+        "correct_answer": "prophage",
+        "explanation": "In lysogeny the viral DNA of the temperate phage, instead of taking over the functions of the cell\u2019s genes, is incorporated into the host DNA and becomes a prophage in the bacterial chromosome, acting as a gene."
+    },
+    {
+        "question": "Vaccination was invented by ____________",
+        "incorrect answers": [
+            "Watson",
+            "Crick",
+            "Pasteur"
+        ],
+        "correct_answer": "Jenner",
+        "explanation": "In 1796 Jenner first vaccinated an 8-year old boy with material removed from cow and it gave protection against the smallpox virus."
+    },
+    {
+        "question": "For which viral disease, vaccine has been recently developed through the use of tissue culture?",
+        "incorrect answers": [
+            "S mallpox",
+            "Rabies",
+            "Mumps"
+        ],
+        "correct_answer": "Measles",
+        "explanation": "Among the virus diseases for which vaccines have been recently developed through the use of tissue culture is measles (rubeola)."
+    },
+    {
+        "question": "Which of the following inhibits DNA replication?",
+        "incorrect answers": [
+            "x-rays",
+            "gamma rays",
+            "cathode rays"
+        ],
+        "correct_answer": "UV light",
+        "explanation": "Ultraviolet light is absorbed by many cellular materials but most significantly by the nucleic acids where it does the most damage. Pyrimidine dimers are formed due to which DNA replication is inhibited and mutations can result."
+    },
+    {
+        "question": "Which was the first disease for which a chemotherapeutic agent was used?",
+        "incorrect answers": [
+            "Small pox",
+            "AIDS",
+            "Malaria"
+        ],
+        "correct_answer": "Syphilis",
+        "explanation": "Syphilis is the first known disease for which a chemotherapeutic agent was used. An arsenical compound known as Salvarsan was synthesized by Paul Ehrlich in 1910 to treat this disease."
+    },
+    {
+        "question": "Bacterial cells grown in a medium exposed to high osmotic pressure, changes shape from rod-shaped to __________ shaped",
+        "incorrect answers": [
+            "elongated",
+            "irregular",
+            "rod shaped"
+        ],
+        "correct_answer": "spherical",
+        "explanation": "The high osmotic pressure prevents the cells from bursting. Rod-shaped cells become spherical because they lack the cell structure which imparts shape."
+    },
+    {
+        "question": "Tyrocidines are more effective against ___________________",
+        "incorrect answers": [
+            "Gram-negative organisms",
+            "Spirochetes",
+            "Mycoplasmas"
+        ],
+        "correct_answer": "Gram-positive organisms",
+        "explanation": "Tyrocidines and gramicidines are more effective against Gram-positive organisms whereas polymyxins are particularly effective against Gram-negative bacteria."
+    },
+    {
+        "question": "Which of the following is the most accurate method for microbial assay of antibiotics?",
+        "incorrect answers": [
+            "Chemical and biological assay",
+            "Biological assay",
+            "Physical assay"
+        ],
+        "correct_answer": "Chemical assay",
+        "explanation": "Chemical-assay methods are generally more accurate and require less time than biological methods, but they are less sensitive, and caution must be used lest biologically inactive degradation products give misleading results."
+    },
+    {
+        "question": "Which among the following is not an ammonia-oxidizing bacteria?",
+        "incorrect answers": [
+            "Nitrosococcus oceanus",
+            "Nitrosomonas europaea",
+            "Nitrosovibrio tenuis"
+        ],
+        "correct_answer": "Nitrospina gracilis",
+        "explanation": "Nitrospina gracilis is a nitrite-oxidizing bacteria. They are involved in the oxidation of nitrite to nitrate."
+    },
+    {
+        "question": "Cellulose is degraded to cellobiose by the enzyme __________________",
+        "incorrect answers": [
+            "cellulose dehydrogenase",
+            "hexokinase",
+            "beta-glucosidase"
+        ],
+        "correct_answer": "cellulase",
+        "explanation": "The most abundant organic material in plants is cellulose. The initial enzymatic at-tack is by cellulase which splits this long-chain polymer of glucose to cellobiose which contains two glucose units."
+    },
+    {
+        "question": "Sulphates are reduced to hydrogen sulphide by _____________________",
+        "incorrect answers": [
+            "Thiobacillus thiooxidans",
+            "Rhodospirillum",
+            "Photosynthetic sulfur bacteria"
+        ],
+        "correct_answer": "Desulfotomaculum sp.",
+        "explanation": "Sulphates are reduced to hydrogen sulphide by soil microorganisms like Desulfotomaculum species. Like calcium sulphate gives us hydrogen sulphide and calcium hydroxide."
+    },
+    {
+        "question": "The microorganisms from lakes and rivers can grow at a salt concentration of _________",
+        "incorrect answers": [
+            "above 1 percent",
+            "2.5 to 4 percent",
+            "5 percent"
+        ],
+        "correct_answer": "below 1 percent",
+        "explanation": "Microorganisms from lakes and rivers are salt sensitive and do not grow at a salt concentration of more than 1 percent whereas marine microorganisms are halophilic."
+    },
+    {
+        "question": "In regions of the estuary that are nutritionally poor, it is more likely to find which of the following organisms?",
+        "incorrect answers": [
+            "viruses",
+            "coliforms",
+            "fecal streptococci"
+        ],
+        "correct_answer": "appendaged bacteria",
+        "explanation": "In regions of the estuary that are nutritionally poor, one is likely to find the budding and/or the appendaged bacteria, in addition to pseudomonads."
+    },
+    {
+        "question": "In which of the following treatment involve oxidation of organic constituents of the wastewater?",
+        "incorrect answers": [
+            "Final treatment",
+            "Advanced treatment",
+            "Primary treatment"
+        ],
+        "correct_answer": "Secondary treatment",
+        "explanation": "Secondary or biological treatment is done to adsorb and ultimately oxidize organic constituents of the wastewater, i.e, to reduce the BOD."
+    },
+    {
+        "question": "Which among the following group of microorganisms are found in the ducts of cow\u2019s mammary glands?",
+        "incorrect answers": [
+            "Microbacteria",
+            "Lactobacilli",
+            "Coliforms"
+        ],
+        "correct_answer": "Micrococci",
+        "explanation": "Micrococci such as Micrococcus luteus, Micrococcus varians are found in the ducts of cow\u2019s mammary glands and dairy utensils. They are acid producers and are weakly proteolytic."
+    },
+    {
+        "question": "Which of the following microorganism is eliminated in canned foods?",
+        "incorrect answers": [
+            "Lactobacillus",
+            "Mycobacterium tuberculosis",
+            "Coxiella burnetii"
+        ],
+        "correct_answer": "Clostridium botulinum",
+        "explanation": "The most important organism to be eliminated in canned foods is the spore forming anaerobe Clostridium botulinum, which is capable of producing a very potent lethal toxin."
+    },
+    {
+        "question": "Bacterial cell grown on hydrocarbon wastes from the petroleum industry are a source of _____________",
+        "incorrect answers": [
+            "fats",
+            "vitamins",
+            "carbohydrates"
+        ],
+        "correct_answer": "proteins",
+        "explanation": "The microorganisms can be cultivated on industrial wastes or by-products as nutrients and yield a large cell crop that is rich in protein. Bacterial cell grown on hydrocarbon wastes from the petroleum industry are a source of protein in France, Japan, Taiwan, and India."
+    },
+    {
+        "question": "Which of the following microorganism produces dextran?",
+        "incorrect answers": [
+            "Streptomyces olivaceus",
+            "Bacillus thuringiensis",
+            "Bacillus polymyxa"
+        ],
+        "correct_answer": "Leuconostoc mesenteroides",
+        "explanation": "Leuconostoc mesenteroides is the producer organism for dextran which acts as a stabilizer in food products and as a blood plasma substitute."
+    },
+    {
+        "question": "The principal microorganism for yogurt is ______________________",
+        "incorrect answers": [
+            "Leuconostoc citrovorum",
+            "Streptococcus lactis",
+            "Lactobacillus acidophilus"
+        ],
+        "correct_answer": "Streptococcus thermophilus",
+        "explanation": "Streptococcus thermophilus and Lactobacillus bulgaricus are among the principal microorganisms responsible for producing yogurt by fermentation."
+    },
+    {
+        "question": "Which of the following yeast can be used to produce microbial protein?",
+        "incorrect answers": [
+            "Eremothecium ashbyi",
+            "Saccharomyces cerevisiae",
+            "Candida milleri"
+        ],
+        "correct_answer": "Candida utilis",
+        "explanation": "Candida utilis is yeast used for producing microbial protein which is used as an animal food supplement (single-cell protein) from paper-pulp waste."
+    },
+    {
+        "question": "Acridine orange is which type of mutagen?",
+        "incorrect answers": [
+            "chemical compounds",
+            "transposons",
+            "base analog"
+        ],
+        "correct_answer": "intercalating agents",
+        "explanation": "Acridine orange is an intercalating agent that can intercalate between the base pairs in the central stack of the DNA helix and distort the structures and cause subsequent replication errors."
+    },
+    {
+        "question": "Lipopolysaccharide in cell walls is characteristic of?",
+        "incorrect answers": [
+            "Algae",
+            "Fungi",
+            "Gram-positive bacteria"
+        ],
+        "correct_answer": "Gram-negative bacteria",
+        "explanation": "The occurrence of lipopolysaccharide in cell walls is characteristic of Gram-negative bacteria; whereas Gram-positive bacteria have cell walls that contain teichoic acid. Fungal and algal cell walls are very different in composition from those of bacteria."
+    },
+    {
+        "question": "Which of the following are present in teichoic acids?",
+        "incorrect answers": [
+            "glycerol residues",
+            "ribitol residues",
+            "glucose residues"
+        ],
+        "correct_answer": "ribitol or glycerol residues",
+        "explanation": "The teichoic acids are water-soluble polymers, containing ribitol or glycerol residues joined through phosphodiester linkages. The glycerol or ribitol is joined to a sugar residue such as glucose, galactose or N-acetyl glucosamine."
+    },
+    {
+        "question": "Which of the following are true for cytoplasmic membrane?",
+        "incorrect answers": [
+            "site of generation of protonmotive force",
+            "hydrophilic barrier",
+            "hydrophobic barrier"
+        ],
+        "correct_answer": "hydrophobic barrier and site of generation of protonmotive force",
+        "explanation": "The cytoplasmic membrane is a hydrophobic barrier to penetration by most water-soluble molecules. Because of its impermeability to protons, the cytoplasmic membrane is the site of the generation of the proton motive force."
+    }
+]

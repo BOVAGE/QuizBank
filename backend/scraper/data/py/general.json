@@ -1,0 +1,302 @@
+[
+    {
+        "question": "Who developed Python Programming Language?",
+        "incorrect answers": [
+            "Wick van Rossum",
+            "Rasmus Lerdorf",
+            "Niene Stom"
+        ],
+        "correct_answer": "Guido van Rossum",
+        "explanation": "Python language is designed by a Dutch programmer Guido van Rossum in the Netherlands."
+    },
+    {
+        "question": "Which type of Programming does Python support?",
+        "incorrect answers": [
+            "object-oriented programming",
+            "structured programming",
+            "functional programming"
+        ],
+        "correct_answer": "all of the mentioned",
+        "explanation": "Python is an interpreted programming language, which supports object-oriented, structured, and functional programming."
+    },
+    {
+        "question": "Is Python case sensitive when dealing with identifiers?",
+        "incorrect answers": [
+            "yes",
+            "machine dependent",
+            "none of the mentioned"
+        ],
+        "correct_answer": "no",
+        "explanation": "Case is always significant."
+    },
+    {
+        "question": "Which of the following is the correct extension of the Python file?",
+        "incorrect answers": [
+            ".python",
+            ".pl",
+            ".p"
+        ],
+        "correct_answer": ".py",
+        "explanation": "\u2018.py\u2019 is the correct extension of the Python file. Python programs can be written in any text editor. To save these programs we need to save in files with file extension \u2018.py\u2019."
+    },
+    {
+        "question": "Is Python code compiled or interpreted?",
+        "incorrect answers": [
+            "Python code is both compiled and interpreted",
+            "Python code is only compiled",
+            "Python code is only interpreted"
+        ],
+        "correct_answer": "Python code is neither compiled nor interpreted",
+        "explanation": "Many languages have been implemented using both compilers and interpreters, including C, Pascal, and Python."
+    },
+    {
+        "question": "All keywords in Python are in _________",
+        "incorrect answers": [
+            "Capitalized",
+            "lower case",
+            "UPPER CASE"
+        ],
+        "correct_answer": "None of the mentioned",
+        "explanation": "True, False and None are capitalized while the others are in lower case."
+    },
+    {
+        "question": "Which of the following is used to define a block of code in Python language?",
+        "incorrect answers": [
+            "Key",
+            "Brackets",
+            "All of the mentioned"
+        ],
+        "correct_answer": "Indentation",
+        "explanation": "In Python, to define a block of code we use indentation. Indentation refers to whitespaces at the beginning of the line."
+    },
+    {
+        "question": "Which of the following functions can help us to find the version of python that we are currently working on?",
+        "incorrect answers": [
+            "sys.version(0)",
+            "sys.version()",
+            "sys.version"
+        ],
+        "correct_answer": "sys.version(1)",
+        "explanation": "The function sys.version can help us to find the version of python that we are currently working on. For example, 3.5.2, 2.7.3 etc. this function also returns the current date, time, bits etc along with the version."
+    },
+    {
+        "question": "Python supports the creation of anonymous functions at runtime, using a construct called __________",
+        "incorrect answers": [
+            "pi",
+            "anonymous",
+            "none of the mentioned"
+        ],
+        "correct_answer": "lambda",
+        "explanation": "Python supports the creation of anonymous functions (i.e. functions that are not bound to a name) at runtime, using a construct called lambda. Lambda functions are restricted to a single expression. They can be used wherever normal functions can be used."
+    },
+    {
+        "question": "What does pip stand for python?",
+        "incorrect answers": [
+            "unlimited length",
+            "all private members must have leading and trailing underscores",
+            "none of the mentioned"
+        ],
+        "correct_answer": "Preferred Installer Program",
+        "explanation": "Variable names can be of any length."
+    },
+    {
+        "question": "Which of the following is true for variable names in Python?",
+        "incorrect answers": [
+            "underscore and ampersand are the only two special characters allowed",
+            "all private members must have leading and trailing underscores",
+            "none of the mentioned"
+        ],
+        "correct_answer": "unlimited length",
+        "explanation": "Variable names can be of any length."
+    },
+    {
+        "question": "Which of the following is the truncation division operator in Python?",
+        "incorrect answers": [
+            "|",
+            "/",
+            "%"
+        ],
+        "correct_answer": "//",
+        "explanation": "// is the operator for truncation division. It is called so because it returns only the integer part of the quotient, truncating the decimal part. For example: 20//3 = 6."
+    },
+    {
+        "question": "Which of the following functions is a built-in function in python?",
+        "incorrect answers": [
+            "factorial()",
+            "seed()",
+            "sqrt()"
+        ],
+        "correct_answer": "print()",
+        "explanation": "The function seed is a function which is present in the random module. The functions sqrt and factorial are a part of the math module. The print function is a built-in function which prints a value directly to the system output."
+    },
+    {
+        "question": "Which of the following is the use of id() function in python?",
+        "incorrect answers": [
+            "Every object doesn\u2019t have a unique id",
+            "All of the mentioned",
+            "None of the mentioned"
+        ],
+        "correct_answer": "Id  returns the identity of the object",
+        "explanation": "Each object in Python has a unique id. The id() function returns the object\u2019s id."
+    },
+    {
+        "question": "Which of the following is not a core data type in Python programming?",
+        "incorrect answers": [
+            "Tuples",
+            "Lists",
+            "Dictionary"
+        ],
+        "correct_answer": "Class",
+        "explanation": "Class is a user-defined data type."
+    },
+    {
+        "question": "Which of these is the definition for packages in Python?",
+        "incorrect answers": [
+            "A set of main modules",
+            "A number of files containing Python definitions and statements",
+            "A set of programs making use of Python modules"
+        ],
+        "correct_answer": "A folder of python modules",
+        "explanation": "A folder of python programs is called as a package of modules."
+    },
+    {
+        "question": "What is the order of namespaces in which Python looks for an identifier?",
+        "incorrect answers": [
+            "Python first searches the built-in namespace, then the global namespace and finally the local namespace",
+            "Python first searches the built-in namespace, then the local namespace and finally the global namespace",
+            "Python first searches the global namespace, then the local namespace and finally the built-in namespace"
+        ],
+        "correct_answer": "Python first searches the local namespace, then the global namespace and finally the built-in namespace",
+        "explanation": "Python first searches for the local, then the global and finally the built-in namespace."
+    },
+    {
+        "question": "Which one of the following is not a keyword in Python language?",
+        "incorrect answers": [
+            "pass",
+            "assert",
+            "nonlocal"
+        ],
+        "correct_answer": "eval",
+        "explanation": "eval can be used as a variable."
+    },
+    {
+        "question": "Which module in the python standard library parses options received from the command line?",
+        "incorrect answers": [
+            "getarg",
+            "main",
+            "os"
+        ],
+        "correct_answer": "getopt",
+        "explanation": "getopt parses options received from the command line."
+    },
+    {
+        "question": "What arithmetic operators cannot be used with strings in Python?",
+        "incorrect answers": [
+            "*",
+            "+",
+            "All of the mentioned"
+        ],
+        "correct_answer": "\u2013",
+        "explanation": "+ is used to concatenate and * is used to multiply strings."
+    },
+    {
+        "question": "Which of the following statements is used to create an empty set in Python?",
+        "incorrect answers": [
+            "( )",
+            "[ ] ",
+            "{ }"
+        ],
+        "correct_answer": "set()",
+        "explanation": "{ } creates a dictionary not a set. Only set() creates an empty set."
+    },
+    {
+        "question": "To add a new element to a list we use which Python command?",
+        "incorrect answers": [
+            "list1.addEnd(5)",
+            "list1.addLast(5)",
+            "list1.add(5)"
+        ],
+        "correct_answer": "list1.append(5)",
+        "explanation": "We use the function append to add an element to the list."
+    },
+    {
+        "question": "Which one of the following is the use of function in python?",
+        "incorrect answers": [
+            "Functions don\u2019t provide better modularity for your application",
+            "you can\u2019t also create your own functions",
+            "All of the mentioned"
+        ],
+        "correct_answer": "Functions are reusable pieces of programs",
+        "explanation": "Functions are reusable pieces of programs. They allow you to give a name to a block of statements, allowing you to run that block using the specified name anywhere in your program and any number of times."
+    },
+    {
+        "question": "What is the maximum possible length of an identifier in Python?",
+        "incorrect answers": [
+            "79 characters",
+            "31 characters",
+            "63 characters"
+        ],
+        "correct_answer": "none of the mentioned",
+        "explanation": "Identifiers can be of any length."
+    },
+    {
+        "question": "What are the two main types of functions in Python?",
+        "incorrect answers": [
+            "System function",
+            "Custom function",
+            "User function"
+        ],
+        "correct_answer": "Built-in function & User defined function",
+        "explanation": "Built-in functions and user defined ones. The built-in functions are part of the Python language. Examples are: dir(), len() or abs(). The user defined functions are functions created with the def keyword."
+    },
+    {
+        "question": "Which of the following is a Python tuple?",
+        "incorrect answers": [
+            "{1, 2, 3}",
+            "{}",
+            "[1, 2, 3] "
+        ],
+        "correct_answer": "(1, 2, 3)",
+        "explanation": "Tuples are represented with round brackets."
+    },
+    {
+        "question": "Which of the following is a feature of Python DocString?",
+        "incorrect answers": [
+            "In Python all functions should have a docstring",
+            "Docstrings can be accessed by the __doc__ attribute on objects",
+            "It provides a convenient way of associating documentation with Python modules, functions, classes, and methods"
+        ],
+        "correct_answer": "All of the mentioned",
+        "explanation": "Python has a nifty feature called documentation strings, usually referred to by its shorter name docstrings. DocStrings are an important tool that you should make use of since it helps to document the program better and makes it easier to understand."
+    },
+    {
+        "question": "What is output of print(math",
+        "incorrect answers": [
+            "None",
+            "9",
+            "None of the mentioned"
+        ],
+        "correct_answer": "9.0",
+        "explanation": "math.pow() returns a floating point number."
+    },
+    {
+        "question": "Which of the following is the use of id() function in python?",
+        "incorrect answers": [
+            "Every object in Python doesn\u2019t have a unique id",
+            "None of the mentioned",
+            "All of the mentioned"
+        ],
+        "correct_answer": "In Python Id function returns the identity of the object",
+        "explanation": "Each object in Python has a unique id. The id() function returns the object\u2019s id."
+    },
+    {
+        "question": "The process of pickling in Python includes ____________",
+        "incorrect answers": [
+            "conversion of a datatable into a list",
+            "conversion of a byte stream into Python object hierarchy",
+            "conversion of a list into a datatable"
+        ],
+        "correct_answer": "conversion of a Python object hierarchy into byte stream",
+        "explanation": "Pickling is the process of sterilizing a Python object, that is, conversion of a byte stream into Python object hierarchy. The reverse of this process is known as unpickling."
+    }
+]

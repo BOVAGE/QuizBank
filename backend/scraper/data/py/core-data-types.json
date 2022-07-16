@@ -1,0 +1,82 @@
+[
+    {
+        "question": "Which of these in not a core data type?",
+        "incorrect answers": [
+            "Lists",
+            "Dictionary",
+            "Tuples"
+        ],
+        "correct_answer": "Class",
+        "explanation": "Class is a user defined data type."
+    },
+    {
+        "question": "Given a function that does not return any value, What value is thrown by default when executed in shell",
+        "incorrect answers": [
+            "int",
+            "bool",
+            "void"
+        ],
+        "correct_answer": "None",
+        "explanation": "Python shell throws a NoneType object back."
+    },
+    {
+        "question": "Which of the following will run without errors?",
+        "incorrect answers": [
+            "round(6352.898,2,5)",
+            "round()",
+            "round(7463.123,2,1)"
+        ],
+        "correct_answer": "round(45.8)",
+        "explanation": "Execute help(round) in the shell to get details of the parameters that are passed into the round function."
+    },
+    {
+        "question": "What is the return type of function id?",
+        "incorrect answers": [
+            "float",
+            "bool",
+            "dict"
+        ],
+        "correct_answer": "int",
+        "explanation": "Execute help(id) to find out details in python shell.id returns a integer value that is unique."
+    },
+    {
+        "question": "xx)",
+        "incorrect answers": [
+            "x = 13 // 2",
+            "x = int(13 / 2)",
+            "x = 13 % 2"
+        ],
+        "correct_answer": "All of the mentioned",
+        "explanation": "// is integer operation in python 3.0 and int(..) is a type cast operator."
+    },
+    {
+        "question": "In order to store values in terms of key and value we use what core data type",
+        "incorrect answers": [
+            "list",
+            "tuple",
+            "class"
+        ],
+        "correct_answer": "dictionary",
+        "explanation": "Dictionary stores values in terms of keys and values."
+    },
+    {
+        "question": "Which of the following results in a SyntaxError?",
+        "incorrect answers": [
+            "\u2018\u201dOnce upon a time\u2026\u201d, she said.\u2019",
+            "\u201cHe said, \u2018Yes!'\u201d",
+            "\u201d\u2019That\u2019s okay\u201d\u2019"
+        ],
+        "correct_answer": "\u20183\\\u2019",
+        "explanation": "Carefully look at the colons."
+    },
+    {
+        "question": "What is the return value of trunc()?",
+        "incorrect answers": [
+            "bool",
+            "float",
+            "None"
+        ],
+        "correct_answer": "int",
+        "explanation": "Execute help(math.trunc) to get details."
+    }
+]

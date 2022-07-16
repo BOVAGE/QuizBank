@@ -1,0 +1,102 @@
+[
+    {
+        "question": "The systems which allow only one process execution at a time, are called __________",
+        "incorrect answers": [
+            "uniprogramming systems",
+            "unitasking systems",
+            "none of the mentioned"
+        ],
+        "correct_answer": "uniprocessing systems",
+        "explanation": "Those systems which allow more than one process execution at a time, are called multiprocessing systems. Uniprocessing means only one processor."
+    },
+    {
+        "question": "In operating system, each process has its own __________",
+        "incorrect answers": [
+            "address space and global variables",
+            "open files",
+            "pending alarms, signals and signal handlers"
+        ],
+        "correct_answer": "all of the mentioned",
+        "explanation": "In Operating Systems, each process has its own address space which contains code, data, stack and heap segments or sections. Each process also has a list of files which is opened by the process as well as all pending alarms, signals and various signal handlers."
+    },
+    {
+        "question": "In Unix, Which system call creates the new process?",
+        "incorrect answers": [
+            "create",
+            "new",
+            "none of the mentioned"
+        ],
+        "correct_answer": "fork",
+        "explanation": "In UNIX, a new process is created by fork() system call. fork() system call returns a process ID which is generally the process id of the child process created."
+    },
+    {
+        "question": "A process can be terminated due to __________",
+        "incorrect answers": [
+            "normal exit",
+            "fatal error",
+            "killed by another process"
+        ],
+        "correct_answer": "all of the mentioned",
+        "explanation": "A process can be terminated normally by completing its task or because of fatal error or killed by another process or forcefully killed by a user. When the process completes its task without any error then it exits normally. The process may exit abnormally because of the occurrence of fatal error while it is running. The process can be killed or terminated forcefully by another process."
+    },
+    {
+        "question": "What is the ready state of a process?",
+        "incorrect answers": [
+            "when process is unable to run until some task has been completed",
+            "when process is using the CPU",
+            "none of the mentioned"
+        ],
+        "correct_answer": "when process is scheduled to run after some execution",
+        "explanation": "Ready state of the process means process has all necessary resources which are required for execution of that process when CPU is allocated. Process is ready for execution but waiting for the CPU to be allocated."
+    },
+    {
+        "question": "What is interprocess communication?",
+        "incorrect answers": [
+            "communication within the process",
+            "communication between two threads of same process",
+            "none of the mentioned"
+        ],
+        "correct_answer": "communication between two process",
+        "explanation": "Interprocess Communication (IPC) is a communication mechanism that allows processes to communicate with each other and synchronise their actions without using the same address space. IPC can be achieved using shared memory and message passing."
+    },
+    {
+        "question": "A set of processes is deadlock if __________",
+        "incorrect answers": [
+            "each process is terminated",
+            "all processes are trying to kill each other",
+            "none of the mentioned"
+        ],
+        "correct_answer": "each process is blocked and will remain so forever",
+        "explanation": "Deadlock is a situation which occurs because process A is waiting for one resource and holds another resource (blocking resource). At the same time another process B demands blocking a resource as it is already held by a process A, process B is waiting state unless and until process A releases occupied resource."
+    },
+    {
+        "question": "A process stack does not contain __________",
+        "incorrect answers": [
+            "Function parameters",
+            "Local variables",
+            "Return addresses"
+        ],
+        "correct_answer": "PID of child process",
+        "explanation": "Process stack contains Function parameters, Local variables and Return address. It does not contain the PID of child process."
+    },
+    {
+        "question": "Which system call can be used by a parent process to determine the termination of child process?",
+        "incorrect answers": [
+            "exit",
+            "fork",
+            "get"
+        ],
+        "correct_answer": "wait",
+        "explanation": "wait() system call is used by the parent process to determine termination of child process. The parent process uses wait() system call and gets the exit status of the child process as well as the pid of the child process which is terminated."
+    },
+    {
+        "question": "The address of the next instruction to be executed by the current process is provided by the __________",
+        "incorrect answers": [
+            "CPU registers",
+            "Process stack",
+            "Pipe"
+        ],
+        "correct_answer": "Program counter",
+        "explanation": "The address of the next instruction to be executed by the current process is provided by the Program Counter. After every instruction is executed, the Program Counter is incremented by 1 i.e. address of the next instruction to be executed. CPU fetches instruction from the address denoted by Program Counter and execute it."
+    }
+]

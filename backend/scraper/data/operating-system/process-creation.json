@@ -1,0 +1,82 @@
+[
+    {
+        "question": "Restricting the child process to a subset of the parent\u2019s resources prevents any process from __________",
+        "incorrect answers": [
+            "overloading the system by using a lot of secondary storage",
+            "under-loading the system by very less CPU utilization",
+            "crashing the system by utilizing multiple resources"
+        ],
+        "correct_answer": "overloading the system by creating a lot of sub-processes",
+        "explanation": "Restricting the child process to a subset of the parent\u2019s resources prevents any process from overloading the system by creating a lot of sub-processes. A process creates a child process, child process requires certain resources to complete its task. A child process can demand required resources directly from the system, but by doing this system will be overloaded. So to avoid overloading of the system, the parent process shares its resources among children."
+    },
+    {
+        "question": "A parent process calling _____ system call will be suspended until children processes terminate",
+        "incorrect answers": [
+            "fork",
+            "exit",
+            "exec"
+        ],
+        "correct_answer": "wait",
+        "explanation": "A parent process calling wait system call will be suspended until children processes terminate. A parameter is passed to wait system call which will obtain exit status of child as well as wait system call returns PID of terminated process."
+    },
+    {
+        "question": "Cascading termination refers to termination of all child processes if the parent process terminates ______",
+        "incorrect answers": [
+            "Normally",
+            "Abnormally",
+            "None of the mentioned"
+        ],
+        "correct_answer": "Normally or abnormally",
+        "explanation": "Cascading termination refers to termination of all child processes if the parent process terminates Normally or Abnormally. Some systems don\u2019t allow child processes to exist if the parent process has terminated. Cascading termination is normally initiated by the operating system."
+    },
+    {
+        "question": "With _____________ only one process can execute at a time; meanwhile all other process are waiting for the processor",
+        "incorrect answers": [
+            "Multiprocessing, Multiprogramming",
+            "Multiprogramming, Uniprocessing",
+            "Multiprogramming, Multiprocessing"
+        ],
+        "correct_answer": "Uniprogramming, Multiprocessing",
+        "explanation": "With Uniprogramming only one process can execute at a time; meanwhile all other processes are waiting for the processor. With Multiprocessing more than one process can run simultaneously each on different processors. The Uniprogramming system has only one program inside the core while the Multiprocessing system has multiple processes inside multiple cores. The core is one which executes instructions and stores data locally into registers."
+    },
+    {
+        "question": "In UNIX, each process is identified by its __________",
+        "incorrect answers": [
+            "Process Control Block",
+            "Device Queue",
+            "None of the mentioned"
+        ],
+        "correct_answer": "Process Identifier",
+        "explanation": "In Unix, each process is identified by its Process Identifier or PID. The PID provides unique value to each process in the system so that each process can be identified uniquely."
+    },
+    {
+        "question": "In UNIX, the return value for the fork system call is _____ for the child process and _____ for the parent process",
+        "incorrect answers": [
+            "A Negative integer, Zero",
+            "Zero, A Negative integer",
+            "A nonzero integer, Zero"
+        ],
+        "correct_answer": "Zero, A nonzero integer",
+        "explanation": "In Unix, the return value of the fork system call is Zero for the child process and Non-zero value for parent process. A fork system call returns the PID of a newly created (child) process to the parent and returns Zero to that newly created (child) process."
+    },
+    {
+        "question": "The child process can __________",
+        "incorrect answers": [
+            "never be a duplicate of the parent process",
+            "cannot have another program loaded into it",
+            "never have another program loaded into it"
+        ],
+        "correct_answer": "be a duplicate of the parent process",
+        "explanation": "The child process can be a duplicate of the parent process. The child process created by fork consists of a copy of the address space of the parent process."
+    },
+    {
+        "question": "The child process completes execution, but the parent keeps executing, then the child process is known as __________",
+        "incorrect answers": [
+            "Orphan",
+            "Body",
+            "Dead"
+        ],
+        "correct_answer": "Zombie",
+        "explanation": "The child process completes execution, but the parent keeps executing, then the child process is known as Zombie. When a child process terminates, its resources get deallocated but its entry in the Process Control Block (PCB) remains there until its parent calls wait system call."
+    }
+]

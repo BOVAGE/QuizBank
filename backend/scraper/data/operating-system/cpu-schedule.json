@@ -1,0 +1,102 @@
+[
+    {
+        "question": "Which module gives control of the CPU to the process selected by the short-term scheduler?",
+        "incorrect answers": [
+            "interrupt",
+            "scheduler",
+            "none of the mentioned"
+        ],
+        "correct_answer": "dispatcher",
+        "explanation": "None."
+    },
+    {
+        "question": "The processes that are residing in main memory and are ready and waiting to execute are kept on a list called _____________",
+        "incorrect answers": [
+            "job queue",
+            "execution queue",
+            "process queue"
+        ],
+        "correct_answer": "ready queue",
+        "explanation": "None."
+    },
+    {
+        "question": "The interval from the time of submission of a process to the time of completion is termed as ____________",
+        "incorrect answers": [
+            "waiting time",
+            "response time",
+            "throughput"
+        ],
+        "correct_answer": "turnaround time",
+        "explanation": "None."
+    },
+    {
+        "question": "Which scheduling algorithm allocates the CPU first to the process that requests the CPU first?",
+        "incorrect answers": [
+            "shortest job scheduling",
+            "priority scheduling",
+            "none of the mentioned"
+        ],
+        "correct_answer": "first-come, first-served scheduling",
+        "explanation": "None."
+    },
+    {
+        "question": "In priority scheduling algorithm ____________",
+        "incorrect answers": [
+            "CPU is allocated to the process with lowest priority",
+            "Equal priority processes can not be scheduled",
+            "None of the mentioned"
+        ],
+        "correct_answer": "CPU is allocated to the process with highest priority",
+        "explanation": "None."
+    },
+    {
+        "question": "In priority scheduling algorithm, when a process arrives at the ready queue, its priority is compared with the priority of ____________",
+        "incorrect answers": [
+            "all process",
+            "parent process",
+            "init process"
+        ],
+        "correct_answer": "currently running process",
+        "explanation": "None."
+    },
+    {
+        "question": "Which algorithm is defined in Time quantum?",
+        "incorrect answers": [
+            "shortest job scheduling algorithm",
+            "priority scheduling algorithm",
+            "multilevel queue scheduling algorithm"
+        ],
+        "correct_answer": "round robin scheduling algorithm",
+        "explanation": "None."
+    },
+    {
+        "question": "Process are classified into different groups in ____________",
+        "incorrect answers": [
+            "shortest job scheduling algorithm",
+            "round robin scheduling algorithm",
+            "priority scheduling algorithm"
+        ],
+        "correct_answer": "multilevel queue scheduling algorithm",
+        "explanation": "None."
+    },
+    {
+        "question": "In multilevel feedback scheduling algorithm ____________",
+        "incorrect answers": [
+            "classification of ready queue is permanent",
+            "processes are not classified into groups",
+            "none of the mentioned"
+        ],
+        "correct_answer": "a process can move to a different classified ready queue",
+        "explanation": "None."
+    },
+    {
+        "question": "Which one of the following can not be scheduled by the kernel?",
+        "incorrect answers": [
+            "kernel level thread",
+            "process",
+            "none of the mentioned"
+        ],
+        "correct_answer": "user level thread",
+        "explanation": "User level threads are managed by thread library and the kernel is unaware of them."
+    }
+]

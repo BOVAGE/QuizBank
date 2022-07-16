@@ -1,0 +1,112 @@
+[
+    {
+        "question": "What is Interprocess communication?",
+        "incorrect answers": [
+            "allows processes to communicate and synchronize their actions when using the same address space",
+            "allows the processes to only synchronize their actions without communication",
+            "none of the mentioned"
+        ],
+        "correct_answer": "allows processes to communicate and synchronize their actions",
+        "explanation": "Interprocess Communication allows processes to communicate and synchronize their actions. Interprocess Communication (IPC) mechanism is used by cooperating processes to exchange data and information."
+    },
+    {
+        "question": "Message passing system allows processes to __________",
+        "incorrect answers": [
+            "communicate with one another by resorting to shared data",
+            "share data",
+            "name the recipient or sender of the message"
+        ],
+        "correct_answer": "communicate with each other without sharing the same address space",
+        "explanation": "Message Passing system allows processes to communicate with each other without sharing the same address space."
+    },
+    {
+        "question": "Which of the following two operations are provided by the IPC facility?",
+        "incorrect answers": [
+            "write & delete message",
+            "delete & receive message",
+            "send & delete message"
+        ],
+        "correct_answer": "receive & send message",
+        "explanation": "Two operations provided by the IPC facility are receive and send messages. Exchange of data takes place in cooperating processes."
+    },
+    {
+        "question": "Messages sent by a process __________",
+        "incorrect answers": [
+            "have to be of a fixed size",
+            "have to be a variable size",
+            "none of the mentioned"
+        ],
+        "correct_answer": "can be fixed or variable sized",
+        "explanation": "Messages sent by a process can be fixed or variable size. If the message size of the process is fixed then system level implementation is straightforward but it makes the task of programming more difficult. If the message size of the process is variable then system level implementation is more complex but it makes the task of programming simpler."
+    },
+    {
+        "question": "The link between two processes P and Q to send and receive messages is called __________",
+        "incorrect answers": [
+            "message-passing link",
+            "synchronization link",
+            "all of the mentioned"
+        ],
+        "correct_answer": "communication link",
+        "explanation": "The link between two processes P and Q to send and receive messages is called communication link. Two processes P and Q want to communicate with each other; there should be a communication link that must exist between these two processes so that both processes can able to send and receive messages using that link."
+    },
+    {
+        "question": "Which of the following are TRUE for direct communication?",
+        "incorrect answers": [
+            "A communication link can be associated with N number of process(N = max. number of processes supported by system)",
+            "Exactly N/2 links exist between each pair of processes(N = max. number of processes supported by system)",
+            "Exactly two link exists between each pair of processes"
+        ],
+        "correct_answer": "A communication link is associated with exactly two processes",
+        "explanation": "For direct communication, a communication link is associated with exactly two processes. One communication link must exist between a pair of processes."
+    },
+    {
+        "question": "In indirect communication between processes P and Q __________",
+        "incorrect answers": [
+            "there is another process R to handle and pass on the messages between P and Q",
+            "there is another machine between the two processes to help communication",
+            "none of the mentioned"
+        ],
+        "correct_answer": "there is a mailbox to help communication between P and Q",
+        "explanation": "In indirect communication between processes P and Q there is a mailbox to help communication between P and Q. A mailbox can be viewed abstractly as an object into which messages can be placed by processes and from which messages can be removed."
+    },
+    {
+        "question": "In the non blocking send __________",
+        "incorrect answers": [
+            "the sending process keeps sending until the message is received",
+            "the sending process keeps sending until it receives a message",
+            "none of the mentioned"
+        ],
+        "correct_answer": "the sending process sends the message and resumes operation",
+        "explanation": "In the non blocking send, the sending process sends the message and resumes operation. Sending process doesn\u2019t care about reception. It is also known as asynchronous send."
+    },
+    {
+        "question": "In the Zero capacity queue __________",
+        "incorrect answers": [
+            "the queue can store at least one message",
+            "the sender keeps sending and the messages don\u2019t wait in the queue",
+            "none of the mentioned"
+        ],
+        "correct_answer": "the sender blocks until the receiver receives the message",
+        "explanation": "In the Zero capacity queue the sender blocks until the receiver receives the message. Zero capacity queue has maximum capacity of Zero; thus message queue does not have any waiting message in it."
+    },
+    {
+        "question": "The Zero Capacity queue __________",
+        "incorrect answers": [
+            "is referred to as a message system with buffering",
+            "is referred to as a link",
+            "none of the mentioned"
+        ],
+        "correct_answer": "is referred to as a message system with no buffering",
+        "explanation": "The Zero capacity queue is referred to as a message system with no buffering. Zero capacity queue has maximum capacity of Zero; thus message queue does not have any waiting message in it."
+    },
+    {
+        "question": "Bounded capacity and Unbounded capacity queues are referred to as __________",
+        "incorrect answers": [
+            "Programmed buffering",
+            "User defined buffering",
+            "No buffering"
+        ],
+        "correct_answer": "Automatic buffering",
+        "explanation": "Bounded capacity and Unbounded capacity queues are referred to as Automatic buffering. Buffer capacity of the Bounded capacity queue is finite length and buffer capacity of the Unbounded queue is infinite."
+    }
+]

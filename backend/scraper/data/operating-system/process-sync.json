@@ -1,0 +1,102 @@
+[
+    {
+        "question": "Which process can be affected by other processes executing in the system?",
+        "incorrect answers": [
+            "child process",
+            "parent process",
+            "init process"
+        ],
+        "correct_answer": "cooperating process",
+        "explanation": "A cooperating process can be affected by other processes executing in the system. Also it can affect other processes executing in the system. A process shares data with other processes, such a process is known as a cooperating process."
+    },
+    {
+        "question": "When several processes access the same data concurrently and the outcome of the execution depends on the particular order in which the access takes place is called ________",
+        "incorrect answers": [
+            "dynamic condition",
+            "essential condition",
+            "critical condition"
+        ],
+        "correct_answer": "race condition",
+        "explanation": "When several processes access the same data concurrently and the outcome of the execution depends on the particular order in which access takes place is called race condition."
+    },
+    {
+        "question": "If a process is executing in its critical section, then no other processes can be executing in their critical section",
+        "incorrect answers": [
+            "critical exclusion",
+            "synchronous exclusion",
+            "asynchronous exclusion"
+        ],
+        "correct_answer": "mutual exclusion",
+        "explanation": "If a process is executing in its critical section, then no other processes can be executed in their critical section. This condition is called Mutual Exclusion. Critical section of the process is shared between multiple processes. If this section is executed by more than one or all of them concurrently then the outcome of this is not as per desired outcome. For this reason the critical section of the process should not be executed concurrently."
+    },
+    {
+        "question": "Which one of the following is a synchronization tool?",
+        "incorrect answers": [
+            "thread",
+            "pipe",
+            "socket"
+        ],
+        "correct_answer": "semaphore",
+        "explanation": "Semaphore is a synchronization tool. Semaphore is a mechanism which synchronizes or controls access of threads on critical resources. There are two types of semaphores i) Binary Semaphore ii) Counting Semaphore."
+    },
+    {
+        "question": "A semaphore is a shared integer variable __________",
+        "incorrect answers": [
+            "that can not be more than zero",
+            "that can not drop below one",
+            "that can not be more than one"
+        ],
+        "correct_answer": "that can not drop below zero",
+        "explanation": "A semaphore is a shared integer variable that can not drop below zero. In binary semaphore, if the value of the semaphore variable is zero that means there is a process that uses a critical resource and no other process can access the same critical resource until it is released. In Counting semaphore, if the value of the semaphore variable is zero that means there is no resource available."
+    },
+    {
+        "question": "Mutual exclusion can be provided by the __________",
+        "incorrect answers": [
+            "mutex locks",
+            "binary semaphores",
+            "none of the mentioned"
+        ],
+        "correct_answer": "both mutex locks and binary semaphores",
+        "explanation": "Mutual exclusion can be provided by both mutex locks and binary semaphore. Mutex is a short form of"
+    },
+    {
+        "question": "When high priority task is indirectly preempted by medium priority task effectively inverting the relative priority of the two tasks, the scenario is called __________",
+        "incorrect answers": [
+            "priority removal",
+            "priority exchange",
+            "priority modification"
+        ],
+        "correct_answer": "priority inversion",
+        "explanation": "When a high priority task is indirectly preempted by a medium priority task effectively inverting the relative priority of the two tasks, the scenario is called priority inversion."
+    },
+    {
+        "question": "Process synchronization can be done on __________",
+        "incorrect answers": [
+            "hardware level",
+            "software level",
+            "none of the mentioned"
+        ],
+        "correct_answer": "both hardware and software level",
+        "explanation": "Process synchronization can be done on both hardware and software level. Critical section problems can be resolved using hardware synchronisation. But this method is not simple for implementation so software synchronization is mostly used."
+    },
+    {
+        "question": "A monitor is a module that encapsulates __________",
+        "incorrect answers": [
+            "shared data structures",
+            "procedures that operate on shared data structure",
+            "synchronization between concurrent procedure invocation"
+        ],
+        "correct_answer": "all of the mentioned",
+        "explanation": "A monitor is a module that encapsulates shared data structures, procedures that operate on shared data structure, synchronization between concurrent procedure invocation."
+    },
+    {
+        "question": "To enable a process to wait within the monitor __________",
+        "incorrect answers": [
+            "condition variables must be used as boolean objects",
+            "semaphore must be used",
+            "all of the mentioned"
+        ],
+        "correct_answer": "a condition variable must be declared as condition",
+        "explanation": "To enable a process to wait within the monitor a condition variable must be declared as condition."
+    }
+]

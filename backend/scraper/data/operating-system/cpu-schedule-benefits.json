@@ -1,0 +1,152 @@
+[
+    {
+        "question": "CPU scheduling is the basis of ___________",
+        "incorrect answers": [
+            "multiprocessor systems",
+            "larger memory sized systems",
+            "none of the mentioned"
+        ],
+        "correct_answer": "multiprogramming operating systems",
+        "explanation": "None."
+    },
+    {
+        "question": "With multiprogramming ______ is used productively",
+        "incorrect answers": [
+            "space",
+            "money",
+            "all of the mentioned"
+        ],
+        "correct_answer": "time",
+        "explanation": "None."
+    },
+    {
+        "question": "What are the two steps of a process execution?",
+        "incorrect answers": [
+            "I/O & OS Burst",
+            "Memory & I/O Burst",
+            "OS & Memory Burst"
+        ],
+        "correct_answer": "CPU & I/O Burst",
+        "explanation": "None."
+    },
+    {
+        "question": "An I/O bound program will typically have ____________",
+        "incorrect answers": [
+            "a few very short CPU bursts",
+            "many very short I/O bursts",
+            "a few very short I/O bursts"
+        ],
+        "correct_answer": "many very short CPU bursts",
+        "explanation": "None."
+    },
+    {
+        "question": "A process is selected from the ______ queue by the ________ scheduler, to be executed",
+        "incorrect answers": [
+            "blocked, short term",
+            "wait, long term",
+            "ready, long term"
+        ],
+        "correct_answer": "ready, short term",
+        "explanation": "None."
+    },
+    {
+        "question": "In the following cases non \u2013 preemptive scheduling occurs?",
+        "incorrect answers": [
+            "When a process switches from the running state to the ready state",
+            "When a process switches from the waiting state to the ready state",
+            "All of the mentioned"
+        ],
+        "correct_answer": "When a process goes from the running state to the waiting state",
+        "explanation": "There is no other choice."
+    },
+    {
+        "question": "The switching of the CPU from one process or thread to another is called ____________",
+        "incorrect answers": [
+            "process switch",
+            "task switch",
+            "context switch"
+        ],
+        "correct_answer": "all of the mentioned",
+        "explanation": "None."
+    },
+    {
+        "question": "What is Dispatch latency?",
+        "incorrect answers": [
+            "the speed of dispatching a process from running to the ready state",
+            "the time of dispatching a process from running to ready state and keeping the CPU idle",
+            "none of the mentioned"
+        ],
+        "correct_answer": "the time to stop one process and start running another one",
+        "explanation": "None."
+    },
+    {
+        "question": "Scheduling is done so as to ____________",
+        "incorrect answers": [
+            "decrease CPU utilization",
+            "keep the CPU more idle",
+            "none of the mentioned"
+        ],
+        "correct_answer": "increase CPU utilization",
+        "explanation": "None."
+    },
+    {
+        "question": "Scheduling is done so as to ____________",
+        "incorrect answers": [
+            "decrease the throughput",
+            "increase the duration of a specific amount of work",
+            "none of the mentioned"
+        ],
+        "correct_answer": "increase the throughput",
+        "explanation": "None."
+    },
+    {
+        "question": "What is Turnaround time?",
+        "incorrect answers": [
+            "the total waiting time for a process to finish execution",
+            "the total time spent in the ready queue",
+            "the total time spent in the running queue"
+        ],
+        "correct_answer": "the total time from the completion till the submission of a process",
+        "explanation": "None."
+    },
+    {
+        "question": "Scheduling is done so as to ____________",
+        "incorrect answers": [
+            "increase the turnaround time",
+            "keep the turnaround time same",
+            "there is no relation between scheduling and turnaround time"
+        ],
+        "correct_answer": "decrease the turnaround time",
+        "explanation": "None."
+    },
+    {
+        "question": "What is Waiting time?",
+        "incorrect answers": [
+            "the total time in the blocked and waiting queues",
+            "the total time spent in the running queue",
+            "the total time from the completion till the submission of a process"
+        ],
+        "correct_answer": "the total time spent in the ready queue",
+        "explanation": "None."
+    },
+    {
+        "question": "Scheduling is done so as to ____________",
+        "incorrect answers": [
+            "increase the waiting time",
+            "keep the waiting time the same",
+            "none of the mentioned"
+        ],
+        "correct_answer": "decrease the waiting time",
+        "explanation": "None."
+    },
+    {
+        "question": "What is Response time?",
+        "incorrect answers": [
+            "the total time taken from the submission time till the completion time",
+            "the total time taken from submission time till the response is output",
+            "none of the mentioned"
+        ],
+        "correct_answer": "the total time taken from the submission time till the first response is produced",
+        "explanation": "None."
+    }
+]

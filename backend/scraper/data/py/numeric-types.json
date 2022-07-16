@@ -1,0 +1,102 @@
+[
+    {
+        "question": "What is the output of print 0",
+        "incorrect answers": [
+            "True",
+            "Machine dependent",
+            "Error"
+        ],
+        "correct_answer": "False",
+        "explanation": "Neither of 0.1, 0.2 and 0.3 can be represented accurately in binary. The round off errors from 0.1 and 0.2 accumulate and hence there is a difference of 5.5511e-17 between (0.1 + 0.2) and 0.3."
+    },
+    {
+        "question": "Which of the following is not a complex number?",
+        "incorrect answers": [
+            "k = 2 + 3j",
+            "k = complex(2, 3)",
+            "k = 2 + 3J"
+        ],
+        "correct_answer": "k = 2 + 3l",
+        "explanation": "l (or L) stands for long."
+    },
+    {
+        "question": "What is the type of inf?",
+        "incorrect answers": [
+            "Boolean",
+            "Integer",
+            "Complex"
+        ],
+        "correct_answer": "Float",
+        "explanation": "Infinity is a special case of floating point numbers. It can be obtained by float(\u2018inf\u2019)."
+    },
+    {
+        "question": "What does ~4 evaluate to?",
+        "incorrect answers": [
+            "-4",
+            "-3",
+            "+3"
+        ],
+        "correct_answer": "-5",
+        "explanation": "~x is equivalent to -(x+1)."
+    },
+    {
+        "question": "What does ~~~~~~5 evaluate to?",
+        "incorrect answers": [
+            "-11",
+            "+11",
+            "-5"
+        ],
+        "correct_answer": "+5",
+        "explanation": "~x is equivalent to -(x+1)."
+    },
+    {
+        "question": "Which of the following is incorrect?",
+        "incorrect answers": [
+            "x = 0b101",
+            "x = 0x4f5",
+            "x = 19023"
+        ],
+        "correct_answer": "x = 03964",
+        "explanation": "Numbers starting with a 0 are octal numbers but 9 isn\u2019t allowed in octal numbers."
+    },
+    {
+        "question": "What is the result of cmp(3, 1)?",
+        "incorrect answers": [
+            "0",
+            "True",
+            "False"
+        ],
+        "correct_answer": "1",
+        "explanation": "cmp(x, y) returns 1 if x > y, 0 if x == y and -1 if x < y."
+    },
+    {
+        "question": "Which of the following is incorrect?",
+        "incorrect answers": [
+            "float(\u2018inf\u2019)",
+            "float(\u2018nan\u2019)",
+            "float(\u201956\u2019+\u201978\u2019)"
+        ],
+        "correct_answer": "float(\u201912+34\u2032)",
+        "explanation": "\u2018+\u2019 cannot be converted to a float."
+    },
+    {
+        "question": "What is the result of round(0",
+        "incorrect answers": [
+            "1.0",
+            "2.0",
+            "0.0"
+        ],
+        "correct_answer": "Value depends on Python version",
+        "explanation": "The behavior of the"
+    },
+    {
+        "question": "What does 3 ^ 4 evaluate to?",
+        "incorrect answers": [
+            "81",
+            "12",
+            "0.75"
+        ],
+        "correct_answer": "7",
+        "explanation": "^ is the Binary XOR operator."
+    }
+]

@@ -1,0 +1,94 @@
+[
+    {
+        "question": "Which one of these is floor division?",
+        "incorrect answers": [
+            "/",
+            "%",
+            "None of the mentioned"
+        ],
+        "correct_answer": "//",
+        "explanation": "When both of the operands are integer then python chops out the fraction part and gives you the round off value, to get the accurate answer use floor division. This is floor division. For ex, 5/2 = 2.5 but both of the operands are integer so answer of this expression in python is 2. To get the 2.5 answer, use floor division."
+    },
+    {
+        "question": "What is the order of precedence in python?",
+        "incorrect answers": [
+            "Exponential",
+            "Multiplication",
+            "Division",
+            "Addition",
+            "Subtraction",
+            "i,ii,iii,iv,v,vi",
+            "ii,i,iii,iv,v,vi",
+            "ii,i,iv,iii,v,vi",
+            "i,ii,iii,iv,vi,v"
+        ],
+        "correct_answer": "Parentheses",
+        "explanation": "For order of precedence, just remember this PEMDAS (similar to BODMAS)."
+    },
+    {
+        "question": "What is the answer to this expression, 22 % 3 is?",
+        "incorrect answers": [
+            "7",
+            "0",
+            "5"
+        ],
+        "correct_answer": "1",
+        "explanation": "Modulus operator gives the remainder. So, 22%3 gives the remainder, that is, 1."
+    },
+    {
+        "question": "Mathematical operations can be performed on a string",
+        "incorrect answers": [
+            "True"
+        ],
+        "correct_answer": "False",
+        "explanation": "You can\u2019t perform mathematical operation on string even if the string is in the form: \u20181234\u2026\u2019."
+    },
+    {
+        "question": "Operators with the same precedence are evaluated in which manner?",
+        "incorrect answers": [
+            "Right to Left",
+            "Can\u2019t say",
+            "None of the mentioned"
+        ],
+        "correct_answer": "Left to Right",
+        "explanation": "None."
+    },
+    {
+        "question": "What is the output of this expression, 3*1**3?",
+        "incorrect answers": [
+            "27",
+            "9",
+            "1"
+        ],
+        "correct_answer": "3",
+        "explanation": "First this expression will solve 1**3 because exponential has higher precedence than multiplication, so 1**3 = 1 and 3*1 = 3. Final answer is 3."
+    },
+    {
+        "question": "Which one of the following has the same precedence level?",
+        "incorrect answers": [
+            "Multiplication, Division and Addition",
+            "Multiplication, Division, Addition and Subtraction",
+            "Addition and Multiplication"
+        ],
+        "correct_answer": "Addition and Subtraction",
+        "explanation": "\u201cAddition and Subtraction\u201d are at the same precedence level. Similarly, \u201cMultiplication and Division\u201d are at the same precedence level. However, Multiplication and Division operators are at a higher precedence level than Addition and Subtraction operators."
+    },
+    {
+        "question": "The expression Int(x) implies that the variable x is converted to integer",
+        "incorrect answers": [
+            "False"
+        ],
+        "correct_answer": "True",
+        "explanation": "None."
+    },
+    {
+        "question": "Which one of the following has the highest precedence in the expression?",
+        "incorrect answers": [
+            "Exponential",
+            "Addition",
+            "Multiplication"
+        ],
+        "correct_answer": "Parentheses",
+        "explanation": "Just remember: PEMDAS, that is, Parenthesis, Exponentiation, Division, Multiplication, Addition, Subtraction. Note that the precedence order of Division and Multiplication is the same. Likewise, the order of Addition and Subtraction is also the same."
+    }
+]

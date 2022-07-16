@@ -1,0 +1,122 @@
+[
+    {
+        "question": "The initial program that is run when the computer is powered up is called __________",
+        "incorrect answers": [
+            "boot program",
+            "bootloader",
+            "initializer"
+        ],
+        "correct_answer": "bootstrap program",
+        "explanation": "None."
+    },
+    {
+        "question": "How does the software trigger an interrupt?",
+        "incorrect answers": [
+            "Sending signals to CPU through bus",
+            "Executing a special program called system program",
+            "Executing a special program called interrupt trigger program"
+        ],
+        "correct_answer": "Executing a special operation called system call",
+        "explanation": "None."
+    },
+    {
+        "question": "What is a trap/exception?",
+        "incorrect answers": [
+            "hardware generated interrupt caused by an error",
+            "user generated interrupt caused by an error",
+            "none of the mentioned"
+        ],
+        "correct_answer": "software generated interrupt caused by an error",
+        "explanation": "None."
+    },
+    {
+        "question": "What is an ISR?",
+        "incorrect answers": [
+            "Information Service Request",
+            "Interrupt Service Request",
+            "Information Service Routine"
+        ],
+        "correct_answer": "Interrupt Service Routine",
+        "explanation": "None."
+    },
+    {
+        "question": "What is an interrupt vector?",
+        "incorrect answers": [
+            "It is a unique device number that is indexed by an address",
+            "It is a unique identity given to an interrupt",
+            "None of the mentioned"
+        ],
+        "correct_answer": "It is an address that is indexed to an interrupt handler",
+        "explanation": "None."
+    },
+    {
+        "question": "DMA is used for __________",
+        "incorrect answers": [
+            "Low speed devices",
+            "Utilizing CPU cycles",
+            "All of the mentioned"
+        ],
+        "correct_answer": "High speed devices(disks and communications network)",
+        "explanation": "None."
+    },
+    {
+        "question": "In a memory mapped input/output __________",
+        "incorrect answers": [
+            "the CPU uses polling to watch the control bit constantly, looping to see if a device is ready",
+            "the CPU receives an interrupt when the device is ready for the next byte",
+            "the CPU runs a user written code and does accordingly"
+        ],
+        "correct_answer": "the CPU writes one data byte to the data register and sets a bit in control register to show that a byte is available",
+        "explanation": "None."
+    },
+    {
+        "question": "In a programmed input/output(PIO) __________",
+        "incorrect answers": [
+            "the CPU writes one data byte to the data register and sets a bit in control register to show that a byte is available",
+            "the CPU receives an interrupt when the device is ready for the next byte",
+            "the CPU runs a user written code and does accordingly"
+        ],
+        "correct_answer": "the CPU uses polling to watch the control bit constantly, looping to see if a device is ready",
+        "explanation": "None."
+    },
+    {
+        "question": "In an interrupt driven input/output __________",
+        "incorrect answers": [
+            "the CPU uses polling to watch the control bit constantly, looping to see if a device is ready",
+            "the CPU writes one data byte to the data register and sets a bit in control register to show that a byte is available",
+            "the CPU runs a user written code and does accordingly"
+        ],
+        "correct_answer": "the CPU receives an interrupt when the device is ready for the next byte",
+        "explanation": "None."
+    },
+    {
+        "question": "In the layered approach of Operating Systems __________",
+        "incorrect answers": [
+            "Bottom Layer(0) is the User interface",
+            "Bottom Layer(N) is the hardware",
+            "Highest Layer(N) is the hardware"
+        ],
+        "correct_answer": "Highest Layer(N) is the User interface",
+        "explanation": "None."
+    },
+    {
+        "question": "How does the Hardware trigger an interrupt?",
+        "incorrect answers": [
+            "Executing a special program called interrupt program",
+            "Executing a special program called system program",
+            "Executing a special operation called system call"
+        ],
+        "correct_answer": "Sending signals to CPU through a system bus",
+        "explanation": "None."
+    },
+    {
+        "question": "Which operation is performed by an interrupt handler?",
+        "incorrect answers": [
+            "Saving the current state of the system",
+            "Loading the interrupt handling code and executing it",
+            "Once done handling, bringing back the system to the original state it was before the interrupt occurred"
+        ],
+        "correct_answer": "All of the mentioned",
+        "explanation": "None."
+    }
+]

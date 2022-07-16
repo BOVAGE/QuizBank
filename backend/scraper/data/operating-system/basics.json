@@ -1,0 +1,102 @@
+[
+    {
+        "question": "What is an operating system?",
+        "incorrect answers": [
+            "collection of programs that manages hardware resources",
+            "system service provider to the application programs",
+            "interface between the hardware and application programs"
+        ],
+        "correct_answer": "all of the mentioned",
+        "explanation": "An Operating System acts as an intermediary between user/user applications/application programs and hardware. It is a program that manages hardware resources. It provides services to application programs."
+    },
+    {
+        "question": "To access the services of operating system, the interface is provided by the ___________",
+        "incorrect answers": [
+            "API",
+            "Library",
+            "Assembly instructions"
+        ],
+        "correct_answer": "System calls",
+        "explanation": "To access services of the Operating System an interface is provided by the System Calls. Generally, these are functions written in C and C++. Open, Close, Read, Write are some of most prominently used system calls."
+    },
+    {
+        "question": "Which one of the following is not true?",
+        "incorrect answers": [
+            "kernel is the program that constitutes the central core of the operating system",
+            "kernel is the first part of operating system to load into memory during booting",
+            "kernel remains in the memory during the entire computer session"
+        ],
+        "correct_answer": "kernel is made of various modules which can not be loaded in running operating system",
+        "explanation": "Kernel is the first program which is loaded in memory when OS is loading as well as it remains in memory till OS is running. Kernel is the core part of the OS which is responsible for managing resources, allowing multiple processes to use the resources and provide services to various processes. Kernel modules can be loaded and unloaded in run-time i.e. in running OS."
+    },
+    {
+        "question": "Which one of the following error will be handle by the operating system?",
+        "incorrect answers": [
+            "power failure",
+            "lack of paper in printer",
+            "connection failure in the network"
+        ],
+        "correct_answer": "all of the mentioned",
+        "explanation": "All the mentioned errors are handled by OS. The OS is continuously monitoring all of its resources. Also, the OS is constantly detecting and correcting errors."
+    },
+    {
+        "question": "What is the main function of the command interpreter?",
+        "incorrect answers": [
+            "to provide the interface between the API and application program",
+            "to handle the files in operating system",
+            "none of the mentioned"
+        ],
+        "correct_answer": "to get and execute the next user-specified command",
+        "explanation": "The main function of command interpreter is to get and execute the next user-specified command. Command Interpreter checks for valid command and then runs that command else it will throw an error."
+    },
+    {
+        "question": "In Operating Systems, which of the following is/are CPU scheduling algorithms?",
+        "incorrect answers": [
+            "Round Robin",
+            "Shortest Job First",
+            "Priority"
+        ],
+        "correct_answer": "All of the mentioned",
+        "explanation": "In Operating Systems, CPU scheduling algorithms are:"
+    },
+    {
+        "question": "If a process fails, most operating system write the error information to a ______",
+        "incorrect answers": [
+            "another running process",
+            "new file",
+            "none of the mentioned"
+        ],
+        "correct_answer": "log file",
+        "explanation": "If a process fails, most operating systems write the error information to a log file. Log file is examined by the debugger, to find out what is the actual cause of that particular problem. Log file is useful for system programmers for correcting errors."
+    },
+    {
+        "question": "Which facility dynamically adds probes to a running system, both in user processes and in the kernel?",
+        "incorrect answers": [
+            "DLocate",
+            "DMap",
+            "DAdd"
+        ],
+        "correct_answer": "DTrace",
+        "explanation": "A facility that dynamically adds probes to a running system, both in user process and in the kernel is called DTrace. This is very much useful in troubleshooting kernels in real-time."
+    },
+    {
+        "question": "Which one of the following is not a real time operating system?",
+        "incorrect answers": [
+            "VxWorks",
+            "QNX",
+            "RTLinux"
+        ],
+        "correct_answer": "Palm OS",
+        "explanation": "VxWorks, QNX & RTLinux are real-time operating systems. Palm OS is a mobile operating system. Palm OS is developed for Personal Digital Assistants (PDAs)."
+    },
+    {
+        "question": "The OS X has ____________",
+        "incorrect answers": [
+            "monolithic kernel",
+            "microkernel",
+            "monolithic kernel with modules"
+        ],
+        "correct_answer": "hybrid kernel",
+        "explanation": "OS X has a hybrid kernel. Hybrid kernel is a combination of two different kernels. OS X is developed by Apple and originally it is known as Mac OS X."
+    }
+]
