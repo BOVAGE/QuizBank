@@ -1,3 +1,4 @@
+from common.permissions import IsAdminUserOrReadOnly
 from django.contrib.auth import get_user_model
 from django.db.models import Q
 from django.shortcuts import get_object_or_404
@@ -8,7 +9,8 @@ from rest_framework.views import APIView
 from rest_framework_simplejwt.authentication import JWTAuthentication
 
 from .models import Category, Question
-from .serializers import QuestionDetailSerializer, QuestionPublicSerializer
+from .serializers import (CategorySerializer, QuestionDetailSerializer,
+                          QuestionPublicSerializer)
 
 User = get_user_model()
 class QuestionListCreateView(generics.GenericAPIView):
@@ -186,9 +188,69 @@ class StatisticsView(APIView):
         }
         return Response(data, status=status.HTTP_200_OK)
 
+class CategoryListCreateView(generics.ListCreateAPIView):
+    serializer_class = CategorySerializer
+    queryset = Category.objects.all()
+    permission_classes = [IsAdminUserOrReadOnly]
+    authentication_classes = [JWTAuthentication]
+
+    def list(self, request, *args, **kwargs):
+        data = super().list(request, *args, **kwargs).data
+        data = {
+            "status": "success",
+            "message": "All Categories fetched successfully",
+            "data": data
+        }
+        return Response(data, status=status.HTTP_200_OK)
+    def create(self, request, *args, **kwargs):
+        data = super().create(request, *args, **kwargs).data
+        data = {
+            "status": "success",
+            "message": f"Category - {data.get('name')} created successfully",
+            "data": data
+        }
+        return Response(data, status=status.HTTP_201_CREATED)
+
+
+class CategoryDetailView(generics.RetrieveUpdateDestroyAPIView):
+    serializer_class = CategorySerializer
+    authentication_classes = [JWTAuthentication]
+    permission_classes = [IsAdminUserOrReadOnly]
+    queryset = Category.objects.all()
+    lookup_field = "slug"
+
+    def retrieve(self, request, *args, **kwargs):
+        data = super().retrieve(request, *args, **kwargs).data
+        data = {
+            "status": "success",
+            "message": f"Category - {data.get('name')} retrieved successfully",
+            "data": data
+        }
+        return Response(data, status=status.HTTP_200_OK)
+    
+    def update(self, request, *args, **kwargs):
+        data = super().update(request, *args, **kwargs).data
+        data = {
+            "status": "success",
+            "message": f"Category - {data.get('name')} updated successfully",
+            "data": data
+        }
+        return Response(data, status=status.HTTP_200_OK)
+
+    def destroy(self, request, *args, **kwargs):
+        data = super().destroy(request, *args, **kwargs).data
+        data = {
+            "status": "success",
+            "message": f"Category deleted successfully",
+            "data": data
+        }
+        return Response(data, status=status.HTTP_204_NO_CONTENT)
+
 
 QuestionListCreateView = QuestionListCreateView.as_view()
 QuestionListFullView = QuestionListFullView.as_view()
 UnverifiedQuestionListFullView = UnverifiedQuestionListFullView.as_view()
 QuestionVerification = QuestionVerification.as_view()
 StatisticsView = StatisticsView.as_view()
+CategoryListCreateView = CategoryListCreateView.as_view()
+CategoryDetailView = CategoryDetailView.as_view()
