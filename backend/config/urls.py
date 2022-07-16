@@ -6,6 +6,7 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1/auth/', include('authentication.urls')),
+    path('api/v1/questions/', include('quiz.urls')),
 ]
 
 if settings.DEBUG:
