@@ -7,7 +7,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework_simplejwt.authentication import JWTAuthentication
 
-from .models import Question
+from .models import Category, Question
 from .serializers import QuestionDetailSerializer, QuestionPublicSerializer
 
 User = get_user_model()
@@ -135,7 +135,60 @@ class QuestionVerification(APIView):
         return Response(data, status=status.HTTP_200_OK)
 
 
+class StatisticsView(APIView):
+    """ 
+        returns information about questions, categories
+        and activity about the quiz app.
+
+        Optianally return a shorter response by filtering against
+        an `on` query parameter in the URL.
+    """
+
+    def get(self, request):
+        questions = {
+            "all_questions": Question.no_of_all_questions(),
+            "verified_questions": Question.no_of_verified_questions(),
+            "unverified_questions": Question.no_of_unverified_questions()
+        }
+        difficulty = {
+            "eazy": Question.no_of_easy_questions(),
+            "medium": Question.no_of_medium_questions(),
+            "hard": Question.no_of_hard_questions()
+        }
+        users = {
+            "Total Users": User.total_user(),
+            "Total Staff": User.total_staff(),
+        }
+        activity = {
+            "last_created": Question.last_created(),
+            "last_verified": Question.last_verified(),
+        }
+        data = {
+            "status": "success",
+            "message": "Statistics about questions,category, difficulty, users, activity",
+            "data": {
+                "question": questions,
+                "difficulty": difficulty,
+                "category": Category.questions_count_category(),
+                "users": users,
+                "activity": activity, 
+            }
+        }
+        info_on = request.query_params.get('on')
+        info_list = ['category', 'difficulty', 'question', 'users', 'activity']
+        if info_on is not None and info_on in info_list:
+            data = {
+            "status": "success",
+            "message": f"Statistics on {info_on}",
+            "data": {
+                info_on: data.get("data")[info_on], 
+            }
+        }
+        return Response(data, status=status.HTTP_200_OK)
+
+
 QuestionListCreateView = QuestionListCreateView.as_view()
 QuestionListFullView = QuestionListFullView.as_view()
 UnverifiedQuestionListFullView = UnverifiedQuestionListFullView.as_view()
 QuestionVerification = QuestionVerification.as_view()
+StatisticsView = StatisticsView.as_view()
