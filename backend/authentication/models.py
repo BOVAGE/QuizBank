@@ -17,3 +17,20 @@ class User(AbstractUser):
             'refresh': str(refresh),
             'access': str(refresh.access_token),
         }
+
+    @staticmethod
+    def total_user() -> int:
+        return User.objects.count()
+
+    @staticmethod
+    def total_staff() -> int:
+        return User.objects.filter(is_staff=True).count()
+
+    def get_number_of_questions(self) -> int:
+        return self.questions.count()
+
+    def get_number_of_verified_questions(self) -> int:
+        return self.questions.filter(is_verified=True).count()
+
+    def get_number_of_unverified_questions(self) -> int:
+        return self.questions.filter(is_verified=False).count()
