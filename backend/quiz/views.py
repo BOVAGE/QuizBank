@@ -284,6 +284,41 @@ class UserQuestionStatView(APIView):
         return Response(data, status=status.HTTP_200_OK)
 
 
+class QuestionDetailView(generics.RetrieveUpdateDestroyAPIView):
+    serializer_class = QuestionPublicSerializer
+    permission_classes = [IsAdminUser]
+    authentication_classes = [JWTAuthentication]
+    queryset = Question.objects.all()
+    lookup_field = "id"   
+
+    def retrieve(self, request, *args, **kwargs):
+        data = super().retrieve(request, *args, **kwargs).data
+        data = {
+            "status": "success",
+            "message": f"Question - {data.get('id')} retrieved successfully",
+            "data": data
+        }
+        return Response(data, status=status.HTTP_200_OK)
+    
+    def update(self, request, *args, **kwargs):
+        data = super().update(request, *args, **kwargs).data
+        data = {
+            "status": "success",
+            "message": f"Question - {data.get('id')} updated successfully",
+            "data": data
+        }
+        return Response(data, status=status.HTTP_200_OK)
+
+    def destroy(self, request, *args, **kwargs):
+        data = super().destroy(request, *args, **kwargs).data
+        data = {
+            "status": "success",
+            "message": f"Question deleted successfully",
+            "data": data
+        }
+        return Response(data, status=status.HTTP_204_NO_CONTENT)
+
+
 QuestionListCreateView = QuestionListCreateView.as_view()
 QuestionListFullView = QuestionListFullView.as_view()
 UnverifiedQuestionListFullView = UnverifiedQuestionListFullView.as_view()
@@ -293,3 +328,4 @@ CategoryListCreateView = CategoryListCreateView.as_view()
 CategoryDetailView = CategoryDetailView.as_view()
 UserQuestionListView = UserQuestionListView.as_view()
 UserQuestionStatView = UserQuestionStatView.as_view()
+QuestionDetailView = QuestionDetailView.as_view()

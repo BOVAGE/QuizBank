@@ -1,10 +1,12 @@
 from django.urls import path
 
-from .views import (QuestionListCreateView, QuestionListFullView,
-                    QuestionVerification, UnverifiedQuestionListFullView)
+from .views import (QuestionDetailView, QuestionListCreateView,
+                    QuestionListFullView, QuestionVerification,
+                    UnverifiedQuestionListFullView)
 
 urlpatterns = [
     path('', QuestionListCreateView, name='question-list'),
+    path('<int:id>', QuestionDetailView, name='question-detail'),
     path('full', QuestionListFullView, name='question-list-full'),
     path('unverified', UnverifiedQuestionListFullView, 
     name='unverified-question-list-full'),

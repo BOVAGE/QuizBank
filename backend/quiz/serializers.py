@@ -42,6 +42,29 @@ class QuestionPublicSerializer(serializers.ModelSerializer):
         question.refresh_from_db()
         return question
 
+    def update(self, instance, validated_data):
+        #check if category and incorrect_answer_fields is in validated_data
+
+        category = validated_data.get('category').get('slug') if validated_data.get('category') else None
+        incorrect_answers = validated_data.get('incorrect_answer_fields')
+        if category:
+            category = validated_data.pop('category')['slug']
+            instance.category = category
+        if incorrect_answers:
+            incorrect_answers = validated_data.pop('incorrect_answer_fields')
+        #bulk update the only fields that are supplied using the key
+        for key in validated_data.keys():
+            setattr(instance, key, validated_data[key])
+        instance.save()
+        if incorrect_answers:
+            incorrect_answers_list = [incorrect_answer for incorrect_answer in incorrect_answers.values()]
+            instance_incorrect_answers = instance.incorrect_answers.all()
+            for idx, instance_incorrect_answer in enumerate(instance_incorrect_answers):
+                instance_incorrect_answer.option = incorrect_answers_list[idx]
+                instance_incorrect_answer.save()
+            instance.refresh_from_db()
+        return instance
+
 
 class QuestionDetailSerializer(serializers.ModelSerializer):
     created_by = serializers.ReadOnlyField(source='created_by.username')
