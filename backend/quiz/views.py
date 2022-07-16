@@ -3,7 +3,8 @@ from django.contrib.auth import get_user_model
 from django.db.models import Q
 from django.shortcuts import get_object_or_404
 from rest_framework import generics, status
-from rest_framework.permissions import IsAdminUser, IsAuthenticatedOrReadOnly
+from rest_framework.permissions import (IsAdminUser, IsAuthenticated,
+                                        IsAuthenticatedOrReadOnly)
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework_simplejwt.authentication import JWTAuthentication
@@ -247,6 +248,42 @@ class CategoryDetailView(generics.RetrieveUpdateDestroyAPIView):
         return Response(data, status=status.HTTP_204_NO_CONTENT)
 
 
+class UserQuestionListView(generics.ListAPIView):
+    serializer_class = QuestionDetailSerializer
+    authentication_classes = [JWTAuthentication]
+    permission_classes = [IsAuthenticated]
+
+    def get_queryset(self):
+        id = self.kwargs['id']
+        user = get_object_or_404(User, id=id)
+        return user.questions.all()
+
+    def list(self, request, *args, **kwargs):
+        data = super().list(request, *args, **kwargs).data
+        data = {
+            "status": "success",
+            "message": "Questions created by the user whose ID is passed in the URL fetched successfully",
+            "data": data
+        }
+        return Response(data, status=status.HTTP_200_OK)
+    
+
+class UserQuestionStatView(APIView):
+
+    def get(self, request, id):
+        user = get_object_or_404(User, id=id)
+        data = {
+            "status": "success",
+            "message": "Statistics on the questions created by the user whose ID is passed in the URL",
+            "data": {
+                "all_question": user.get_number_of_questions(),
+                "unverified_questions": user.get_number_of_verified_questions(),
+                "verified_questions": user.get_number_of_unverified_questions(), 
+            }
+        }
+        return Response(data, status=status.HTTP_200_OK)
+
+
 QuestionListCreateView = QuestionListCreateView.as_view()
 QuestionListFullView = QuestionListFullView.as_view()
 UnverifiedQuestionListFullView = UnverifiedQuestionListFullView.as_view()
@@ -254,3 +291,5 @@ QuestionVerification = QuestionVerification.as_view()
 StatisticsView = StatisticsView.as_view()
 CategoryListCreateView = CategoryListCreateView.as_view()
 CategoryDetailView = CategoryDetailView.as_view()
+UserQuestionListView = UserQuestionListView.as_view()
+UserQuestionStatView = UserQuestionStatView.as_view()

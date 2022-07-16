@@ -3,7 +3,8 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import include, path
 from quiz.views import (CategoryDetailView, CategoryListCreateView,
-                        StatisticsView)
+                        StatisticsView, UserQuestionListView,
+                        UserQuestionStatView)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -12,6 +13,8 @@ urlpatterns = [
     path('api/v1/statistics/', StatisticsView, name="statistics"),
     path('api/v1/categories/', CategoryListCreateView, name="categories-list"),
     path('api/v1/categories/<slug:slug>', CategoryDetailView, name="categories-detail"),
+    path('api/v1/users/<int:id>/questions', UserQuestionListView, name="user-question"),
+    path('api/v1/users/<int:id>/questions-stat', UserQuestionStatView, name="user-question-stat"),
 ]
 
 if settings.DEBUG:
