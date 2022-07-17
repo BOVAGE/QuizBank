@@ -10,6 +10,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1/auth/', include('authentication.urls')),
     path('api/v1/questions/', include('quiz.urls')),
+    path('api/v1/feedback/', include('feedback.urls')),
     path('api/v1/statistics/', StatisticsView, name="statistics"),
     path('api/v1/categories/', CategoryListCreateView, name="categories-list"),
     path('api/v1/categories/<slug:slug>', CategoryDetailView, name="categories-detail"),
