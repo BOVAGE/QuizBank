@@ -1,3 +1,4 @@
+from authentication.views import UserListView, UserStaff
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
@@ -14,6 +15,8 @@ urlpatterns = [
     path('api/v1/statistics/', StatisticsView, name="statistics"),
     path('api/v1/categories/', CategoryListCreateView, name="categories-list"),
     path('api/v1/categories/<slug:slug>', CategoryDetailView, name="categories-detail"),
+    path('api/v1/users', UserListView.as_view(), name="user-list"),
+    path('api/v1/users/<int:id>/staff', UserStaff.as_view(), name="user-staff"),
     path('api/v1/users/<int:id>/questions', UserQuestionListView, name="user-question"),
     path('api/v1/users/<int:id>/questions-stat', UserQuestionStatView, name="user-question-stat"),
 ]
