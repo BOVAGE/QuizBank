@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     #created apps
     'authentication',
     'quiz',
+    'feedback',
     
     #third party packages
     'rest_framework',
