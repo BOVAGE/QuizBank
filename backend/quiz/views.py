@@ -277,8 +277,8 @@ class UserQuestionStatView(APIView):
             "message": "Statistics on the questions created by the user whose ID is passed in the URL",
             "data": {
                 "all_question": user.get_number_of_questions(),
-                "unverified_questions": user.get_number_of_verified_questions(),
-                "verified_questions": user.get_number_of_unverified_questions(), 
+                "verified_questions": user.get_number_of_verified_questions(),
+                "unverified_questions": user.get_number_of_unverified_questions(), 
             }
         }
         return Response(data, status=status.HTTP_200_OK)
