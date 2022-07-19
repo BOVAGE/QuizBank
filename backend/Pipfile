@@ -13,6 +13,7 @@ djangorestframework-simplejwt = "*"
 beautifulsoup4 = "*"
 requests = "*"
 html5lib = "*"
+django-cors-headers = "*"
 
 [dev-packages]
 notebook = "*"
