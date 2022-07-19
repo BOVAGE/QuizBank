@@ -140,3 +140,10 @@ SIMPLE_JWT = {
     'ALGORITHM': config('JWT_ALGORITHM'),
     'SIGNING_KEY': config('JWT_SECRET_KEY'),
 }
+
+# REST_FRAMEWORK configurations
+REST_FRAMEWORK = {
+    'NON_FIELD_ERRORS_KEY': "error",
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 10
+}
