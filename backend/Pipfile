@@ -14,6 +14,7 @@ beautifulsoup4 = "*"
 requests = "*"
 html5lib = "*"
 django-cors-headers = "*"
+mysqlclient = "*"
 
 [dev-packages]
 notebook = "*"
