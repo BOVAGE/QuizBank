@@ -157,3 +157,5 @@ REST_FRAMEWORK = {
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
 ]
+
+ADMIN_TOKEN = config('TEST_TOKEN')
