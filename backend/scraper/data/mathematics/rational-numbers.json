@@ -1,0 +1,102 @@
+[
+    {
+        "question": "Which of the following type of numbers are closed under only multiplication?",
+        "incorrect answers": [
+            "Rational Numbers",
+            "Integers",
+            "Natural Numbers"
+        ],
+        "correct_answer": "Whole Numbers",
+        "explanation": ""
+    },
+    {
+        "question": "By using the properties of rational numbers solve the following equation (8 + 0) + (6 * 3)",
+        "incorrect answers": [
+            "24",
+            "28",
+            "0"
+        ],
+        "correct_answer": "26",
+        "explanation": "By using the properties of rational numbers like addition and multiplication, we can solve the equation and get to the correct answer."
+    },
+    {
+        "question": "Solve: \\((\\frac{15}{6}) * (\\frac{2}{3})\\)",
+        "incorrect answers": [
+            "\\(\\frac{3}{5}\\) ",
+            "\\(\\frac{2}{5}\\) ",
+            "\\(\\frac{5}{2}\\) "
+        ],
+        "correct_answer": "\\(\\frac{5}{3}\\) ",
+        "explanation": "Using the property of multiplication, we can solve the question."
+    },
+    {
+        "question": "Which number should be subtracted from \\(\\frac{16}{15}\\) to get \\((\\frac{-16}{15})\\)?",
+        "incorrect answers": [
+            "\\(\\frac{31}{15}\\) ",
+            "\\(\\frac{-32}{15}\\) ",
+            "0"
+        ],
+        "correct_answer": "\\(\\frac{32}{15}\\) ",
+        "explanation": "Using the properties of addition and subtraction we can solve this problem."
+    },
+    {
+        "question": "Simplify: \\(\\frac{11}{2} + \\frac{11}{4} \u2013 \\frac{11}{8} +  \\frac{11}{16}\\)",
+        "incorrect answers": [
+            "\\(\\frac{44}{2}\\) ",
+            "\\(\\frac{44}{4}\\) ",
+            "\\(\\frac{44}{16}\\) "
+        ],
+        "correct_answer": "\\(\\frac{121}{16}\\) ",
+        "explanation": "In order to simplify the given equation we have to equate the denominators."
+    },
+    {
+        "question": "Which of the following rational number is in the standard form?",
+        "incorrect answers": [
+            "\\(\\frac{16}{24}\\) ",
+            "\\(\\frac{21}{15}\\) ",
+            "\\(\\frac{-21}{56}\\) "
+        ],
+        "correct_answer": "\\(\\frac{16}{21}\\) ",
+        "explanation": "A rational number is said to be in it\u2019s standard form when the numbers cannot be further reduced."
+    },
+    {
+        "question": "Fill in the blanks \\(\\frac{-15}{32}\\) / ____ = \\(\\frac{12}{32}\\)",
+        "incorrect answers": [
+            "\\(\\frac{39}{128}\\) ",
+            "\\(\\frac{128}{39}\\) ",
+            "\\(\\frac{128}{-39)}\\) "
+        ],
+        "correct_answer": "\\(\\frac{-5}{4}\\) ",
+        "explanation": "Using the properties of addition and subtraction we can solve this problem."
+    },
+    {
+        "question": "What is the multiplicative inverse of \\(\\frac{15}{135}\\)?",
+        "incorrect answers": [
+            "\\(\\frac{15}{135}\\) ",
+            "\\(\\frac{-15}{135}\\) ",
+            "1"
+        ],
+        "correct_answer": "9",
+        "explanation": "\\(\\frac{15}{135}\\) * x = 1"
+    },
+    {
+        "question": "Which of the following lies between 2 and 3?",
+        "incorrect answers": [
+            "\\(\\frac{6}{2}\\) ",
+            "\\(\\frac{6}{3}\\) ",
+            "\\(\\frac{12}{3}\\) "
+        ],
+        "correct_answer": "\\(\\frac{5}{2}\\) ",
+        "explanation": "The correct answer to the question is \\(\\frac{5}{2}\\), since it is the only number that lies between 2 and 3. While the others don\u2019t lie in the given range."
+    },
+    {
+        "question": "What is the reciprocal of \\(\\frac{1}{-x}\\)?",
+        "incorrect answers": [
+            "x",
+            "\\(\\frac{1}{x}\\) ",
+            "\\(\\frac{1}{-x}\\) "
+        ],
+        "correct_answer": "-x",
+        "explanation": "The number obtained by dividing a number by 1 is its reciprocal. All the numbers have one and only one reciprocal number."
+    }
+]

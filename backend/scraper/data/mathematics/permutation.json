@@ -1,0 +1,220 @@
+[
+    {
+        "question": "If an event can occur in \u2018m\u2019 different ways, following which another event can occur in \u2018n\u2019 different ways, then the total numbers of occurrence of the events in the given order is __________________",
+        "incorrect answers": [
+            "m + n",
+            "m \u2013 n",
+            "m/n"
+        ],
+        "correct_answer": "m*n",
+        "explanation": "By the fundamental principle of counting, if an event can occur in \u2018m\u2019 different ways, following which another event can occur in \u2018n\u2019 different ways, then the total numbers of occurrence of the events in the given order is m*n."
+    },
+    {
+        "question": "A child has 2 pencil and 3 erasers",
+        "incorrect answers": [
+            "5",
+            "8",
+            "9"
+        ],
+        "correct_answer": "6",
+        "explanation": "By the fundamental principle of counting, if an event can occur in \u2018m\u2019 different ways, following which another event can occur in \u2018n\u2019 different ways, then the total numbers of occurrence of the events in the given order is m*n."
+    },
+    {
+        "question": "If there are 4 paths to travel from Delhi to Kanpur, then in how many ways a person can travel from Delhi to Kanpur and came back to Delhi?",
+        "incorrect answers": [
+            "4",
+            "8",
+            "12"
+        ],
+        "correct_answer": "16",
+        "explanation": "If there are 4 paths to travel from Delhi to Kanpur then number of paths to travel from Kanpur to Delhi are 4. So, by the fundamental principle of counting, total number of ways to go and come back are 4*4 = 16."
+    },
+    {
+        "question": "If there are 4 paths to travel from Delhi to Kanpur, then in how many ways a person can travel from Delhi to Kanpur and came back to Delhi via same path?",
+        "incorrect answers": [
+            "8",
+            "12",
+            "16"
+        ],
+        "correct_answer": "4",
+        "explanation": "If there are 4 paths to travel from Delhi to Kanpur and person take one path then in coming back journey only one option is there. So, by the fundamental principle of counting, total number of ways a person can travel from Delhi to Kanpur and came back to Delhi via same path are 4*1 = 4."
+    },
+    {
+        "question": "If there are 4 paths to travel from Delhi to Kanpur, then in how many ways a person can travel from Delhi to Kanpur and came back to Delhi via different path?",
+        "incorrect answers": [
+            "4",
+            "8",
+            "16"
+        ],
+        "correct_answer": "12",
+        "explanation": "If there are 4 paths to travel from Delhi to Kanpur and person take one path then in coming back journey only 3 paths are remaining. So, by the fundamental principle of counting, total number of ways a person can travel from Delhi to Kanpur and came back to Delhi via different path are 4 * 3 = 12."
+    },
+    {
+        "question": "Find the number of 5 letter words which can be formed from word PULSE without repetition",
+        "incorrect answers": [
+            "20",
+            "60",
+            "240"
+        ],
+        "correct_answer": "120",
+        "explanation": "PULSE is a 5 letters word. By the fundamental principle of counting, total number of possible words without repetition are 5*4*3*2*1 = 120."
+    },
+    {
+        "question": "Find the number of 5 letter words which can be formed from word PULSE if repetition is allowed",
+        "incorrect answers": [
+            "25",
+            "120",
+            "125"
+        ],
+        "correct_answer": "3125",
+        "explanation": "PULSE is a 5 letters word. By the fundamental principle of counting, total number of possible words with repetition allowed are 5*5*5*5*5 = 3125."
+    },
+    {
+        "question": "Find the number of 4 letter words which can be formed from word PULSE without repetition",
+        "incorrect answers": [
+            "20",
+            "60",
+            "240"
+        ],
+        "correct_answer": "120",
+        "explanation": "PULSE is a 5 letters word. By the fundamental principle of counting, total number of possible words without repetition are 5*4*3*2 = 120."
+    },
+    {
+        "question": "Find the number of 4 letter words which can be formed from word PULSE if repetition is allowed",
+        "incorrect answers": [
+            "120",
+            "125",
+            "3125"
+        ],
+        "correct_answer": "625",
+        "explanation": "PULSE is a 5 letters word. By the fundamental principle of counting, total number of possible words with repetition allowed are 5*5*5*5 = 625."
+    },
+    {
+        "question": "How many 5-digit numbers are possible without repetition of digits?",
+        "incorrect answers": [
+            "50400",
+            "100000",
+            "90000"
+        ],
+        "correct_answer": "27216",
+        "explanation": "Total digits are 0-9 i.e.10. In a 5-digit number 0 cannot be at first place."
+    },
+    {
+        "question": "How many 5-digit numbers are possible if repetition of digits is allowed?",
+        "incorrect answers": [
+            "27216",
+            "50400",
+            "100000"
+        ],
+        "correct_answer": "90000",
+        "explanation": "Total digits are 0-9 i.e.10. In a 5-digit number 0 cannot be at first place."
+    },
+    {
+        "question": "A passcode is made of 5 digits",
+        "incorrect answers": [
+            "27215",
+            "50399",
+            "89999"
+        ],
+        "correct_answer": "99999",
+        "explanation": "Total digits are 0-9 i.e.10. In passcode, 0 may also occur at first place."
+    },
+    {
+        "question": "How many 4 digits even numbers are possible from digits 1 to 9 if repetition is not allowed?",
+        "incorrect answers": [
+            "6561",
+            "2016",
+            "2916"
+        ],
+        "correct_answer": "1344",
+        "explanation": "Total digits are 1-9 i.e.9. Even number means 2,4,6,8 at unit\u2019s place."
+    },
+    {
+        "question": "How many 4 digits even numbers are possible from digits 1 to 9 if repetition is allowed?",
+        "incorrect answers": [
+            "6561",
+            "2016",
+            "1344"
+        ],
+        "correct_answer": "2916",
+        "explanation": "Total digits are 1-9 i.e.9. Even number means 2,4,6,8 at unit\u2019s place."
+    },
+    {
+        "question": "If a code involves one letter of English alphabet at first place and a number at second place",
+        "incorrect answers": [
+            "260",
+            "314",
+            "324"
+        ],
+        "correct_answer": "234",
+        "explanation": "Since there are 26 letters in English alphabet and 9 possible digits from 1 to 9."
+    },
+    {
+        "question": "Permutation is also known as selection",
+        "incorrect answers": [
+            "True"
+        ],
+        "correct_answer": "False",
+        "explanation": "Permutation is known as arrangement. Selection is another name for combinations."
+    },
+    {
+        "question": "6! = _____________",
+        "incorrect answers": [
+            "24",
+            "120",
+            "8"
+        ],
+        "correct_answer": "720",
+        "explanation": "We know, n! = n.(n-1).(n-2).(n-3)\u2026.."
+    },
+    {
+        "question": "\\(\\frac{7!}{5!}\\) = ____________________",
+        "incorrect answers": [
+            "7",
+            "230",
+            "30"
+        ],
+        "correct_answer": "42",
+        "explanation": "We know, n! = n.(n-1).(n-2).(n-3)\u2026\u2026 = n(n-1)!"
+    },
+    {
+        "question": "\\(\\frac{100}{10!} = \\frac{1}{8!} + \\frac{x}{9!}\\)",
+        "incorrect answers": [
+            "2",
+            "3",
+            "4"
+        ],
+        "correct_answer": "1",
+        "explanation": "\\(\\frac{100}{10!} = \\frac{1}{8!} + \\frac{x}{9!}\\)."
+    },
+    {
+        "question": "How many 3-digit numbers are possible using permutations without repetition of digits if digits are 1-9?",
+        "incorrect answers": [
+            "729",
+            "1000",
+            "720"
+        ],
+        "correct_answer": "504",
+        "explanation": "1-9 digits which means 9 digits are possible. We have to arrange 3 digits at a time out of 9 digits without repetition. So, total permutations are"
+    },
+    {
+        "question": "How many 3-digit numbers are possible using permutations with repetition allowed if digits are 1-9?",
+        "incorrect answers": [
+            "504",
+            "1000",
+            "720"
+        ],
+        "correct_answer": "729",
+        "explanation": "1-9 digits which means 9 digits are possible. We have to arrange 3 digits at a time out of 9 digits with repetition allowed. So, total permutations are n"
+    },
+    {
+        "question": "In how many ways 2 red pens, 3 blue pens and 4 black pens can be arranged if same color pens are indistinguishable?",
+        "incorrect answers": [
+            "362880",
+            "24",
+            "105680"
+        ],
+        "correct_answer": "1260",
+        "explanation": "Total number of pens are 2+3+4 = 9 out of which 2 are of 1 type, 3 are of 2"
+    }
+]

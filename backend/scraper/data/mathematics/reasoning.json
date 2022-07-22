@@ -1,0 +1,196 @@
+[
+    {
+        "question": "What methods are inserted into the uterus through the vagina to prevent pregnancy?",
+        "incorrect answers": [
+            "Natural methods",
+            "Barrier methods",
+            "Oral methods"
+        ],
+        "correct_answer": "Intrauterine methods",
+        "explanation": "Intrauterine devices are inserted into the uterus through the vagina. Expert doctors do this. It is a contraceptive measure."
+    },
+    {
+        "question": "Intrauterine methods exist only for females",
+        "incorrect answers": [
+            "False"
+        ],
+        "correct_answer": "True",
+        "explanation": "Intrauterine methods are designed to be inserted into uterus through vagina. These exist only for females. There is no similar counterpart for males because the act of fertilization occurs in the female genital tract."
+    },
+    {
+        "question": "IUDs stand for _______",
+        "incorrect answers": [
+            "Inter Uterine Devices",
+            "Intra Uterine Diseases",
+            "Inter Uterine Diseases"
+        ],
+        "correct_answer": "Intra Uterine Devices",
+        "explanation": "IUDs stand for Intra Uterine Devices. These are designed to be inserted through the vagina into the uterus."
+    },
+    {
+        "question": "Which of the following is a non-medicated IUD?",
+        "incorrect answers": [
+            "Cu7",
+            "Multiload 375",
+            "Progestasert"
+        ],
+        "correct_answer": "Lippes loop",
+        "explanation": "Lippes loop is a non-medicated IUD. It is made of an inert plastic material and can be used for longterm use."
+    },
+    {
+        "question": "Which of the following is not a copper releasing IUD?",
+        "incorrect answers": [
+            "Cu7",
+            "CuT",
+            "Multiload 375"
+        ],
+        "correct_answer": "LNG-20",
+        "explanation": "The copper releasing IUDs include Cu7, CuT, and Multiload 375. LNG-20 instead releases progestin, which is a hormone."
+    },
+    {
+        "question": "Which of the following IUDs work by releasing hormone?",
+        "incorrect answers": [
+            "Lippes loop",
+            "Cu7",
+            "Multiload 375"
+        ],
+        "correct_answer": "Progestasert",
+        "explanation": "Proestasert is an IUD. It works by releasing the hormone progesterone. This prevents pregnancy and hence acts as a contraceptive measure."
+    },
+    {
+        "question": "LNG-20 is an IUD, hence releases Cu ions to terminate pregnancy",
+        "incorrect answers": [
+            "True"
+        ],
+        "correct_answer": "False",
+        "explanation": "LNG-20 is an IUD. However, not all IUDs released Cu ions. LNG-20 belongs to the class of IUDs that release hormones. LNG-20 causes the release of the hormone progestin in the uterine cavity."
+    },
+    {
+        "question": "How do IUDs prevent pregnancy?",
+        "incorrect answers": [
+            "By preventing mixing of vaginal and seminal fluids",
+            "By increasing phagocytosis of eggs",
+            "By preventing the release of egg"
+        ],
+        "correct_answer": "By increasing phagocytosis of sperms",
+        "explanation": "IUDs are intrauterine devices. They do not act as a barrier between vaginal and seminal fluids. Also, they do not affect the ovary or the egg. They work by enhancing the phagocytosis of sperms and thus reducing the probability of sperm entering the fallopian tube to fertilize the egg."
+    },
+    {
+        "question": "How do Cu ions in copper releasing IUDs prevent fertilization?",
+        "incorrect answers": [
+            "By increasing the motility of the sperms",
+            "By causing the females to expel out the sperms",
+            "By causing the lysis of sperms"
+        ],
+        "correct_answer": "By reducing the motility of the sperms",
+        "explanation": "Copper releasing IUDs include Cu7, CuT, and Multiload 375. These work by dampening the motility of the sperms. This reduces the ability of sperm to cross the barriers of the uterus before reaching the fallopian tube and thus prevents fertilization and pregnancy."
+    },
+    {
+        "question": "What is the unique feature of hormone-releasing IUDs?",
+        "incorrect answers": [
+            "Causing lysis of sperms",
+            "Increasing the release of sperms by male",
+            "Closing of vagina"
+        ],
+        "correct_answer": "Rendering the uterus unsuitable for the fertilized egg to implant",
+        "explanation": "The hormone-releasing IUDs are very strong and have fewer side-effects. These stimulate the body\u2019s mechanisms to prevent fertilization. They render the cervix hostile for sperms and also make the uterus not suitable for the blastocyst to the implant. Thus, even if fertilization occurs, the chances of it leading to pregnancy are almost nil."
+    },
+    {
+        "question": "The denial of statement is called _____________",
+        "incorrect answers": [
+            "contradiction",
+            "contrapositive",
+            "compound"
+        ],
+        "correct_answer": "negation",
+        "explanation": "The denial of statement is known as negation of the statement. It is denoted by ~p if statement is denoted by p."
+    },
+    {
+        "question": "The negation of a statement is also a statement",
+        "incorrect answers": [
+            "False"
+        ],
+        "correct_answer": "True",
+        "explanation": "Yes, the negation of statement is also a statement. If the statement is true, its negation is false or if statement is false, its negation is true."
+    },
+    {
+        "question": "Which of the following cannot be the negation of the statement \u201cDelhi is in India\u201d?",
+        "incorrect answers": [
+            "Delhi is not in India",
+            "It is false that Delhi is in India",
+            "It is not the case that Delhi is in India"
+        ],
+        "correct_answer": "It is false that Delhi is not in India",
+        "explanation": "\u201cDelhi is not in India\u201d, \u201cIt is false that Delhi is in India\u201d, \u201cIt is not the case that Delhi is in India\u201d are negations of the given statement. Negation of a statement can be formed by adding \u2018it is false that\u2019 or \u2018it is not the case that\u2019. In statement \u201cIt is false that Delhi is not in India\u201d two negation phrases are used which is wrong so it is not the negation statement."
+    },
+    {
+        "question": "Which of the following cannot be the negation of the statement \u201cEveryone in India speaks Hindi\u201d?",
+        "incorrect answers": [
+            "Not everyone in India speaks Hindi",
+            "Someone in India does not speaks Hindi",
+            "At least one person in India who does not speaks Hindi"
+        ],
+        "correct_answer": "No person in India speaks Hindi",
+        "explanation": "Negation of everyone is not everyone. So, negation of the given statement should be \u201cNot everyone in India speaks Hindi\u201d, \u201cSomeone in India does not speaks Hindi\u201d, \u201cAt least one person in India who does not speaks Hindi\u201d. \u201cNo person in India speaks Hindi\u201d cannot be the negation of the given statement as this means no one speaks Hindi which does not means not everyone."
+    },
+    {
+        "question": "Which of the following cannot be the negation of the statement \u201cAll angles are equal in equilateral triangle\u201d?",
+        "incorrect answers": [
+            "There is at least one angle different in equilateral triangle",
+            "It is false that all angles are equal in equilateral triangle",
+            "It is not the case that all angles are equal in equilateral triangle"
+        ],
+        "correct_answer": "All angles are unequal in equilateral triangle",
+        "explanation": "Negation of all angles is \u2018not all angles\u2019. So, negation of the given statement is \u201cThere is at least one angle different in equilateral triangle\u201d, \u201cIt is false that all angles are equal in equilateral triangle\u201d, \u201cIt is not the case that all angles are equal in equilateral triangle\u201d. But \u201cAll angles are unequal in equilateral triangle\u201d cannot be the negation of given statement as this does not include isosceles triangles."
+    },
+    {
+        "question": "Which of the following is not negation of statement \u201cSum of 2 and 3 is greater than 4\u201d?",
+        "incorrect answers": [
+            "Sum of 2 and 3 is smaller than or equal to 4",
+            "Sum of 2 and 3 is not greater than 4",
+            "It is false that sum of 2 and 3 is greater than 4"
+        ],
+        "correct_answer": "Sum of 2 and 3 is smaller than 4",
+        "explanation": "Negation of greater is \u2018not greater\u2019. \u2018Not greater\u2019 means either smaller than or equal to. So, \u201cSum of 2 and 3 is smaller than or equal to 4\u201d, \u201cSum of 2 and 3 is not greater than 4\u201d, \u201cSum of 2 and 3 is not greater than 4\u201d are negation of the given statement. And \u201cSum of 2 and 3 is smaller than 4\u201d is not the negation of given statement as it should include equal to also."
+    },
+    {
+        "question": "_____________ statement is made up of two or more statements where each statement is known as ________________ statement",
+        "incorrect answers": [
+            "Compound, compound",
+            "Component, compound",
+            "Component, component"
+        ],
+        "correct_answer": "Compound, component",
+        "explanation": "A compound statement is made up of two or more statements where each statement is known as component statement."
+    },
+    {
+        "question": "Connect \u201c0 is positive number\u201d and \u201c0 is a negative number\u201d?",
+        "incorrect answers": [
+            "0 is a positive and negative number",
+            "0 is either positive or negative number",
+            "0 is neither positive nor negative number"
+        ],
+        "correct_answer": "0 is a positive or negative number",
+        "explanation": "\u201c0 is a positive or negative number\u201d is formed by connecting the given statements using or."
+    },
+    {
+        "question": "A rectangle is a quadrilateral and its four sides are equal",
+        "incorrect answers": [
+            "A rectangle has four sides is true",
+            "A rectangle is a quadrilateral is true",
+            "A rectangle has all sided equal is false"
+        ],
+        "correct_answer": "A rectangle is a quadrilateral is false",
+        "explanation": "A rectangle has four sides so it is a quadrilateral. All the four sides are not equal as two are equal and other two are equal."
+    },
+    {
+        "question": "Which of the following compound statement has both true component statements?",
+        "incorrect answers": [
+            "A prime number is divisible by 2 and odd",
+            "Two and two makes four or five",
+            "All integers are positive and divisible by 2"
+        ],
+        "correct_answer": "100 is divisible by 2 and 5",
+        "explanation": "Prime number is not divisible by 2 always. Two and two makes our not five. All integers are not positive. 100 is divisible by 2 and 5 both. So, component statements of \u201c100 is divisible by 2 and 5\u201d are true."
+    }
+]
