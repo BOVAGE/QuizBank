@@ -1,0 +1,615 @@
+[
+    {
+        "question": "Patients suffering from AIDS can be helped using which of the following drugs?",
+        "incorrect answers": [
+            "Cisplatin",
+            "Taxol",
+            "Codeine"
+        ],
+        "correct_answer": "AZT (Azidothymidine)",
+        "explanation": "The drug AZT is used for preventing or treating AIDS, while cisplatin & taxol are for cancer and codeine is a sort of painkiller. The drug AZT is also known as Zidovudine. This drug AZT is an antiretroviral drug. It\u2019s used along with other drugs as a combination."
+    },
+    {
+        "question": "What are the basic constituents of matter?",
+        "incorrect answers": [
+            "Atoms & Moles",
+            "Molecules & Ions",
+            "Nuclei & Ions"
+        ],
+        "correct_answer": "Atoms & Molecules",
+        "explanation": "Atoms & Molecules are the basic constituents because the matter is made up of molecules and a molecule is made of atoms. Ions are either positively or negatively charged particles. Nuclei are the central part of atoms. When seen in the microscopic level, atoms are the basic unit of matter."
+    },
+    {
+        "question": "Which of the following is a chemical change?",
+        "incorrect answers": [
+            "Conversion of water to ice",
+            "Crumpling a sheet of aluminum foil",
+            "Casting silver"
+        ],
+        "correct_answer": "Rusting of iron",
+        "explanation": "In rusting of iron, the oxidation state of iron changes, but in the conversion of water to ice, crumpling a sheet of aluminum foil and casting silver the chemical state remains same whereas the physical state changes. When iron is exposed to oxygen, iron oxide formation takes place."
+    },
+    {
+        "question": "What does Sushruta Samhita explain?",
+        "incorrect answers": [
+            "Alkanes",
+            "Alkynes",
+            "Noble gases"
+        ],
+        "correct_answer": "Alkalies importance",
+        "explanation": "Sushruta Samhita is written by Sushruta, It\u2019s in Sanskrit and contains text about various medicinal sciences and surgical procedures. It\u2019s an old ancient book of India. It has great historical importance as it contains the detailed procedures and the proper instruments needed."
+    },
+    {
+        "question": "Philosophy of changing substances into another form is called as   _______",
+        "incorrect answers": [
+            "Physiology",
+            "Anatomy",
+            "Transformation"
+        ],
+        "correct_answer": "Alchemy",
+        "explanation": "Alchemy is the study of how a substance changes to other substances. It\u2019s a very old study. In olden days, it used to be done in secrecy and was a mystery. It\u2019s related to magic and astrology. The main thing practitioners concentrated in alchemy was turning lead into gold."
+    },
+    {
+        "question": "Rasopanishada says how the gunpowder mixture is used in war",
+        "incorrect answers": [
+            "True"
+        ],
+        "correct_answer": "False",
+        "explanation": "The preparation of gun powder is explained in Rasopanishada. It\u2019s an ancient alchemy book that describes gun powder. It also describes the making of fireworks with sulfur, saltpeter, charcoal, arsenic, camphor, mercury, etc."
+    },
+    {
+        "question": "What does the Elixir of life of do?",
+        "incorrect answers": [
+            "cures diseases",
+            "kills a person",
+            "cause an incurable disease"
+        ],
+        "correct_answer": "grants immortality",
+        "explanation": "\u201cElixir\u201d is a magical or medical potion, that is used to prolong life to an infinite extent. This is one of the main purposes of the study of chemistry in olden days. It grants the person who drinks it with eternal life or youth. It\u2019s sometimes equated with the philosopher\u2019s stone."
+    },
+    {
+        "question": "The paintings on the walls of Ajanta and Ellora cave were based on ________",
+        "incorrect answers": [
+            "Sushruta Samhita",
+            "Rasopanishada",
+            "Charaka Samhita"
+        ],
+        "correct_answer": "Varahmihir\u2019s Brihat Samhitha",
+        "explanation": "Varahmihir\u2019s Brihat Samhitha is about how glutinous material is prepared and applications of it on roofs and walls of houses and temples. Ajanta and Ellora\u2019s walls look bright for ages only because the science mentioned in this book. It contains the science of using fruits, plants, etc to paint."
+    },
+    {
+        "question": "Seeds of Manhua plant and oil of Eranda were used in making ________",
+        "incorrect answers": [
+            "cosmetic powder",
+            "color dye",
+            "perfume"
+        ],
+        "correct_answer": "soap",
+        "explanation": "Seeds of Manhua plant and oil of Eranda along with calcium carbonate were used in making soaps around the 18"
+    },
+    {
+        "question": "Charaka Samhita is the oldest known book of Ayurvedic in India",
+        "incorrect answers": [
+            "False"
+        ],
+        "correct_answer": "True",
+        "explanation": "Ayurveda is about the treatment of diseases. It also consists of nanotechnology. It also uses bhasma of metals for treatment. It\u2019s proven that metal\u2019s nanoparticles are present in bhasmas. it belongs to the 2"
+    },
+    {
+        "question": "The substances whose compositions are not uniform and different components are mixed are called _______",
+        "incorrect answers": [
+            "Homogenous substances",
+            "Pure substances",
+            "Elements"
+        ],
+        "correct_answer": "Heterogeneous substances",
+        "explanation": "Heterogeneous substance is a mixture of different components non-uniformly. Homogeneous substances is a uniform mixture of substances. A pure substance has a fixed composition. Whereas elements are composed of only one substance."
+    },
+    {
+        "question": "A ________ is made up of two or more pure substances which may be in any ratio",
+        "incorrect answers": [
+            "Element",
+            "Molecule",
+            "Atom"
+        ],
+        "correct_answer": "Mixture",
+        "explanation": "Mixture is a combination of pure substances in a ratio. Pure substances which are in its composition are called its components. Atom is the basic unit of life."
+    },
+    {
+        "question": "Matter can be divided into two types i",
+        "incorrect answers": [
+            "False"
+        ],
+        "correct_answer": "True",
+        "explanation": "On a bulk level, the matter is divided as a mixture and pure substances."
+    },
+    {
+        "question": "Which of the following is not a pure substance?",
+        "incorrect answers": [
+            "Copper",
+            "Gold",
+            "Water"
+        ],
+        "correct_answer": "Sugar solution",
+        "explanation": "Copper, gold, and water are pure but sugar solution is a homogeneous mixture. Copper, gold, and water are made of the same elements but sugar solution contains sugar as solute and water as a solvent."
+    },
+    {
+        "question": "What are pure substances classified as?",
+        "incorrect answers": [
+            "Elements and Atoms",
+            "Molecules and Compounds",
+            "Atoms and Molecules"
+        ],
+        "correct_answer": "Elements and Compounds",
+        "explanation": "Elements and Compounds together make pure substances, as they have fixed compositions."
+    },
+    {
+        "question": "When two or more atoms of different elements combine with each other in a fixed ratio, the molecule of a ____ is obtained",
+        "incorrect answers": [
+            "Element",
+            "Atom",
+            "Ion"
+        ],
+        "correct_answer": "Compound",
+        "explanation": "Compound is a combination of two or more elements in a fixed ratio. Element is made up of the same atoms. Atom is the basic unit of life. Ion is either positively or negatively charged."
+    },
+    {
+        "question": "Compounds cannot be separated by chemical methods",
+        "incorrect answers": [
+            "True"
+        ],
+        "correct_answer": "False",
+        "explanation": "Compounds cannot be separated simply by physical methods, but they need chemical methods because when its components are mixed they change their chemical formulae and combine with each other to form a new chemical formula, resulting in a compound."
+    },
+    {
+        "question": "Point out an example of a compound",
+        "incorrect answers": [
+            "Sugar solution",
+            "Hydrogen",
+            "Sodium"
+        ],
+        "correct_answer": "Ammonia",
+        "explanation": "Ammonia is made up of nitrogen and hydrogen in a ratio of 1:3 by atoms. The sugar solution is a homogeneous mixture. Hydrogen and Sodium are elements."
+    },
+    {
+        "question": "Which among the three states of matter has a definite shape and size?",
+        "incorrect answers": [
+            "Liquids",
+            "Gases",
+            "Vapor"
+        ],
+        "correct_answer": "Solids",
+        "explanation": "Solids occupy particular and definite shape and size. Liquids and gases do not, as they occupy the container\u2019s shape and size."
+    },
+    {
+        "question": "Water is a/an _______",
+        "incorrect answers": [
+            "Element",
+            "Pure substance",
+            "Mixture"
+        ],
+        "correct_answer": "Compound",
+        "explanation": "Water molecule consists of 2 Hydrogen and 1 Oxygen atoms. When two or more atoms of different elements combine with each other in a fixed ratio, the molecule of a compound is obtained."
+    },
+    {
+        "question": "Which of the following may not be a physical property?",
+        "incorrect answers": [
+            "Odor",
+            "Color",
+            "Density"
+        ],
+        "correct_answer": "Composition",
+        "explanation": "Composition is a chemical property because we can\u2019t find a compound\u2019s composition just by looking at it. We need to run some chemical tests to find out. Odor, color, and density are physical properties, as we can find them just by looking at them."
+    },
+    {
+        "question": "The observation of __________ properties needs a chemical change to occur",
+        "incorrect answers": [
+            "Physical",
+            "Extrinsic",
+            "Intrinsic"
+        ],
+        "correct_answer": "Chemical",
+        "explanation": "Chemical properties are combustibility, composition, reactivity with acids & bases, etc. So to observe them chemical change has to occur. Combustibility can be known only when extinguished with fire. Composition is a chemical property because we can\u2019t find a compound\u2019s composition just by looking at it. We need to run some chemical tests to find out etc"
+    },
+    {
+        "question": "Candela is the S",
+        "incorrect answers": [
+            "Thermodynamic temperature",
+            "Amount of substance",
+            "Electric current"
+        ],
+        "correct_answer": "Luminous intensity",
+        "explanation": "Candela is an S.I. unit of luminous intensity with symbol cd. It\u2019s termed a source emitting monochromatic radiation at frequency 540 x 10"
+    },
+    {
+        "question": "How many scientific fundamental quantities are given S",
+        "incorrect answers": [
+            "5",
+            "3",
+            "9"
+        ],
+        "correct_answer": "7",
+        "explanation": "There are seven scientific fundamental quantities i.e. Length(l), Time(t), Mass(m), Electric current(I), Thermodynamic temperature(T), Amount of substance(n) & Luminous intensity(I"
+    },
+    {
+        "question": "What is the symbol of the amount of substance\u2019s S",
+        "incorrect answers": [
+            "K",
+            "s",
+            "kg"
+        ],
+        "correct_answer": "mol",
+        "explanation": "As the S.I. unit of the amount of substance is a mole, it\u2019s denoted by \u201cmol\u201d. A mole is defined as many elementary entities as there are atoms in 0.012 kilograms of carbon-12."
+    },
+    {
+        "question": "What is the difference in units between Kelvin and centigrade scales of temperature?",
+        "incorrect answers": [
+            "212.15",
+            "32",
+            "298"
+        ],
+        "correct_answer": "273.15",
+        "explanation": "Kelvin = Centigrade + 273.15. So the difference between in units between Kelvin and centigrade scales of temperature is 273.15."
+    },
+    {
+        "question": "What is the human body temperature in Fahrenheit?",
+        "incorrect answers": [
+            "212",
+            "273.15",
+            "32"
+        ],
+        "correct_answer": "98.6",
+        "explanation": "Our human body\u2019s temperature is 37\u00b0C = 98.6\u00b0F = 310K. It\u2019s a known fact and is the same for every human."
+    },
+    {
+        "question": "Convert 40\u00b0C to \u00b0F",
+        "incorrect answers": [
+            "104K",
+            "313\u00b0F",
+            "313K"
+        ],
+        "correct_answer": "104\u00b0F",
+        "explanation": "1 Fahrenheit = 9/5 Centigrade + 32."
+    },
+    {
+        "question": "_________ is referred to as the closeness of different measurements for the same quantity",
+        "incorrect answers": [
+            "Accuracy",
+            "Analysis",
+            "Dimension"
+        ],
+        "correct_answer": "Precision",
+        "explanation": "Precision is referred to as the closeness of different measurements for the same quantity. Accuracy is the degree to which it\u2019s taken as standard or almost equivalent to it."
+    },
+    {
+        "question": "How many seconds are there in a half day?",
+        "incorrect answers": [
+            "86,400 seconds",
+            "172,800 seconds",
+            "3660 seconds"
+        ],
+        "correct_answer": "43,200 seconds",
+        "explanation": "Half day means 12 hours. One hour means 60 seconds. And each minute is of 60 seconds. In the above question, we need the total number of seconds so 12 x 60 x 60 seconds = 43,200 seconds."
+    },
+    {
+        "question": "A piece of iron is 5 inches long",
+        "incorrect answers": [
+            "6.35 cm",
+            "5 cm",
+            "500 cm"
+        ],
+        "correct_answer": "12.7 cm",
+        "explanation": "1 inch = 2.54 cm : 1 cm = 0.3931 inch. As we now know, how much is 1inch in centimeters, then we need to multiply 5 to 2.54 cm in order to convert it into centimeters. 5 x 2.54 cm = 12.7 cm."
+    },
+    {
+        "question": "How many significant figures does 0",
+        "incorrect answers": [
+            "4",
+            "3",
+            "0"
+        ],
+        "correct_answer": "2",
+        "explanation": "The non-zero digits and any zeros between them are all significant. Leading zeros are not significant. Counting all the significant digits gives us 2."
+    },
+    {
+        "question": "How many significant figures does 63180 have?",
+        "incorrect answers": [
+            "5",
+            "1",
+            "2"
+        ],
+        "correct_answer": "4",
+        "explanation": "The non-zero digits and any zeros between them are all significant. Since there is no decimal, zeros are not significant. Therefore it\u2019s 4."
+    },
+    {
+        "question": "Multiply 1",
+        "incorrect answers": [
+            "4.692",
+            "4.69",
+            "5"
+        ],
+        "correct_answer": "4.7",
+        "explanation": "1.2 x 3.91 = 4.692. Since 1.2 has two significant figures, the result should not have more than two significant figures, thus, it is 4.7. As per the rules of significant figures, the resultant answer should not have more significant figures the number with a less significant figured number."
+    },
+    {
+        "question": "How many significant figures are there in 60",
+        "incorrect answers": [
+            "4",
+            "2",
+            "1"
+        ],
+        "correct_answer": "3",
+        "explanation": "The non-zero digits and any zeros between them are all significant. Leading zeros are not significant. Counting all the significant digits gives us 3."
+    },
+    {
+        "question": "How many basic laws are required to govern the combination of elements to form compounds?",
+        "incorrect answers": [
+            "6",
+            "4",
+            "1"
+        ],
+        "correct_answer": "5",
+        "explanation": "Five basic laws are required to govern the combination of elements to form compounds. They are Law of Conservation of Mass, Law of Definite Proportions, Law of Multiple Proportions, Gay Lussac\u2019s Law of Gaseous Volumes, and Avogadro\u2019s Law."
+    },
+    {
+        "question": "Who proposed Law of Conservation of Mass?",
+        "incorrect answers": [
+            "Joseph Proust",
+            "Lorenzo Romano",
+            "Joseph Louis"
+        ],
+        "correct_answer": "Antoine Lavoisier",
+        "explanation": "Antoine Lavoisier conducted many experiments regarding combustion and noticed various physical and chemical changes and there is no change in overall mass. Hence he came to a conclusion that mass can neither be created nor destroyed i.e. Law of Conservation of Mass."
+    },
+    {
+        "question": "What did Joseph Proust state regarding Law of Definite Proportions?",
+        "incorrect answers": [
+            "A given mixture always contains absolutely the same proportion of elements by weight",
+            "A given compound always contains absolutely the same proportion of moles by weight",
+            "A given compound always contains absolutely the same proportion of elements by volume"
+        ],
+        "correct_answer": "A given compound always contains absolutely the same proportion of elements by weight",
+        "explanation": "When Joseph Proust worked about the composition of elements present in a compound experimentally, he found out that it was the same for all the samples he took. Joseph Louis concluded that from any source, a particular compound always contains the same elements in the same proportion by mass/weight."
+    },
+    {
+        "question": "What did Dalton propose?",
+        "incorrect answers": [
+            "Avogadro\u2019s Law",
+            "Law of Definite Composition",
+            "Law of Conservation of Mass"
+        ],
+        "correct_answer": "Law of Multiple Proportions",
+        "explanation": "Two or more elements those are given, may combine to form more than one compound, the masses of one element that will combine with the given mass of the other elements, would be in the ratio of whole numbers is the law of Multiple Proportions."
+    },
+    {
+        "question": "Who proposed the Law of Definite Composition?",
+        "incorrect answers": [
+            "Lorenzo Romano",
+            "Joseph Louis",
+            "Antoine Lavoisier"
+        ],
+        "correct_answer": "Joseph Proust",
+        "explanation": "Joseph Proust worked about the composition of elements present in a compound experimentally, he concluded that from any source, a particular compound always contains the same elements in the same proportion by mass/weight."
+    },
+    {
+        "question": "Law of Definite Composition is also known as ________",
+        "incorrect answers": [
+            "Law of Multiple Proportions",
+            "Avogadro\u2019s Law",
+            "Law of Conservation of Mass"
+        ],
+        "correct_answer": "Law of Definite Proportion",
+        "explanation": "Joseph Proust worked about the composition of elements present in a compound experimentally, he concluded that from any source, a particular compound always contains the same elements in the same proportion by mass/weight. Hence it can also be known as the Law of Definite Proportion."
+    },
+    {
+        "question": "The volumes of hydrogen & oxygen when combined bear a simple ratio of 2:1",
+        "incorrect answers": [
+            "Law of Multiple Proportions",
+            "Avogadro\u2019s Law",
+            "Law of Definite Proportion"
+        ],
+        "correct_answer": "Gay Lussac\u2019s Law of Gaseous Volumes",
+        "explanation": "When gases combine or as written in a chemical reaction they combine in a simple ratio by volume, provided that all gases are at the same temperature and given pressure, this is called Gay Lussac\u2019s Law of Gaseous Volumes and is proposed by Joseph Louis."
+    },
+    {
+        "question": "Who proposed that equal volumes of all gases at the same temperature & given pressure should contain an equal number of molecules?",
+        "incorrect answers": [
+            "Antoine Lavoisier",
+            "Joseph Proust",
+            "Joseph Louis"
+        ],
+        "correct_answer": "Avogadro",
+        "explanation": "Avogadro\u2019s law is an experimental gas law combining & relating the volume of a gas to the amount of substance of gas present i.e\u2019 directly proportional. This law is valid only for ideal gases. And also only when the pressure and temperature of the given substance are constant."
+    },
+    {
+        "question": "Which of the following is not a law of chemical combination?",
+        "incorrect answers": [
+            "Law of Multiple Proportions",
+            "Avogadro\u2019s Law",
+            "Law of Definite Proportion"
+        ],
+        "correct_answer": "Law of Conservation of volume",
+        "explanation": "Five basic laws are required to govern the combination of elements to form compounds. They are Law of Conservation of Mass, Law of Definite Proportions, Law of Multiple Proportions, Gay Lussac\u2019s Law of Gaseous Volumes, and Avogadro\u2019s Law."
+    },
+    {
+        "question": "Which of the following may be an incorrect statement?",
+        "incorrect answers": [
+            "Law of Definite Composition is also known as Law of Definite composition",
+            "Antoine Lavoisier conducted many experiments regarding combustion",
+            "Five basic laws are required to govern the combination of elements to form compounds"
+        ],
+        "correct_answer": "Mass can neither be created nor destroyed is Law of Conservation of Volume",
+        "explanation": "The correct statement is mass can neither be created nor destroyed is the Law of Conservation of Mass. On conducting many experiments regarding combustion and noticing various physical and chemical changes, there is no change in overall mass hence conservation of mass."
+    },
+    {
+        "question": "According to Dalton\u2019s Atomic Theory, matter consists of indivisible _______",
+        "incorrect answers": [
+            "Molecules",
+            "Ions",
+            "Mixtures"
+        ],
+        "correct_answer": "Atoms",
+        "explanation": "Atom is the basic unit of life. A molecule is a compound made up of 2 or more atoms held by chemical bonds. The mixture is a combination of pure substances in a ratio. Ion is either positively or negatively charged."
+    },
+    {
+        "question": "Atoms of different elements differ in mass",
+        "incorrect answers": [
+            "False"
+        ],
+        "correct_answer": "True",
+        "explanation": "Each and every element has a different mass. For example, carbon\u2019s molecular weight is 12.0107 u, oxygen\u2019s molecular weight is 15.999 u and nitrogen\u2019s molecular weight is 14.0067 u. Hence it\u2019s different for different elements."
+    },
+    {
+        "question": "What did Dalton\u2019s Theory couldn\u2019t explain?",
+        "incorrect answers": [
+            "conservation of mass",
+            "chemical philosophy",
+            "indivisible atoms"
+        ],
+        "correct_answer": "gaseous volumes",
+        "explanation": "Dalton\u2019s atomic theory couldn\u2019t explain gaseous volumes, because as per his view, different elements have different mass but this isn\u2019t true. This is explained by Gay lussac\u2019s law. This is one of the major limitations of Dalton\u2019s atomic theory."
+    },
+    {
+        "question": "What is the name of Dalton\u2019s publication?",
+        "incorrect answers": [
+            "A New system of atomic Philosophy",
+            "An old system of Chemical Philosophy",
+            "A New System of Chemical Prophecy"
+        ],
+        "correct_answer": "A New System of Chemical Philosophy",
+        "explanation": "Dalton published \u201d A New System of Chemical Philosophy\u201d in 1808. He proposed a theory in that, that is Dalton\u2019s atomic theory. It also has some limitations like it couldn\u2019t explain how molecules combine i.e. their driving force."
+    },
+    {
+        "question": "Which of the following may not be explained by Dalton\u2019s atomic theory?",
+        "incorrect answers": [
+            "conservation of mass",
+            "chemical philosophy",
+            "indivisible atoms"
+        ],
+        "correct_answer": "reason for combining atoms",
+        "explanation": "Dalton\u2019s atomic theory couldn\u2019t explain the reason for combining atoms. This is one of the major limitations of Dalton\u2019s atomic theory. Though it could explain the conservation of mass, indivisible atoms and definite proportions."
+    },
+    {
+        "question": "Law of conservation of mass isn\u2019t explained in Dalton\u2019s atomic theory",
+        "incorrect answers": [
+            "True"
+        ],
+        "correct_answer": "False",
+        "explanation": "Law of conservation of mass is explained in Dalton\u2019s atomic theory. He said that reorganization of atoms is involved in chemical reactions. This means mass is neither created nor destroyed in a chemical reaction i.e. explained."
+    },
+    {
+        "question": "Could Dalton\u2019s atomic theory explain the laws of chemical combinations?",
+        "incorrect answers": [
+            "No",
+            "Only a few",
+            "Except one"
+        ],
+        "correct_answer": "Yes",
+        "explanation": "Yes, it could explain all the laws of chemical combinations i.e. Law of Conservation of Mass, Law of Definite Proportions, Law of Multiple Proportions, Gay Lussac\u2019s Law of Gaseous Volumes, and Avogadro\u2019s Law."
+    },
+    {
+        "question": "They are no limitations to Dalton\u2019s atomic theory",
+        "incorrect answers": [
+            "True"
+        ],
+        "correct_answer": "False",
+        "explanation": "There are limitations to Dalton\u2019s atomic theory. Dalton\u2019s atomic theory couldn\u2019t explain the reason for combining atoms. He also couldn\u2019t explain gaseous volumes, because as per his view, different elements have different mass but this isn\u2019t true. This is explained by Gay lussac\u2019s law."
+    },
+    {
+        "question": "All atoms of a given element have identical __________  including identical _________",
+        "incorrect answers": [
+            "Weight, volume",
+            "Volume, properties",
+            "Temperature, pressure"
+        ],
+        "correct_answer": "Properties, mass",
+        "explanation": "According to Dalton\u2019s Atomic Theory, All atoms of a given element have identical properties, including identical mass. The reason behind this is that they belong to the same element (here \u201cthey\u201d is about atoms)."
+    },
+    {
+        "question": "As, per the current system, carbon-12 has been taken as the standard for measuring atomic masses",
+        "incorrect answers": [
+            "False"
+        ],
+        "correct_answer": "True",
+        "explanation": "1 amu is defined as a mass that is almost equal to one-twelfth of the mass of one carbon \u2013 12 atom. It is a unit to measure atomic and molecular mass. The carbon atom is taken relatively here. And also 1 amu = 1.66056\u00d710"
+    },
+    {
+        "question": "What is the mass of hydrogen in terms of amu?",
+        "incorrect answers": [
+            "1.0020 amu",
+            "1.0180 amu",
+            "1.0070 amu"
+        ],
+        "correct_answer": "1.0080 amu",
+        "explanation": "The mass of a hydrogen atom is 1.6736\u00d710"
+    },
+    {
+        "question": "What is the abbreviation of amu?",
+        "incorrect answers": [
+            "Atomic matter unit",
+            "Atomic mass unified",
+            "At mass unity"
+        ],
+        "correct_answer": "Atomic mass unit",
+        "explanation": "The Atomic mass unit is a standard unit of mass that measures mass on an atomic or molecular scale. One unit of it is practically equal to 1.66056\u00d710"
+    },
+    {
+        "question": "Nowadays, \u201camu\u201d is replaced by ____",
+        "incorrect answers": [
+            "g",
+            "kg",
+            "am"
+        ],
+        "correct_answer": "u",
+        "explanation": "Presently, \u201camu\u201d has been replaced by \u201cu\u201d. Atomic mass unit is \u201camu\u201d, but now as it has been changed to \u201cu\u201d, & now known as unified mass. One unified atomic mass unit is the mass of one nucleon and is also equal to 1 g/mol."
+    },
+    {
+        "question": "007 amu",
+        "incorrect answers": [
+            "14.000 amu",
+            "14.0031 amu"
+        ],
+        "correct_answer": "15.001 amu",
+        "explanation": "The formula for finding the average atomic mass of an element is given by Avg. Atomic Mass = \u2211Abundance of isotope x Mass of isotope. So for nitrogen, avg atomic mass = 99.69 x 14.0031 + 0.39% x 15.0001 = 14.007."
+    },
+    {
+        "question": "A sample of carbon that contains 70% carbon-12 and 30% carbon-14",
+        "incorrect answers": [
+            "14.5",
+            "14.14",
+            "12"
+        ],
+        "correct_answer": "14",
+        "explanation": "Given that, carbon-12 is of 70% and carbon-14 is of 30%. In order to find avg atomic mass, you should add the products of multiplications 12 with 70/100 and 14 with 30/100. 12 x 0. 7 = 9.8; 14 x 0.3 = 4.2. Now adding them 9.8 + 4.2 = 14."
+    },
+    {
+        "question": "______ is the sum of atomic masses of the elements present in a molecule",
+        "incorrect answers": [
+            "Average atomic mass",
+            "Atomic mass",
+            "Gram formula mass"
+        ],
+        "correct_answer": "Molecular mass",
+        "explanation": "Molecular mass is the sum of atomic masses of the elements present in a molecule. Gram formula mass is the amount of a compound with the exact mass in grams as the formula mass in amu. The standard unit of mass that measures mass on the molecular scale or an atomic scale is \u201camu\u201d."
+    },
+    {
+        "question": "What\u2019s the molecular mass of carbon dioxide?",
+        "incorrect answers": [
+            "43",
+            "28",
+            "40"
+        ],
+        "correct_answer": "44",
+        "explanation": "The individual mass of carbon is 12 amu and the individual mass of oxygen is 16 amu. The formula for carbon dioxide is CO"
+    },
+    {
+        "question": "What\u2019s the formula mass of NaCl?",
+        "incorrect answers": [
+            "23 u",
+            "35.5 u",
+            "58 u"
+        ],
+        "correct_answer": "58.5 u",
+        "explanation": "As Cl in NaCl can\u2019t exist in the solid state, we can only calculate it\u2019s formula mass. the individual mass of sodium is 23 u, whereas that of chlorine is 35.5 u. Together formula mass f Sodium chloride is the sum of individual masses, 23 + 35.5 = 58.5 u."
+    }
+]
