@@ -149,6 +149,7 @@ SIMPLE_JWT = {
 REST_FRAMEWORK = {
     'NON_FIELD_ERRORS_KEY': "error",
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'EXCEPTION_HANDLER': "common.exception.custom_exception_handler",
     'PAGE_SIZE': 10
 }
 

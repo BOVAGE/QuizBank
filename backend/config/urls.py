@@ -23,3 +23,6 @@ urlpatterns = [
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+handler404 ='common.errors.not_found'
+handler500 = 'common.errors.server'
