@@ -1,9 +1,11 @@
 import datetime
 import random
 from typing import Dict
-from django.db import models
+
 from django.contrib.auth import get_user_model
 from django.core.exceptions import ValidationError
+from django.db import models
+from django.utils import timezone
 from django.utils.text import slugify
 
 User = get_user_model()
@@ -145,7 +147,7 @@ class Question(models.Model):
 
     def verify(self, user: User):
         self.is_verified = True
-        self.date_verified = datetime.datetime.now()
+        self.date_verified = timezone.now()
         self.verified_by = user
         self.save()
 
