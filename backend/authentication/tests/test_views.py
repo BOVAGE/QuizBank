@@ -8,6 +8,7 @@ LOGIN_URL = reverse("authentication:login")
 REGISTER_URL = reverse("authentication:register")
 REFRESH_URL = reverse("authentication:token-refresh")
 CHANGE_PWD_URL = reverse("authentication:change-password")
+PROFILE_URL = reverse("authentication:user-profile")
 
 class LoginViewTest(APITestCase):
     
@@ -277,3 +278,70 @@ class ChangePasswordViewTest(APITestCase):
         self.assertIn("error", response.data)
         self.assertNotIn("data", response.data)
         self.assertEqual(response.data.get('status'), "error")
+
+
+class UserProfileViewTest(APITestCase):
+    def setUp(self):
+        self.user = User.objects.create_user(username="bovage", 
+        password="bovage123", email="b@gmail.com")
+        self.verified_user = User.objects.create_user(username="dave", 
+        password="dave1234", email="d@gmail.com", is_verified=True)
+    
+    def test_successful_get(self):
+        access_token = self.verified_user.get_tokens_for_user()["access"]
+        self.client.credentials(HTTP_AUTHORIZATION='Bearer ' + access_token)
+        response = self.client.get(PROFILE_URL)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn("status", response.data)
+        self.assertIn("message", response.data)
+        self.assertIn("data", response.data)
+        self.assertNotIn("error", response.data)
+        self.assertEqual(response.data.get('status'), "success")
+        self.assertNotIn("password", response.data.get("data"))
+    
+    def test_invalid_token(self):
+        access_token = "invalid token"
+        self.client.credentials(HTTP_AUTHORIZATION='Bearer ' + access_token)
+        response = self.client.get(PROFILE_URL)
+        self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
+        self.assertIn("status", response.data)
+        self.assertIn("message", response.data)
+        self.assertIn("error", response.data)
+        self.assertNotIn("data", response.data)
+        self.assertEqual(response.data.get('status'), "error")
+
+    def test_successful_update(self):
+        access_token = self.verified_user.get_tokens_for_user()["access"]
+        body = {
+            "username": "newusername",
+        }
+        self.client.credentials(HTTP_AUTHORIZATION='Bearer ' + access_token)
+        response = self.client.patch(PROFILE_URL, data=body)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn("status", response.data)
+        self.assertIn("message", response.data)
+        self.assertIn("data", response.data)
+        self.assertNotIn("error", response.data)
+        self.assertEqual(response.data.get('status'), "success")
+        self.assertIn("username", response.data.get('data'))
+        self.assertEqual(body["username"],response.data.get('data')["username"])
+        self.assertNotIn("password", response.data.get("data"))
+
+    def test_cannot_update_id(self):
+        """
+            confirm user cannot update their id
+        """
+        access_token = self.verified_user.get_tokens_for_user()["access"]
+        body = {
+            "id": "23",
+        }
+        self.client.credentials(HTTP_AUTHORIZATION='Bearer ' + access_token)
+        response = self.client.patch(PROFILE_URL, data=body)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn("status", response.data)
+        self.assertIn("message", response.data)
+        self.assertIn("data", response.data)
+        self.assertNotIn("error", response.data)
+        self.assertEqual(response.data.get('status'), "success")
+        self.assertNotEqual(response.data.get('data')["id"], body["id"])
+        self.assertEqual(response.data.get('data')["id"], self.verified_user.id)
