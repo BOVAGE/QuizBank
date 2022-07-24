@@ -101,10 +101,12 @@ class Question(models.Model):
     def clean(self):
         """ validate the verification of a question """
         if self.is_verified and self.verified_by is None:
-            raise ValidationError("Add the a user to verified_by")
+            raise ValidationError("Add a user to verified_by")
         if self.verified_by and not self.is_verified:
             raise ValidationError("is_verified needs to be updated")
-    
+        if self.verified_by and self.is_verified and not self.date_verified:
+            raise ValidationError("date_verified needs to be updated")
+
     def save(self, *args, **kwargs):
         self.clean()
         super().save(*args, **kwargs)
