@@ -3,7 +3,7 @@ from django.urls import path
 from .views import (QuestionDetailView, QuestionListCreateView,
                     QuestionListFullView, QuestionVerification,
                     UnverifiedQuestionListFullView)
-
+app_name = "quiz"
 urlpatterns = [
     path('', QuestionListCreateView, name='question-list'),
     path('<int:id>', QuestionDetailView, name='question-detail'),
