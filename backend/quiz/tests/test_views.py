@@ -141,3 +141,73 @@ class PublicQuestionListTest(APITestCase):
         self.assertIn("data", response.data)
         self.assertNotIn("error", response.data)
         self.assertEqual(response.data.get('status'), "success")
+
+
+class QuestionListFullViewTest(APITestCase):
+    def setUp(self):
+        self.verified_user = User.objects.create_user(username="dave", 
+        password="dave1234", email="d@gmail.com", is_verified=True)
+        self.admin_user = User.objects.create_superuser(username="admin", 
+        password="dave1234", email="admin@gmail.com", is_verified=True)
+        self.category = Category.objects.create(name="Test")
+        self.question_1 = Question.objects.create(
+            question="Are you old?", difficulty="eazy", type="True / False",
+            created_by=self.verified_user, correct_answer="True", explanation="cause I'm old",
+            category=self.category
+        )
+        self.question_1.verify(self.admin_user)
+
+    def test_admin_restriction(self):
+        """
+            confirms that only an admin user can access the full question
+            endpoint
+        """
+        access_token = self.verified_user.get_tokens_for_user()["access"]
+        self.client.credentials(HTTP_AUTHORIZATION='Bearer ' + access_token)
+        response = self.client.get(QUESTION_LIST_FULL_URL)
+        self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
+        self.assertIn("status", response.data)
+        self.assertIn("message", response.data)
+        self.assertIn("error", response.data)
+        self.assertNotIn("data", response.data)
+        self.assertEqual(response.data.get('status'), "error")
+
+    def test_successful_question_list_for_admin(self):
+        access_token = self.admin_user.get_tokens_for_user()["access"]
+        self.client.credentials(HTTP_AUTHORIZATION='Bearer ' + access_token)
+        response = self.client.get(QUESTION_LIST_FULL_URL)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn("status", response.data)
+        self.assertIn("message", response.data)
+        self.assertIn("data", response.data)
+        self.assertNotIn("error", response.data)
+        self.assertEqual(response.data.get('status'), "success")
+
+    def test_response_is_paginated(self):
+        """
+            confirms that the response is paginated.
+        """
+        access_token = self.admin_user.get_tokens_for_user()["access"]
+        self.client.credentials(HTTP_AUTHORIZATION='Bearer ' + access_token)
+        response = self.client.get(QUESTION_LIST_FULL_URL)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIsInstance(response.data.get('data'), dict)
+        self.assertIn("count", response.data.get('data'))
+        self.assertIn("previous", response.data.get('data'))
+        self.assertIn("next", response.data.get('data'))
+        self.assertIn("results", response.data.get('data'))
+        self.assertIsInstance(response.data.get('data')["results"], list)
+
+    def test_response_data_is_detailed(self):
+        """
+            confirms that the response is more detailed. i.e
+            contains more info like verified_by, date_verified
+        """
+        access_token = self.admin_user.get_tokens_for_user()["access"]
+        self.client.credentials(HTTP_AUTHORIZATION='Bearer ' + access_token)
+        response = self.client.get(QUESTION_LIST_FULL_URL)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        results = response.data.get('data')["results"]
+        self.assertIn("date_verified", results[0])
+        self.assertIn("verified_by", results[0])
+        self.assertIn("created_by", results[0])
