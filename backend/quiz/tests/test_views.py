@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from django.contrib.auth import get_user_model
 from django.urls import reverse
 from rest_framework import status
@@ -11,7 +13,6 @@ QUESTION_URL = reverse("quiz:question-list")
 QUESTION_DETAIL_URL = reverse("quiz:question-detail", args="1")
 QUESTION_LIST_FULL_URL = reverse("quiz:question-list-full")
 UNVERIFIED_QUESTION_LIST_URL = reverse("quiz:unverified-question-list-full")
-QUESTION_VERIFICATION_URL = reverse("quiz:question-verification", args="1")
 
 class PublicQuestionListTest(APITestCase):
     def setUp(self):
@@ -211,3 +212,78 @@ class QuestionListFullViewTest(APITestCase):
         self.assertIn("date_verified", results[0])
         self.assertIn("verified_by", results[0])
         self.assertIn("created_by", results[0])
+
+class QuestionVerificationTest(APITestCase):
+    
+    def setUp(self):
+        self.verified_user = User.objects.create_user(username="dave", 
+        password="dave1234", email="d@gmail.com", is_verified=True)
+        self.admin_user = User.objects.create_superuser(username="admin", 
+        password="dave1234", email="admin@gmail.com", is_verified=True)
+        self.category = Category.objects.create(name="Test")
+        self.question_1 = Question.objects.create(
+            question="Are you old?", difficulty="eazy", type="True / False",
+            created_by=self.admin_user, correct_answer="True", explanation="cause I'm old",
+            category=self.category
+        )
+        
+    def get_question_verification_url(self) -> str:
+        """
+            returns the url for question verification based on
+            the question id in setUp, so the test can be independent of 
+            other tests
+        """
+        return reverse("quiz:question-verification", args=(self.question_1.id,))
+
+    def test_admin_restriction(self):
+        """
+            confirms that only an admin user can handle full question
+            verification.
+        """
+        access_token = self.verified_user.get_tokens_for_user()["access"]
+        self.client.credentials(HTTP_AUTHORIZATION='Bearer ' + access_token)
+        response = self.client.post(self.get_question_verification_url())
+        self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
+        self.assertIn("status", response.data)
+        self.assertIn("message", response.data)
+        self.assertIn("error", response.data)
+        self.assertNotIn("data", response.data)
+        self.assertEqual(response.data.get('status'), "error")
+    
+    def test_successful_verification(self):
+        """
+            confirms that a question can be verified successfully 
+            by an admin user
+        """
+        access_token = self.admin_user.get_tokens_for_user()["access"]
+        self.client.credentials(HTTP_AUTHORIZATION='Bearer ' + access_token)
+        response = self.client.post(self.get_question_verification_url())
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn("status", response.data)
+        self.assertIn("message", response.data)
+        self.assertIn("data", response.data)
+        self.assertNotIn("error", response.data)
+        self.assertEqual(response.data.get("status"), "success")
+        self.question_1.refresh_from_db()
+        self.assertTrue(self.question_1.is_verified)
+        self.assertIsInstance(self.question_1.verified_by, User)
+        self.assertIsInstance(self.question_1.date_verified, datetime)
+
+    def test_successful_unverification(self):
+        """
+            confirms that a question can be unverified successfully 
+            by an admin user
+        """
+        access_token = self.admin_user.get_tokens_for_user()["access"]
+        self.client.credentials(HTTP_AUTHORIZATION='Bearer ' + access_token)
+        response = self.client.delete(self.get_question_verification_url())
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn("status", response.data)
+        self.assertIn("message", response.data)
+        self.assertIn("data", response.data)
+        self.assertNotIn("error", response.data)
+        self.assertEqual(response.data.get("status"), "success")
+        self.question_1.refresh_from_db()
+        self.assertFalse(self.question_1.is_verified)
+        self.assertIsNone(self.question_1.verified_by)
+        self.assertIsNone(self.question_1.date_verified)
