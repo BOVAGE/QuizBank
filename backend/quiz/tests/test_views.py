@@ -13,6 +13,7 @@ QUESTION_URL = reverse("quiz:question-list")
 QUESTION_DETAIL_URL = reverse("quiz:question-detail", args="1")
 QUESTION_LIST_FULL_URL = reverse("quiz:question-list-full")
 UNVERIFIED_QUESTION_LIST_URL = reverse("quiz:unverified-question-list-full")
+STATISTICS_URL = reverse("statistics")
 
 class PublicQuestionListTest(APITestCase):
     def setUp(self):
@@ -287,3 +288,92 @@ class QuestionVerificationTest(APITestCase):
         self.assertFalse(self.question_1.is_verified)
         self.assertIsNone(self.question_1.verified_by)
         self.assertIsNone(self.question_1.date_verified)
+
+
+class StatisticsViewTest(APITestCase):
+    def setUp(self):
+        self.verified_user = User.objects.create_user(username="dave", 
+        password="dave1234", email="d@gmail.com", is_verified=True)
+        self.admin_user = User.objects.create_superuser(username="admin", 
+        password="dave1234", email="admin@gmail.com", is_verified=True)
+        self.category = Category.objects.create(name="Test")
+        self.question_1 = Question.objects.create(
+            question="Are you old?", difficulty="eazy", type="True / False",
+            created_by=self.verified_user, correct_answer="True", explanation="cause I'm old",
+            category=self.category
+        )
+        self.question_1.verify(self.admin_user)
+    
+    def test_success_request(self):
+        response = self.client.get(STATISTICS_URL)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn("status", response.data)
+        self.assertIn("message", response.data)
+        self.assertIn("data", response.data)
+        self.assertNotIn("error", response.data)
+        self.assertEqual(response.data.get("status"), "success")
+        self.assertIsInstance(response.data.get("data"), dict)
+        self.assertIn("question", response.data.get("data"))
+        self.assertIn("difficulty", response.data.get("data"))
+        self.assertIn("category", response.data.get("data"))
+        self.assertIn("users", response.data.get("data"))
+        self.assertIn("activity", response.data.get("data"))
+
+    def test_filtering_category(self):
+        response = self.client.get(STATISTICS_URL +"?on=category")
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn("status", response.data)
+        self.assertIn("message", response.data)
+        self.assertIn("data", response.data)
+        self.assertNotIn("error", response.data)
+        self.assertEqual(response.data.get("status"), "success")
+        self.assertIn("category", response.data.get("data"))
+        self.assertEqual(len(response.data.get("data")), 1)
+
+    def test_filtering_difficulty(self):
+        """
+            confirms filtering returns the result contains
+            difficulty only.
+        """
+        response = self.client.get(STATISTICS_URL +"?on=difficulty")
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn("status", response.data)
+        self.assertIn("message", response.data)
+        self.assertIn("data", response.data)
+        self.assertNotIn("error", response.data)
+        self.assertEqual(response.data.get("status"), "success")
+        self.assertIn("difficulty", response.data.get("data"))
+        self.assertEqual(len(response.data.get("data")), 1)
+
+    def test_filtering_question(self):
+        response = self.client.get(STATISTICS_URL +"?on=question")
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn("status", response.data)
+        self.assertIn("message", response.data)
+        self.assertIn("data", response.data)
+        self.assertNotIn("error", response.data)
+        self.assertEqual(response.data.get("status"), "success")
+        self.assertIn("question", response.data.get("data"))
+        self.assertEqual(len(response.data.get("data")), 1)
+
+    def test_filtering_users(self):
+        response = self.client.get(STATISTICS_URL +"?on=users")
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn("status", response.data)
+        self.assertIn("message", response.data)
+        self.assertIn("data", response.data)
+        self.assertNotIn("error", response.data)
+        self.assertEqual(response.data.get("status"), "success")
+        self.assertIn("users", response.data.get("data"))
+        self.assertEqual(len(response.data.get("data")), 1)
+
+    def test_filtering_activity(self):
+        response = self.client.get(STATISTICS_URL +"?on=activity")
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn("status", response.data)
+        self.assertIn("message", response.data)
+        self.assertIn("data", response.data)
+        self.assertNotIn("error", response.data)
+        self.assertEqual(response.data.get("status"), "success")
+        self.assertIn("activity", response.data.get("data"))
+        self.assertEqual(len(response.data.get("data")), 1)
