@@ -1,0 +1,574 @@
+[
+    {
+        "question": "Reproductive health refers to _________",
+        "incorrect answers": [
+            "healthy baby",
+            "frequent coitus",
+            "longer lifetime"
+        ],
+        "correct_answer": "healthy reproductive organs and functions",
+        "explanation": "Reproductive health refers to the proper maintenance of reproductive organs and ensuring the smooth functioning of the same."
+    },
+    {
+        "question": "Which of the following is not the role of Reproductive and Child Health Care (RCH) programs?",
+        "incorrect answers": [
+            "Awareness about reproductive health",
+            "Providing facilities to build a reproductively healthy society",
+            "Providing support to reproductively sick people"
+        ],
+        "correct_answer": "Promote abortion",
+        "explanation": "Reproductive and Child Health Care (RCH) programs were developed to cover a considerable range of reproduction-related issues. These did not encompass abortion. Abortion does not determine reproductive health."
+    },
+    {
+        "question": "Reproductive health covers perspectives ranging from the proper functioning of reproductive organs to the emotional, physical, behavioral, and social well-being of individuals",
+        "incorrect answers": [
+            "False"
+        ],
+        "correct_answer": "True",
+        "explanation": "Reproductive health is not just a proxy for organ maintenance. According to WHO, it also implies that society is reproductively healthy, given the various aspects associated with reproduction ranging from emotional, behavioral, and social are also appropriately maintained."
+    },
+    {
+        "question": "What modes have not been used by the agencies to generate awareness on reproductive health?",
+        "incorrect answers": [
+            "Radio",
+            "Newspaper",
+            "Television"
+        ],
+        "correct_answer": "Protests",
+        "explanation": "Governmental and non-governmental organizations have been raising awareness on reproductive health. They have used different media for the same. The most common ones being radio, television, newspapers, posters, etc."
+    },
+    {
+        "question": "Which of the following is the correct reason for delivering sex education at schools?",
+        "incorrect answers": [
+            "Encouraging rise in population",
+            "Solve the issue of global warming",
+            "Promote myths"
+        ],
+        "correct_answer": "Discouraging myths and misconceptions",
+        "explanation": "The purpose of sex education is to provide the students with correct information about sex-related aspects and also to discourage any myths and misconceptions."
+    },
+    {
+        "question": "What is not a reproduction-related problem?",
+        "incorrect answers": [
+            "STDs",
+            "Abortion",
+            "Infertility"
+        ],
+        "correct_answer": "Global warming",
+        "explanation": "Reproduction-related problems are ones that affect reproductive health. These include difficulties in pregnancy and delivery, STDs, abortions, menstrual problems, infertility, contraception, and many more."
+    },
+    {
+        "question": "What test is used to determine the sex of the fetus?",
+        "incorrect answers": [
+            "Amyliodogenesis",
+            "Amnionic",
+            "Fluidic"
+        ],
+        "correct_answer": "Amniocentesis",
+        "explanation": "Fetal sex determination is based on the patterns of chromosomes in the amniotic fluid present around the embryo. Hence this test is called amniocentesis."
+    },
+    {
+        "question": "Amniocentesis deals with patterns of ______ in the amniotic fluid",
+        "incorrect answers": [
+            "fingers",
+            "DNA",
+            "proteins"
+        ],
+        "correct_answer": "chromosomes",
+        "explanation": "The chromosomal pattern in the amniotic fluid is detected using the technique called amniocentesis. This chromosomal pattern is called karyogenesis and can be used to detect the nature of chromosomes. Hence it can be exploited to determine sex of the fetus."
+    },
+    {
+        "question": "Saheli is ______ contraceptive",
+        "incorrect answers": [
+            "intravenous",
+            "topical",
+            "vaginal"
+        ],
+        "correct_answer": "oral",
+        "explanation": "Saheli is a contraceptive for females. It prevents unwanted pregnancy. It is an oral pill. It is Ormeloxifene, marketed under the brand name Saheli. It is a selective estrogen receptor modulator or SERM."
+    },
+    {
+        "question": "Saheli was developed by scientists at _______ in India",
+        "incorrect answers": [
+            "Indian Institute of Science",
+            "Indian Institute of Technology",
+            "Acropolis"
+        ],
+        "correct_answer": "Central Drug Research Institute",
+        "explanation": "Saheli was developed by scientists at the Central Drug Research Institute. This institute is located at Lucknow in India. It belongs to a class of drugs called SERMs or Selective Estrogen Receptor Modulators."
+    },
+    {
+        "question": "The world population is ________",
+        "incorrect answers": [
+            "declining",
+            "stabilized",
+            "unpredictable"
+        ],
+        "correct_answer": "rising",
+        "explanation": "The global population is rising exponentially. It increased from 2 billion in 1900 to 6 billion in 2000 and has currently crossed 10 billion."
+    },
+    {
+        "question": "As of 2000 census, every 6th person in the world is an Indian",
+        "incorrect answers": [
+            "False"
+        ],
+        "correct_answer": "True",
+        "explanation": "The global population in 2000 was 6 billion. Of these, Indians numbered 1 billion. Thus every 6th person should be Indian."
+    },
+    {
+        "question": "Indian population has increased significantly post _______",
+        "incorrect answers": [
+            "Aryan invasion",
+            "globalization",
+            "world war 2"
+        ],
+        "correct_answer": "independence",
+        "explanation": "The Indian population at the time of independence was 350 million, which soared to 1 billion by the end of 2000. Thus, there was a huge increase in population post-independence."
+    },
+    {
+        "question": "MMR stands for ________",
+        "incorrect answers": [
+            "mother\u2019s mortality rate",
+            "maternal menstruation rate",
+            "maternal mortality ratio"
+        ],
+        "correct_answer": "maternal mortality rate",
+        "explanation": "MMR stands for maternal mortality rate. This refers to the death post-pregnancy. Due to increased medical facilities and improvised techniques and transport, there has been a sharp decline in MMR."
+    },
+    {
+        "question": "What does IMR stand for?",
+        "incorrect answers": [
+            "Infant maternity ratio",
+            "Infant mortality ratio",
+            "Infant maternity rate"
+        ],
+        "correct_answer": "Infant mortality rate",
+        "explanation": "IMR stands for Infant Mortality Ratio. It refers to the death rate of infants owing to poor health, developmental deficits, or infections. Increased medications and hygienic conditions have resulted in a decline in IMR."
+    },
+    {
+        "question": "A rapid decline in which of the following is not associated with a rise in population?",
+        "incorrect answers": [
+            "Death rate",
+            "Maternal mortality rate (MMR)",
+            "Infant mortality rate (IMR)"
+        ],
+        "correct_answer": "Fertility",
+        "explanation": "Highly developed medications, treatment options, quick transports, increased number of hospitals have all resulted in a decrease in death rate, MMR, IMR, and infertility. This has resulted in a longer lifespan of humans and also a rise in population."
+    },
+    {
+        "question": "What is the rate at which the population of a region increased called?",
+        "incorrect answers": [
+            "Birth rate",
+            "Population increase rate",
+            "Population rise rate"
+        ],
+        "correct_answer": "Population growth rate",
+        "explanation": "Population growth rate is a measure used to measure the current rate of increase in population in a given region. This can also be used to predict the population for the coming years. This helps in planning and taking appropriate steps to accommodate the new growth."
+    },
+    {
+        "question": "For country A, the population in 2000 was 1 billion",
+        "incorrect answers": [
+            "Country A will be more populous compared to Country B",
+            "Country B will be more populous compared to Country A",
+            "Country A will be more populous compared to Country B"
+        ],
+        "correct_answer": "Both countries A and B will have the same population",
+        "explanation": "Population fold change  = (Final population / Initial population) / (Time period)"
+    },
+    {
+        "question": "Population rise is not going to affect the food, shelter, and housing because of the advancements in technology and infrastructure",
+        "incorrect answers": [
+            "True"
+        ],
+        "correct_answer": "False",
+        "explanation": "Population rise is tremendous. If significant steps are not taken, the population would be sufficient to cause problems with infrastructure, food, clothing, and any resource used by humankind."
+    },
+    {
+        "question": "What is the most effective step to reduce the population growth rate?",
+        "incorrect answers": [
+            "Erase humanity",
+            "Mass murder of newborns",
+            "Decrease health facilities for the poor"
+        ],
+        "correct_answer": "Use of contraceptive methods",
+        "explanation": "Contraceptive methods are promoted by various organizations for small families. These are the most comfortable and most effective methods that can be used to keep the population in check."
+    },
+    {
+        "question": "What slogan has been popularized in India for population control?",
+        "incorrect answers": [
+            "Hum Saath Saath hai",
+            "Hum Honge Kamiyab Ek Din",
+            "Bharat Mata Ki Jay"
+        ],
+        "correct_answer": "Hum Do Humare Do",
+        "explanation": "There has been an enormous drive across India to use contraceptive methods in order to check the population growth rate. Many advertisements and posters with the slogan of \u201cHum Do Humaare Do\u201d have been used. This means, \u201cWe two, our two.\u201d"
+    },
+    {
+        "question": "Which of the following is not a step taken to keep a check on the population?",
+        "incorrect answers": [
+            "Marriageable age rises of females to 18 years and of males to 21 years",
+            "Promotion of contraceptives",
+            "One child norm"
+        ],
+        "correct_answer": "Reservation in offices for women candidates",
+        "explanation": "To maintain the growth rate of the Indian population, various steps have been taken by the government. An increase in the marriageable age of males and females is one such step. Also, programs like Hum Do Humaare Do and One chid norm also play a role. Contraceptives have been promoted via Television, radio, and newspapers. Reservation of women candidates at workplaces has to do with another issue of inequality and injustice."
+    },
+    {
+        "question": "A contraceptive should be user-friendly, easily-available, and with least side-effects",
+        "incorrect answers": [
+            "False"
+        ],
+        "correct_answer": "True",
+        "explanation": "A contraceptive is used as a method to ensure healthy population control. Hence it should be user-friendly, easily available, effective, and have no or least side-effects."
+    },
+    {
+        "question": "A contraceptive is meant to hinder the sexual desire and drive of the user",
+        "incorrect answers": [
+            "True"
+        ],
+        "correct_answer": "False",
+        "explanation": "Contraceptives are designed to be user-friendly. They do not interfere with sexual desire and the act."
+    },
+    {
+        "question": "What is the principle of natural contraceptive methods?",
+        "incorrect answers": [
+            "Avoiding release of egg",
+            "Avoiding release of sperm",
+            "Abortion when pregnant"
+        ],
+        "correct_answer": "Avoiding sperm and ovum to meet",
+        "explanation": "Contraceptive methods are not harmful. Natural methods of contraception aim to prevent the meeting of ovum and sperm in the fallopian tube."
+    },
+    {
+        "question": "What contraceptive method prevents coitus during the ovulation period?",
+        "incorrect answers": [
+            "Permanent abstinence",
+            "Periodic absence",
+            "Permanent absence"
+        ],
+        "correct_answer": "Periodic abstinence",
+        "explanation": "One of the natural methods of contraception called periodic abstinence is used to prevent coitus during the 10th to 17th day of the menstrual cycle. This avoids the presence of sperm in the oviduct during the release of an egg."
+    },
+    {
+        "question": "What is the period 5 days prior, and post-ovulation called?",
+        "incorrect answers": [
+            "Infertile period",
+            "Abstinent period",
+            "Maternity period"
+        ],
+        "correct_answer": "Fertile period",
+        "explanation": "The period from 5 days before ovulation to 5 days after ovulation is called the fertile period. During the period, there are high chances that if coitus occurs, the sperm can fertilize the released egg."
+    },
+    {
+        "question": "What is the scientific term for the withdrawal of penis from vagina before ejaculation?",
+        "incorrect answers": [
+            "Periodic abstinence",
+            "Lactational amenorrhea",
+            "Coitus pluralis"
+        ],
+        "correct_answer": "Coitus interruptus",
+        "explanation": "Withdrawal of the penis from the vagina before ejaculation is an example of a natural method of birth control. It prevents sperm from entering the genital tract. Since this, in principle, prevents coitus, it is called \u201ccoitus interruptus.\u201d"
+    },
+    {
+        "question": "What method is used to prevent the ejaculated semen from entering the vagina during intercourse?",
+        "incorrect answers": [
+            "Periodic abstinence",
+            "Lactational amenorrhea",
+            "Coitus pluralis"
+        ],
+        "correct_answer": "Coitus interruptus",
+        "explanation": "Withdrawal, also called coitus interruptus, is a method used to prevent the ejaculation of semen into the female genital tract. This is one of the most effective natural methods as it prevents semen, which is rich in sperms from entering the female genital tract and hence avoids pregnancy."
+    },
+    {
+        "question": "What is coitus interruptus?",
+        "incorrect answers": [
+            "Rejection of sperms by female",
+            "Rejection of egg my male",
+            "Withdrawal of the penis from the vagina after ejaculation"
+        ],
+        "correct_answer": "Withdrawal of the penis from the vagina before ejaculation",
+        "explanation": "Coitus interruptus is basically a natural contraceptive method. Its purpose is to prevent pregnancy. It works by avoiding the insemination of the female genital tract. During coitus interruptus, the male partner withdraws the penis from the vagina before ejaculation."
+    },
+    {
+        "question": "What is the absence of menstruation called?",
+        "incorrect answers": [
+            "Periodic abstinence",
+            "Coitus interruptus",
+            "Coitus pluralis"
+        ],
+        "correct_answer": "Lactational amenorrhea",
+        "explanation": "The absence of menstruation occurs after the baby has been delivered, and the mother is lactating to nourish the baby. During this period, the mother cannot get pregnant. This lack of menstruation is called lactational amenorrhea."
+    },
+    {
+        "question": "What is lactational amenorrhea?",
+        "incorrect answers": [
+            "Inability of female to lactate",
+            "Inability of female to conceive",
+            "Inability of male to conceive"
+        ],
+        "correct_answer": "Inability of female to menstruate",
+        "explanation": "Lactational amenorrhea is the inability of a female to menstruate after parturition. This is the time when the female lactates extensively to support the growth and nourishment of the baby. Lack of menstruation removes the burden of blood loss and weakness and also acts as a measure to prevent another pregnancy before the baby is grown sufficiently to feed himself/herself."
+    },
+    {
+        "question": "Which of the following is not a natural contraceptive method?",
+        "incorrect answers": [
+            "Periodic abstinence",
+            "Lactational amenorrhea",
+            "Coitus interruptus"
+        ],
+        "correct_answer": "Condoms",
+        "explanation": "Condom is an example of a barrier method. Periodic abstinence, coitus interruptus, and lactational amenorrhea are natural methods."
+    },
+    {
+        "question": "Natural methods have ______ side-effects and have _____ rate of failure",
+        "incorrect answers": [
+            "many, high",
+            "many, low",
+            "less, low"
+        ],
+        "correct_answer": "less, high",
+        "explanation": "Natural methods do not interfere with the normal functioning of the human system in any way. They do not rely on external devices or medications. Hence, they have least or no side-effects. However, they come up with high chances of failure."
+    },
+    {
+        "question": "What methods are used to prevent the meeting of a sperm and an egg by the use of a barrier?",
+        "incorrect answers": [
+            "Natural methods",
+            "Oral methods",
+            "Intrauterine methods"
+        ],
+        "correct_answer": "Barrier methods",
+        "explanation": "The barrier methods create a barrier between the female and male fluids. This acts as a physical barrier that prevents fertilization."
+    },
+    {
+        "question": "Barrier methods exist only for males",
+        "incorrect answers": [
+            "True"
+        ],
+        "correct_answer": "False",
+        "explanation": "Barrier methods are developed for use by both males and females. These create a physical barrier to prevent fertilization and thus avoid pregnancy."
+    },
+    {
+        "question": "What are condoms made of?",
+        "incorrect answers": [
+            "Thick rubber or latex sheath",
+            "Paper",
+            "Plastic"
+        ],
+        "correct_answer": "Thin rubber or latex sheath",
+        "explanation": "Condoms are examples of barrier methods. Both males and females use them. These are made of think rubber or latex sheath that prevents contact of semen and vaginal fluid."
+    },
+    {
+        "question": "What part of male genitalia is covered by a condom?",
+        "incorrect answers": [
+            "Scrotum",
+            "Testis",
+            "Fallopian tube"
+        ],
+        "correct_answer": "Penis",
+        "explanation": "Condom is an external barrier. It prevents the mixing of seminal and vaginal fluids during intercourse. In males, it is a rubber sheath that covers the penis and thus holds semen at the end of coitus."
+    },
+    {
+        "question": "What part of female genitalia is covered by a condom?",
+        "incorrect answers": [
+            "Mons pubis",
+            "Labia minora",
+            "Clitoris"
+        ],
+        "correct_answer": "Cervix",
+        "explanation": "The condoms work for both males and females. These act as a physical barrier between sperms and eggs. In females, they cover the vagina and cervix, thus holding the ejaculated semen of the males."
+    },
+    {
+        "question": "Which barrier method is made of latex sheath and holds the semen after coitus?",
+        "incorrect answers": [
+            "Spermicidal jelly",
+            "Spermicidal cream",
+            "Spermicidal foam"
+        ],
+        "correct_answer": "Condom",
+        "explanation": "Condoms are one of the least invasive barrier methods. They are designed for both male and female use. They are made of rubber or a latex sheath and hold semen containing sperms after ejaculation."
+    },
+    {
+        "question": "Condoms should be worn after ejaculation",
+        "incorrect answers": [
+            "True"
+        ],
+        "correct_answer": "False",
+        "explanation": "The purpose of condoms is to generate a physical barrier between the male and female fluids. This will prevent the sperm from meeting the egg. Thus, condoms have to be worn before coitus in order to prevent the ejaculated semen from coming in contact with the vaginal fluids."
+    },
+    {
+        "question": "Which is a popular brand of condoms designed for males?",
+        "incorrect answers": [
+            "Virodh",
+            "Vinod",
+            "Saheli"
+        ],
+        "correct_answer": "Nirodh",
+        "explanation": "Nirodh is a well-known brand name of condoms for males in India. This was popularized across India by many organizations to encourage the use of contraceptives."
+    },
+    {
+        "question": "Apart from preventing conception, condoms are also known to prevent transmission of ______",
+        "incorrect answers": [
+            "STMs",
+            "ATMs",
+            "ATDs"
+        ],
+        "correct_answer": "STDs",
+        "explanation": "Condoms prevent the mixing of female and male fluids during intercourse. Thus any pathogens are also prevented from being transferred. The Sexually Transmitted Diseases (STDs) are thus prevented by condoms."
+    },
+    {
+        "question": "STD stands for ______",
+        "incorrect answers": [
+            "Selfish Trump Democrat",
+            "Selfborn Tumor of Disneyland",
+            "Sexually Tested Diseases"
+        ],
+        "correct_answer": "Sexually Transmitted Diseases",
+        "explanation": "STDs are sexually transmitted diseases. These diseases transfer via sexual contact. The use of contraceptives like condoms can prevent this transmission."
+    },
+    {
+        "question": "What is AIDS an acronym for?",
+        "incorrect answers": [
+            "Acquired Immune Deficiency Syndrome",
+            "Acquired Immunity During Sex",
+            "Acquired Immune Deficiency Stabilized"
+        ],
+        "correct_answer": "Acquired Immunodeficiency Syndrome",
+        "explanation": "AIDS stands for Acquired Immunodeficiency Syndrome. It is a syndrome comprised of many diseases that target the immune system by rendering it deficient for any attack. Thus, the body of the patient is prone to many opportunistic infections."
+    },
+    {
+        "question": "Which of the following is not a property of condoms?",
+        "incorrect answers": [
+            "Disposable",
+            "Self-insertable",
+            "Provides privacy"
+        ],
+        "correct_answer": "Surgical insertion",
+        "explanation": "Both males and females can use condoms. Being external barriers and non-invasive, they can be self-inserted and thus provide privacy to the user. Additionally, being made of rubber or latex, they can be disposed of easily."
+    },
+    {
+        "question": "Which of the following barrier device is not made of rubber?",
+        "incorrect answers": [
+            "Cervical caps",
+            "Vaults",
+            "Diaphragms"
+        ],
+        "correct_answer": "CuT",
+        "explanation": "Cervical caps, vaults, and diaphragms are female contraceptive devices made of rubber. These are barrier contraceptives. CuT is an Intra-Uterine Device made of copper."
+    },
+    {
+        "question": "Diaphragms, cervical caps, and vaults are used to cover _______",
+        "incorrect answers": [
+            "Penis",
+            "Breasts",
+            "Scrotum"
+        ],
+        "correct_answer": "Cervix",
+        "explanation": "Diaphragms, vaults, and cervical caps are barrier methods for females. They cover the cervix during coitus, thus preventing fertilization and pregnancy."
+    },
+    {
+        "question": "Which of the following barrier method is not reusable?",
+        "incorrect answers": [
+            "Cervical caps",
+            "Vaults",
+            "Diaphragms"
+        ],
+        "correct_answer": "Condoms",
+        "explanation": "Cervical caps, vaults, and diaphragms cover the female cervix. These are made of rubber and inserted inside. These are reusable. Condoms, on the other hand, are designed for one-time use and hence disposable."
+    },
+    {
+        "question": "What methods are inserted into the uterus through the vagina to prevent pregnancy?",
+        "incorrect answers": [
+            "Natural methods",
+            "Barrier methods",
+            "Oral methods"
+        ],
+        "correct_answer": "Intrauterine methods",
+        "explanation": "Intrauterine devices are inserted into the uterus through the vagina. Expert doctors do this. It is a contraceptive measure."
+    },
+    {
+        "question": "Intrauterine methods exist only for females",
+        "incorrect answers": [
+            "False"
+        ],
+        "correct_answer": "True",
+        "explanation": "Intrauterine methods are designed to be inserted into uterus through vagina. These exist only for females. There is no similar counterpart for males because the act of fertilization occurs in the female genital tract."
+    },
+    {
+        "question": "IUDs stand for _______",
+        "incorrect answers": [
+            "Inter Uterine Devices",
+            "Intra Uterine Diseases",
+            "Inter Uterine Diseases"
+        ],
+        "correct_answer": "Intra Uterine Devices",
+        "explanation": "IUDs stand for Intra Uterine Devices. These are designed to be inserted through the vagina into the uterus."
+    },
+    {
+        "question": "Which of the following is a non-medicated IUD?",
+        "incorrect answers": [
+            "Cu7",
+            "Multiload 375",
+            "Progestasert"
+        ],
+        "correct_answer": "Lippes loop",
+        "explanation": "Lippes loop is a non-medicated IUD. It is made of an inert plastic material and can be used for longterm use."
+    },
+    {
+        "question": "Which of the following is not a copper releasing IUD?",
+        "incorrect answers": [
+            "Cu7",
+            "CuT",
+            "Multiload 375"
+        ],
+        "correct_answer": "LNG-20",
+        "explanation": "The copper releasing IUDs include Cu7, CuT, and Multiload 375. LNG-20 instead releases progestin, which is a hormone."
+    },
+    {
+        "question": "Which of the following IUDs work by releasing hormone?",
+        "incorrect answers": [
+            "Lippes loop",
+            "Cu7",
+            "Multiload 375"
+        ],
+        "correct_answer": "Progestasert",
+        "explanation": "Proestasert is an IUD. It works by releasing the hormone progesterone. This prevents pregnancy and hence acts as a contraceptive measure."
+    },
+    {
+        "question": "LNG-20 is an IUD, hence releases Cu ions to terminate pregnancy",
+        "incorrect answers": [
+            "True"
+        ],
+        "correct_answer": "False",
+        "explanation": "LNG-20 is an IUD. However, not all IUDs released Cu ions. LNG-20 belongs to the class of IUDs that release hormones. LNG-20 causes the release of the hormone progestin in the uterine cavity."
+    },
+    {
+        "question": "How do IUDs prevent pregnancy?",
+        "incorrect answers": [
+            "By preventing mixing of vaginal and seminal fluids",
+            "By increasing phagocytosis of eggs",
+            "By preventing the release of egg"
+        ],
+        "correct_answer": "By increasing phagocytosis of sperms",
+        "explanation": "IUDs are intrauterine devices. They do not act as a barrier between vaginal and seminal fluids. Also, they do not affect the ovary or the egg. They work by enhancing the phagocytosis of sperms and thus reducing the probability of sperm entering the fallopian tube to fertilize the egg."
+    },
+    {
+        "question": "How do Cu ions in copper releasing IUDs prevent fertilization?",
+        "incorrect answers": [
+            "By increasing the motility of the sperms",
+            "By causing the females to expel out the sperms",
+            "By causing the lysis of sperms"
+        ],
+        "correct_answer": "By reducing the motility of the sperms",
+        "explanation": "Copper releasing IUDs include Cu7, CuT, and Multiload 375. These work by dampening the motility of the sperms. This reduces the ability of sperm to cross the barriers of the uterus before reaching the fallopian tube and thus prevents fertilization and pregnancy."
+    },
+    {
+        "question": "What is the unique feature of hormone-releasing IUDs?",
+        "incorrect answers": [
+            "Causing lysis of sperms",
+            "Increasing the release of sperms by male",
+            "Closing of vagina"
+        ],
+        "correct_answer": "Rendering the uterus unsuitable for the fertilized egg to implant",
+        "explanation": "The hormone-releasing IUDs are very strong and have fewer side-effects. These stimulate the body\u2019s mechanisms to prevent fertilization. They render the cervix hostile for sperms and also make the uterus not suitable for the blastocyst to the implant. Thus, even if fertilization occurs, the chances of it leading to pregnancy are almost nil."
+    }
+]

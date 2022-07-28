@@ -1,0 +1,1204 @@
+[
+    {
+        "question": "What, according to Medel, was responsible for the inheritance of specific traits?",
+        "incorrect answers": [
+            "Genes",
+            "Chromosomes",
+            "DNA"
+        ],
+        "correct_answer": "Factors",
+        "explanation": "Mendel discovered the laws of inheritance. He attributed these traits being encoded by factors. Later studies showed that these factors are genes."
+    },
+    {
+        "question": "The structure of DNA by ______ received the Nobel Prize in 1962",
+        "incorrect answers": [
+            "Maurice Wilkins",
+            "Rosalind Franklin",
+            "Erwin Chargaff"
+        ],
+        "correct_answer": "Francis Crick",
+        "explanation": "One of the central problems in molecular biology was unraveling the structure of DNA. This was finally postulated by Francis Crick and James Watson in 1953. For this, they shared a Nobel Prize in 1962."
+    },
+    {
+        "question": "What branch of biology focusses on the study of patterns of inheritance?",
+        "incorrect answers": [
+            "Immunology",
+            "Evolution",
+            "Ecology"
+        ],
+        "correct_answer": "Genetics",
+        "explanation": "Genetics is the branch of biology that deals with questions of inheritance. It uses techniques from various disciplines like Molecular biology, Cell biology, and many more to understand the basis of inheritance."
+    },
+    {
+        "question": "The process of transfer of characters from parents to offspring is referred to as ______",
+        "incorrect answers": [
+            "Heritage",
+            "Genetics",
+            "Variation"
+        ],
+        "correct_answer": "Inheritance",
+        "explanation": "Inheritance or Heredity is the process of transfer of information from parents/ancestors to offsprings. This gives rise to patterns that can be studied using the subject of genetics."
+    },
+    {
+        "question": "What determines the differences between the progeny and parents?",
+        "incorrect answers": [
+            "Inheritance",
+            "Heritage",
+            "Genetics"
+        ],
+        "correct_answer": "Variation",
+        "explanation": "Variation is the difference between individuals within a population. These arise between the progeny and parents/ancestors and form a backbone for natural selection to act on."
+    },
+    {
+        "question": "Sexual reproduction produces larger variations than asexual reproduction",
+        "incorrect answers": [
+            "False"
+        ],
+        "correct_answer": "True",
+        "explanation": "Sexual reproduction involves two parents and the exchange of genetic material. Thus producing higher variations. Asexual reproduction is simply the replication of DNA and involves very low to almost no variation."
+    },
+    {
+        "question": "Which of the following approaches used by early humans is not an instance of exploitation of variation in population for the benefit of society?",
+        "incorrect answers": [
+            "Domestication of dog",
+            "Domestication of cow",
+            "Artificial selection of wheat as a crop"
+        ],
+        "correct_answer": "Invention of fire",
+        "explanation": "All the 4 options refer to approaches of early humans that have benefitted society. However, the domestication of dog and cow and the artificial selection of wheat as a crop have used the principle of variation and selection of traits best suitable for a particular task."
+    },
+    {
+        "question": "Who proposed the laws of inheritance in living organisms?",
+        "incorrect answers": [
+            "James Watson",
+            "Francis Crick",
+            "Erwin Chargaff"
+        ],
+        "correct_answer": "Gregor Mendel",
+        "explanation": "The laws of inheritance in living organisms were proposed by Gregor Mendel. He was the first person to apply the scientific method to understand patterns of inheritance. However, the importance of his work was not recognized until after his death."
+    },
+    {
+        "question": "What technique in plant biology was used by Gregor Mendel to derive the patterns of inheritance?",
+        "incorrect answers": [
+            "Mutagenesis",
+            "Exportation",
+            "Importation"
+        ],
+        "correct_answer": "Hybridization",
+        "explanation": "Gregor Mendel carried out the hybridization of pea plants with specific characters and used manual counting to carry out estimates of factors over generations. This gave rise to the laws of inheritance, as we know today."
+    },
+    {
+        "question": "Which of the following is a recessive trait in pea plants?",
+        "incorrect answers": [
+            "Violet flowers",
+            "Axial flowers",
+            "Inflated pods"
+        ],
+        "correct_answer": "Dwarf stem height",
+        "explanation": "Recessive traits are the ones that require both alleles to be present to result in the expression of the gene product. Of the mentioned traits, only dwarf stem height is a recessive trait."
+    },
+    {
+        "question": "Round and wrinkled seeds were one of the contrasting traits used by Mendel to devise the laws of inheritance",
+        "incorrect answers": [
+            "False"
+        ],
+        "correct_answer": "True",
+        "explanation": "Mendel used 7 different pairs of contrasting traits to devise the laws of inheritance. These also included the mentioned round and wrinkled seeds. Round seeds are dominant, whereas wrinkled seeds are recessive."
+    },
+    {
+        "question": "If you were to sample garden pea plants in Mendel\u2019s garden, which of the following statements would hold?",
+        "incorrect answers": [
+            "Wrinkled seeds were more abundant than round seeds",
+            "Both round and wrinkled seeds were equally abundant",
+            "Answer depends on the time of day when sampling is done"
+        ],
+        "correct_answer": "Round seeds were more abundant than wrinkled seeds",
+        "explanation": "Dominant allele can express even in the presence of a recessive allele. Hence dominant phenotype is more common. Round seeds are dominant over wrinkled seeds; hence would be more abundant."
+    },
+    {
+        "question": "What was the model organism used by Mendel to give the laws of inheritance?",
+        "incorrect answers": [
+            "Wild peas",
+            "Basket peas",
+            "Bottle gourd"
+        ],
+        "correct_answer": "Garden peas",
+        "explanation": "Mendel was a priest at a church. He grew garden peas behind the church. He studied the passing of characters within these by the process of hybridization."
+    },
+    {
+        "question": "Which of the following is not an attribute associated with Mendel\u2019s studies?",
+        "incorrect answers": [
+            "Mathematical analysis",
+            "Larger sampling size",
+            "A reliable and credible data source generation"
+        ],
+        "correct_answer": "Frequent killing of the model organism",
+        "explanation": "Mendel\u2019s studies were one of its kind as he used the robust scientific method, mathematical and statistical tools to study a large sample of pea plants. He also created a reliable and credible data source to look upon frequently for deriving conclusions. Additionally, his techniques were ethical even in today\u2019s standard and involved proper maintenance of the model organism in hand."
+    },
+    {
+        "question": "Which of the following is not a pair of contrasting traits studied by Mendel?",
+        "incorrect answers": [
+            "Green and yellow pods",
+            "Full and constricted pods",
+            "Axial and terminal flowers"
+        ],
+        "correct_answer": "Pink and white flowers",
+        "explanation": "Mendel\u2019s studies involved study of seven pairs of contrasting traits. These included green and yellow pods, full and constricted pods, axial, and terminal flowers. The flower color pair studied was violet and white."
+    },
+    {
+        "question": "What was the type of pea lines used by Mendel?",
+        "incorrect answers": [
+            "False-breeding",
+            "Not breeding",
+            "Indefinitely breeding"
+        ],
+        "correct_answer": "True-breeding",
+        "explanation": "True-breeding pea lines were used by Mendel to study the processes. These are plants that are homozygous, hence have two copies of the same alleles."
+    },
+    {
+        "question": "What method is used to produce a true-breeding line?",
+        "incorrect answers": [
+            "Cross-pollination",
+            "Artificial pollination",
+            "Allogamy"
+        ],
+        "correct_answer": "Self-pollination",
+        "explanation": "A true-breeding line is the one that is homozygous for a given allele. This can be achieved by repeated self-pollination over many generations. This exposes the traits encoded by recessive alleles, which would otherwise be suppressed by the presence of dominant alleles."
+    },
+    {
+        "question": "Which of the following is a dominant character in pea plants?",
+        "incorrect answers": [
+            "White flowers",
+            "Terminal flowers",
+            "Constricted pods"
+        ],
+        "correct_answer": "Tall stem height",
+        "explanation": "Dominant characters are the ones that are expressed even when a single allele of the gene is present. Of the mentioned traits, only tall stem height is a dominant character."
+    },
+    {
+        "question": "What is the process of removal of anthers termed?",
+        "incorrect answers": [
+            "Demasculation",
+            "Remasculation",
+            "Masculation"
+        ],
+        "correct_answer": "Emasculation",
+        "explanation": "Emasculation is the process of removal of anthers. This is carried out to carry out pollination in a controlled manner and avoid self-pollination."
+    },
+    {
+        "question": "What process needs to be avoided for carrying of efficient crosses?",
+        "incorrect answers": [
+            "Fertilization",
+            "Development of embryo",
+            "Pollen tube development"
+        ],
+        "correct_answer": "Self-pollination",
+        "explanation": "Self-pollination leads to fertilization by the pollen from the same flower. A cross desires pollination and fertilization by pollen from a different plant. Hence self-pollination needs to be avoided."
+    },
+    {
+        "question": "What is the generation of plants produced by the crossing of true-breeding plants called?",
+        "incorrect answers": [
+            "F0",
+            "F2",
+            "F3"
+        ],
+        "correct_answer": "F1",
+        "explanation": "True-breeding plants are taken as parental plants in crosses. Hence offsprings produced by the crossing of these true-breeding plants are F1 progeny."
+    },
+    {
+        "question": "What does F in \u201cF1 progeny\u201d stand for?",
+        "incorrect answers": [
+            "Fillial",
+            "Filum",
+            "Filler"
+        ],
+        "correct_answer": "Filial",
+        "explanation": "F1 progeny refers to the first generation of offsprings. This is also termed as the first Filial generation, thereby stating their filial relationship with the true-breeding plants."
+    },
+    {
+        "question": "What should be the phenotype of the F1 progeny produced by a cross between tall and dwarf true-breeding garden pea plants?",
+        "incorrect answers": [
+            "Dwarf plants",
+            "Intermediate plants",
+            "Mixed population of tall and dwarf plants"
+        ],
+        "correct_answer": "Tall plants",
+        "explanation": "Tall plants are dominant over dwarf plants. Being true-breeding parents, the offsprings will all be heterozygous. Moreover, hence phenotypically, all of them will be tall."
+    },
+    {
+        "question": "I = Inflated, i = constricted",
+        "incorrect answers": [
+            "Parent 1: II; Parent 2: ii",
+            "Parent 1: II; Parent 2: II",
+            "Parent 1: ii; Parent 2: II"
+        ],
+        "correct_answer": "Parent 1: ii; Parent 2: ii",
+        "explanation": "Inflated is the dominant phenotype. Hence it can be expressed in two genotypes: II and Ii. The F1 progeny can have it in all the mentioned cases except when both parents are recessive ii."
+    },
+    {
+        "question": "What should be the phenotype of a cross between violet and white-flowered true-breeding garden pea plants?",
+        "incorrect answers": [
+            "White",
+            "Pink",
+            "Red"
+        ],
+        "correct_answer": "Violet",
+        "explanation": "Violet is the dominant factor over white in pea flowers. Hence violet can express even in the presence of white. The cross of violet true-breeding and white true-breeding pea plants will produce all heterozygous offsprings. Thus, all of them will have violet flowers."
+    },
+    {
+        "question": "With green pods as a dominant trait over yellow, which of the following crosses will result in all progeny having yellow pods?",
+        "incorrect answers": [
+            "Homozygous green and homozygous yellow",
+            "Heterozygous green and heterozygous green",
+            "Homozygous green and homozygous green"
+        ],
+        "correct_answer": "Homozygous yellow and homozygous yellow",
+        "explanation": "Yellow being recessive will express only when both alleles are present. That occurs only when both parents can contribute an allele encoding for the yellow pod. For all progeny to have yellow pods, both parents have to be homozygous for yellow pods."
+    },
+    {
+        "question": "The cross of true-breeding yellow and green seeded pea plants can only produce yellow seeded progeny",
+        "incorrect answers": [
+            "False"
+        ],
+        "correct_answer": "True",
+        "explanation": "Being homozygous, these parents will produce all heterozygous individuals. Since yellow is dominant over green seed, the phenotype can be seen in the heterozygous state too. Thus, all progeny will be yellow seeded."
+    },
+    {
+        "question": "If VV produces violet flowers and vv produces white flowers, what will be the phenotype and genotype of the F1 progeny?",
+        "incorrect answers": [
+            "All white; tt",
+            "All violet; TT and Tt",
+            "All violet; TT, Tt, and tt"
+        ],
+        "correct_answer": "All violet; Tt",
+        "explanation": "The VV and vv upon crossing will produce all progeny with genotype Vv. This is the heterozygous state. Violet being dominant over white, all the progeny will have violet flowers."
+    },
+    {
+        "question": "The factor which expresses in homozygous and heterozygous states is called _______",
+        "incorrect answers": [
+            "recessive",
+            "gene",
+            "allele"
+        ],
+        "correct_answer": "dominant",
+        "explanation": "A dominant factor masks the expression of its recessive counterpart. Thus, it can express in both homozygous and heterozygous states."
+    },
+    {
+        "question": "A plant that exhibits two alleles for only one trait is called ________",
+        "incorrect answers": [
+            "dihybrid",
+            "monogamous",
+            "digamous"
+        ],
+        "correct_answer": "monohybrid",
+        "explanation": "Monohybrid refers to a hybrid that differs at only one gene. Thus, a plant that exhibits two alleles for one trait is a monohybrid."
+    },
+    {
+        "question": "During meiosis, what happens to the parental alleles?",
+        "incorrect answers": [
+            "They undergo repair",
+            "They undergo breakage",
+            "They replicate"
+        ],
+        "correct_answer": "They segregate",
+        "explanation": "Based on his studies on pea plants, he observed that the parental recessive traits were observed again only in the F2 progeny without any form of blending in F1 generation. This points out that the factors segregate or separate during the process of meiosis."
+    },
+    {
+        "question": "The presence of two different alleles at a particular locus results in _________",
+        "incorrect answers": [
+            "Homozygosity",
+            "Hemizygosity",
+            "Nullizygosity"
+        ],
+        "correct_answer": "Heterozygosity",
+        "explanation": "Heterozygosity refers to different alleles present at a given locus. This is the condition that is of interest to the study of genetics. It can be used to test the nature of an allele."
+    },
+    {
+        "question": "Self-pollination of F1 progeny will result in a new filial generation called _______",
+        "incorrect answers": [
+            "F1",
+            "F0",
+            "F1.1"
+        ],
+        "correct_answer": "F2",
+        "explanation": "The filial generations are numbered in relation to the parental generations. The self-pollination of F1 progeny will produce a generation that is two-step distant from the parental generation. Hence it will be F2 generation."
+    },
+    {
+        "question": "What are the possible phenotypes that can be observed after self-crossing violet flowered pea plants?",
+        "incorrect answers": [
+            "All violet",
+            "All white",
+            "25% violet and 75% white"
+        ],
+        "correct_answer": "25% white and 75% violet",
+        "explanation": "Violet is dominant over white. Self-crossing of violet flowered plants will produce 25% recessive plants, which will have white-flowers."
+    },
+    {
+        "question": "In Mendelian crosses, the F2 progeny exhibits a recessive phenotype and a blended phenotype",
+        "incorrect answers": [
+            "True"
+        ],
+        "correct_answer": "False",
+        "explanation": "Mendelian crosses do not exhibit blending of phenotypes. These are performed on true-breeding parents, and the locus encoding the traits does not show any crossover. The phenotypes of F are dominant and recessive."
+    },
+    {
+        "question": "Which of the following was not observed in F2 progeny of true-breeding tall and dwarf plants?",
+        "incorrect answers": [
+            "Homozygous tall plants",
+            "Heterozygous tall plants",
+            "Homozygous dwarf plants"
+        ],
+        "correct_answer": "Heterozygous dwarf plants",
+        "explanation": "The F2 progeny has both dwarf and tall plants. 25% of them are homozygous tall, 50% are heterozygous tall, and 25% are homozygous dwarf. Dwarfness is a recessive trait and thus cannot be expressed in the heterozygous state."
+    },
+    {
+        "question": "Based on his experiments on pea plants, what were the things that he suspected of being transferred across generations?",
+        "incorrect answers": [
+            "Genes",
+            "Chromosomes",
+            "DNA"
+        ],
+        "correct_answer": "Factors",
+        "explanation": "Mendel studied pea plant inheritance of traits. He observed a pattern in the way traits were passed from parents to offsprings. Based on these, he suspected the existence of \u201cfactors\u201d that need to be transferred through gametes from parents to offsprings."
+    },
+    {
+        "question": "What exactly are Mendel\u2019s factors?",
+        "incorrect answers": [
+            "Proteins",
+            "Chromosomes",
+            "RNA"
+        ],
+        "correct_answer": "Genes",
+        "explanation": "The factors that Mendel observed were forgotten for decades to come. Later experiments, independent of these studies of Mendel, led to the discovery of genes as the source of transfer of information that codes for traits. Later it was found that Mendel\u2019s factors were indeed genes."
+    },
+    {
+        "question": "What are the copies of genes that code for different phenotypes called?",
+        "incorrect answers": [
+            "Gametes",
+            "Chromatin",
+            "DNA"
+        ],
+        "correct_answer": "Alleles",
+        "explanation": "Alleles are the copies of genes that code for contrasting traits. They are different forms of the same gene. For an allele to express, it should have a fitness benefit over its counterpart allele."
+    },
+    {
+        "question": "To represent a genotype, the dominant allele is represented by a capital letter and the recessive allele by a small letter",
+        "incorrect answers": [
+            "False"
+        ],
+        "correct_answer": "True",
+        "explanation": "The convention used to write the genotype uses a single letter to represent an allele. Capital letters symbolize dominant alleles. The corresponding small letters are used to represent recessive alleles."
+    },
+    {
+        "question": "Which zygosity has the same allelic pair of genes?",
+        "incorrect answers": [
+            "Heterozygosity",
+            "Hemizygosity",
+            "Nullizygosity"
+        ],
+        "correct_answer": "Homozygosity",
+        "explanation": "Homozygosity refers to the state of genes that have both copies of genes or alleles as the same alleles. Heterozygous condition has two different alleles."
+    },
+    {
+        "question": "VV, Vv and vv are _______, while violet and white are _________",
+        "incorrect answers": [
+            "phenotypes, genotypes",
+            "genotypes, genotypes",
+            "phenotypes, phenotypes"
+        ],
+        "correct_answer": "genotypes, phenotypes",
+        "explanation": "The genotypes refer to the allelic composition of a particular gene. Thus VV, Vv, and vv are the genotypes. Violet and white are the phenotypes. These refer to the expressed trait."
+    },
+    {
+        "question": "The factor expressed only in homozygous state is called _________",
+        "incorrect answers": [
+            "dominant",
+            "gene",
+            "allele"
+        ],
+        "correct_answer": "recessive",
+        "explanation": "A recessive factor cannot express itself when a dominant factor is present. It can only express when the organism has two copies of it. Thus, it requires homozygous state to express itself."
+    },
+    {
+        "question": "What is the cross between VV and vv called?",
+        "incorrect answers": [
+            "Dihybrid cross",
+            "Monogamous cross",
+            "Digamous cross"
+        ],
+        "correct_answer": "Monohybrid cross",
+        "explanation": "The offsprings produced from this cross are heterozygous for only one gene, which encodes for tallness. Thus, the cross is called a monohybrid cross."
+    },
+    {
+        "question": "What kind of a process is the segregation of alleles during meiosis?",
+        "incorrect answers": [
+            "Uniform",
+            "Gaussian",
+            "Poisson"
+        ],
+        "correct_answer": "Stochastic",
+        "explanation": "Segregation of alleles leads to each gamete having only a single allele at the end of meiosis. This process is purely random or stochastic. Thus, the probability of a gamete having either alleles is 50%."
+    },
+    {
+        "question": "If the F1 generation produced by a cross between axial and terminal flower-bearing plants produces only axial flowers, the F2 progeny produced by the self-crossing of F1 will also produce only axial flowers",
+        "incorrect answers": [
+            "True"
+        ],
+        "correct_answer": "False",
+        "explanation": "The F1 progeny has only axial flowers, which imply that axial trait is dominant over the terminal trait. However, the F1 progeny are heterozygous. Upon self-crossing, 25% of the F2 progeny will be homozygous for the recessive trait, resulting in the formation of 3:1 ratio of axial flower-bearing to terminal flower-bearing plants."
+    },
+    {
+        "question": "What diagram is used to study the production of zygotes in F1 and F2 generation?",
+        "incorrect answers": [
+            "Punnett rectangle",
+            "Punnett rhombus",
+            "Punnett circle"
+        ],
+        "correct_answer": "Punnett square",
+        "explanation": "The Punnett square is a mathematical tool used in probability and statistics. Mendel employed it to study the genotypes of F1 and F2 progeny based on the games produced by the previous generation."
+    },
+    {
+        "question": "Who deserves the credit to discover Punnett square?",
+        "incorrect answers": [
+            "Gregor Mendel",
+            "John Watson",
+            "Maurice Punnett"
+        ],
+        "correct_answer": "Reginald Punnett",
+        "explanation": "The Punnett square was discovered by a British scientist named Reginald Punnett. Its importance was recognized by Gregor Mendel, who used it to study the patterns of inheritance and thus formulate the laws of inheritance."
+    },
+    {
+        "question": "Where are the parental genotypes mentioned in a Punnett square?",
+        "incorrect answers": [
+            "Left column and right column",
+            "Top row and bottom row",
+            "Right column and bottom row"
+        ],
+        "correct_answer": "Left column and top row",
+        "explanation": "Punnett square gives a graphical representation for the transfer of genetic information in crosses. The gametes from the parents are represented on the top and the left sides of the Punnett square."
+    },
+    {
+        "question": "What is represented in the boxes of the Punnett square?",
+        "incorrect answers": [
+            "Gametes of female parent",
+            "Genotype of the offspring produced",
+            "Genotype of all possible offsprings"
+        ],
+        "correct_answer": "Gametes of male parent",
+        "explanation": "In the Punnett square, the boxes are filled with the offsprings that can be produced, in principle, from the combinations of gametes of both parents. This can be used to determine the genotypic and phenotypic ratios of the progeny."
+    },
+    {
+        "question": "What gametes are produced by a Vv heterozygous plant?",
+        "incorrect answers": [
+            "75% V and 25% v",
+            "25% V and 75% v",
+            "100% V and 0% v"
+        ],
+        "correct_answer": "50% V and 50% v",
+        "explanation": "The process of segregation that occurs during meiosis is a random process. Thus the gametes will have 50% of each allele. Hence Vv heterozygous plant would produce 50% V and 50% v containing gametes."
+    },
+    {
+        "question": "Upon self-fertilization of Aa with itself, the probability of A gamete fusing A and a gamete is equal",
+        "incorrect answers": [
+            "False"
+        ],
+        "correct_answer": "True",
+        "explanation": "The probability of occurrence of A and a is equal; each has a chance of 50%. Fertilization is also a random process. Thus, A fertilizing A or a gamete has an equal probability of 50%."
+    },
+    {
+        "question": "Which of the following is the correct number of offsprings produced by self-fertilization of a heterozygous pea plant for a trait that exhibits Mendelian genetic pattern?",
+        "incorrect answers": [
+            "125 Homozygous dominant, 125 Heterozygous dominant and 125 Homozygous recessive",
+            "500 Homozygous dominant, 501 Heterozygous dominant and 250 Homozygous recessive",
+            "500 Homozygous dominant, 250 Heterozygous dominant and 500 Homozygous recessive"
+        ],
+        "correct_answer": "250 Homozygous dominant, 500 Heterozygous dominant and 250 Homozygous recessive",
+        "explanation": "Self-fertilization of heterozygote will lead to 25% homozygous dominants, 25% homozygous recessive, and 50% heterozygous dominants. This is satisfied if the population sampled has 250 homozygous dominant and recessive plant and 500 heterozygous dominant plants."
+    },
+    {
+        "question": "The ratio of genotypes observed in progeny after a cross has been performed is called ________",
+        "incorrect answers": [
+            "phenotypic ratio",
+            "absolute ratio",
+            "relative ratio"
+        ],
+        "correct_answer": "genotypic ratio",
+        "explanation": "The genotypes of a progeny can be studied using Punnett square. The ratio of different genotypes is called the genotypic ratio."
+    },
+    {
+        "question": "The ratio of phenotypes observed in progeny after a cross has been performed is called ________",
+        "incorrect answers": [
+            "genotypic ratio",
+            "absolute ratio",
+            "relative ratio"
+        ],
+        "correct_answer": "phenotypic ratio",
+        "explanation": "The phenotypes of a progeny can be studied by manually counting the offsprings. The ratio of different phenotypes defines the phenotypic ratio of the cross."
+    },
+    {
+        "question": "What generation of Mendelian cross has a phenotypic ratio of 3:1?",
+        "incorrect answers": [
+            "F0",
+            "F1",
+            "F3"
+        ],
+        "correct_answer": "F2",
+        "explanation": "The phenotypic ratio is the ratio of different phenotypes observed in the progeny. In the F2 generation of a Mendelian cross, there are 75% plants with dominant phenotype and 25% plants with a recessive phenotype. This gives a phenotypic ratio of 3:1."
+    },
+    {
+        "question": "According to the law of dominance, what are the discrete units that control the characters?",
+        "incorrect answers": [
+            "Multipliers",
+            "Divisors",
+            "Remainders"
+        ],
+        "correct_answer": "Factors",
+        "explanation": "The law of dominance states characters encoded by discrete units. Mendel called these factors, which he believed transferred from parents during progeny during fertilization. These are now known as genes."
+    },
+    {
+        "question": "The factors that Mendel postulated occur in triplets",
+        "incorrect answers": [
+            "True"
+        ],
+        "correct_answer": "False",
+        "explanation": "The Mendels\u2019 factors are genes. These exist in a pair. These can be the same or different, which are termed as alleles."
+    },
+    {
+        "question": "Which of the following is not a statement of the principle of dominance?",
+        "incorrect answers": [
+            "Factors occur in pairs",
+            "One factor is dominant over the other",
+            "Factors control characters"
+        ],
+        "correct_answer": "Factors segregated during the process of meiosis",
+        "explanation": "The principle of dominance does not state the segregation of factors. This is stated by the law of segregation or separation."
+    },
+    {
+        "question": "A homozygous parent produces gametes that are ______; while the heterozygous parent produces gametes that are _______",
+        "incorrect answers": [
+            "similar; similar",
+            "dissimilar; dissimilar",
+            "dissimilar; similar"
+        ],
+        "correct_answer": "similar; dissimilar",
+        "explanation": "The law of segregation states that the factors separate during gamete formation. Thus a homozygous parent will produce gametes that have similar factors while the heterozygous parent would produce gametes with dissimilar alleles."
+    },
+    {
+        "question": "What filial generation exhibits a genotypic ratio of 1:2:1?",
+        "incorrect answers": [
+            "F0",
+            "F2",
+            "F3"
+        ],
+        "correct_answer": "F1",
+        "explanation": "The genotypic ratio refers to the ratio of different genotypes observed in a population. In the F2 generation of a Mendelian cross, the proportion of homozygous dominant: heterozygous: homozygous recessive is 1:2:1."
+    },
+    {
+        "question": "Which mathematical expression can be used to obtain the genotypic ratio of F2 offsprings from the gametes of the F1 progeny?",
+        "incorrect answers": [
+            "Monomial expression",
+            "Trinomial expression",
+            "Algebraic expression"
+        ],
+        "correct_answer": "Binomial expression",
+        "explanation": "The binomial expression (ax+by)"
+    },
+    {
+        "question": "Self-crossing of dwarf plants from F2 generation will produce _____",
+        "incorrect answers": [
+            "100% tall and 0% dwarf plants",
+            "50% tall and 50% dwarf plants",
+            "25% tall and 75% dwarf plants"
+        ],
+        "correct_answer": "0% tall and 100% dwarf plants",
+        "explanation": "The F2 dwarf plants are homozygous recessive. Therefore, the self-crossing will only produce dwarf plants as no copy of the dominant allele is present."
+    },
+    {
+        "question": "What method can be used to check the genotypic composition experimentally of the F2 tall plant?",
+        "incorrect answers": [
+            "Self cross",
+            "Check cross",
+            "Exam cross"
+        ],
+        "correct_answer": "Test cross",
+        "explanation": "To determine the genotype of a tall plant amongst the F2 progeny, Mendel employed test crossing. Here he crossed the tall plant with a recessive dwarf plant. If the genotype of the tall plant were TT, the offspring will all be tall. However, if the genotype is Tt, there will be 50% tall and 50% dwarf plants."
+    },
+    {
+        "question": "What is the genotype of a plant showing a dominant phenotype of violet flowers if it is test crossed and produces only violet-flowered plants?",
+        "incorrect answers": [
+            "Vv",
+            "vv",
+            "v"
+        ],
+        "correct_answer": "VV",
+        "explanation": "Test cross involves a cross between the plant whose genotype is to be determined with the homozygous recessive plants. If a violet-flowered plant is crossed with white-flowered plant, the offsprings will have one v allele. Thus, to exhibit a phenotype of violet-flowering, the genotype will be Vv. Hence the parent will have a genotype of VV."
+    },
+    {
+        "question": "What is the genotype of a plant showing a dominant phenotype of violet flowers if it is test crossed and produces both violet-flowered and white-flowered plants?",
+        "incorrect answers": [
+            "VV",
+            "vv",
+            "v"
+        ],
+        "correct_answer": "Vv",
+        "explanation": "If a cross occurs between violet-flowered and white-flowered plants, the offsprings will have an allele v. To have both violet and white flowers, the violet-flowered parent should be able to produce both V and v containing gametes. Thus, the genotype of the unknown parent will be Vv."
+    },
+    {
+        "question": "Mendel proposed three laws of inheritance based on his studies involving monohybrid crosses in pea plants",
+        "incorrect answers": [
+            "True"
+        ],
+        "correct_answer": "False",
+        "explanation": "Based on his studies of monohybrid crosses, Mendel proposed two laws of inheritance. The third law came from his studies of dihybrid crosses."
+    },
+    {
+        "question": "What are the rules postulated by Mendel based on his studies of inheritance in pea plants called?",
+        "incorrect answers": [
+            "Rules of Inheritance",
+            "Principles of Heredity",
+            "Rules of Heredity"
+        ],
+        "correct_answer": "Principles of Inheritance",
+        "explanation": "Mendel formulated specific rules that he observed based on his studies in pea plants. These rules were later found to be universal and, in fact, the central pillars of genetics. These are now known as the principles or laws of inheritance."
+    },
+    {
+        "question": "What is the first law of Mendel termed as?",
+        "incorrect answers": [
+            "Law of Recessivity",
+            "Law of Segregation",
+            "Law of Independent Assortment"
+        ],
+        "correct_answer": "Law of Dominance",
+        "explanation": "The laws of inheritance were proposed by Mendel. These were verified by his experiments on pea plants and many others that followed him. The first of these laws is termed as the law of dominance."
+    },
+    {
+        "question": "What is the second law of Mendel called?",
+        "incorrect answers": [
+            "Law of Recessivity",
+            "Law of Dominance",
+            "Law of Independent Assortment"
+        ],
+        "correct_answer": "Law of Segregation",
+        "explanation": "The second law of Mendel is called the law of segregation. It gives the rule or pattern followed by the gametes during meiosis."
+    },
+    {
+        "question": "Which of the following is not a law postulated by Mendel?",
+        "incorrect answers": [
+            "Law of Dominance",
+            "Law of Segregation",
+            "Law of Independent Assortment"
+        ],
+        "correct_answer": "Law of Recessivity",
+        "explanation": "Mendel stated three laws of inheritance. These are the law of dominance, the law of segregation, and the law of independent assortment. The law of recessivity is not the law proposed by Mendel."
+    },
+    {
+        "question": "Which law explains the expression of the dominant phenotype in the F1 progeny?",
+        "incorrect answers": [
+            "Law of Recessivity",
+            "Law of Segregation",
+            "Law of Independent Assortment"
+        ],
+        "correct_answer": "Law of Dominance",
+        "explanation": "The first law of Mendel, also known as the law of dominance, explains the outcome of a monohybrid cross. It explains the reason for all progeny to have dominant phenotype as all progeny contain one copy of each allele obtained from parents, one of which is dominant over the other."
+    },
+    {
+        "question": "Which law explains the expression of the dominant phenotype in the F2 progeny?",
+        "incorrect answers": [
+            "Law of Recessivity",
+            "Law of Segregation",
+            "Law of Independent Assortment"
+        ],
+        "correct_answer": "Law of Dominance",
+        "explanation": "According to the law of dominance, the factors occur in pairs. One factor is dominant over the other. This leads to suppression of the expression of the recessive allele. Thus, the recessive allele can express only when both copies of the gene are recessive. This can give the F2 progeny the observed phenotype of 75% dominant and 25% recessive."
+    },
+    {
+        "question": "What does the second law of Mendel state?",
+        "incorrect answers": [
+            "Factors occur in pairs",
+            "One factor is dominant over the other",
+            "Factors determine the characters of the offsprings"
+        ],
+        "correct_answer": "The alleles separate during meiosis and pair up during fertilization",
+        "explanation": "The second law of Mendel is the law of segregation. It states that the alleles are segregated during the process of meiosis and these pair again after fertilization to restore the genetic composition. This explains the loss of recessive phenotype in F1 and reappearance of it in F2 generation."
+    },
+    {
+        "question": "Which of the following shows incomplete dominance?",
+        "incorrect answers": [
+            "Flower color in garden peas",
+            "Blood grouping in humans",
+            "Pod color in garden peas"
+        ],
+        "correct_answer": "Flower color in snapdragon",
+        "explanation": "The garden peas exhibit Mendelian inheritance. Human blood grouping shows codominance. Snapdragon flower color shows incomplete dominance."
+    },
+    {
+        "question": "Incomplete dominance violated Mendel\u2019s law of dominance",
+        "incorrect answers": [
+            "True"
+        ],
+        "correct_answer": "False",
+        "explanation": "The law of dominance still holds. Incomplete dominance also involves a pair of factors that encode for a specific phenotype. However, the dominance of one over the other is incomplete, giving rise to a blending of phenotypes in heterozygotes."
+    },
+    {
+        "question": "If a cross between true-breeding red-flowered and true-breeding white-flowered plants give rise to pink-flowered progeny, what is the mode of inheritance?",
+        "incorrect answers": [
+            "Complete dominance",
+            "Codominance",
+            "Multiple allelism"
+        ],
+        "correct_answer": "Incomplete dominance",
+        "explanation": "Incomplete dominance involves the blending of characters in the progeny that are heterozygotes. Here red and white-flowered plants produce pink-flowered progeny. Hence this is an instance of incomplete dominance."
+    },
+    {
+        "question": "Rahul observed a plant in his garden",
+        "incorrect answers": [
+            "500 tall plants, 250 intermediate plants, and 250 small plants",
+            "250 tall plants, 250 intermediate plants, and 500 small plants",
+            "125 tall plants, 750 intermediate plants, and 125 small plants"
+        ],
+        "correct_answer": "250 tall plants, 500 intermediate plants, and 250 small plants",
+        "explanation": "The phenotypic ratio of the progeny that exhibits incomplete dominance is 1:2:1. Therefore, of 1000 plants sampled from the progeny, 250 should be tall, 250 should be small, and 500 intermediate plants if incomplete dominance holds."
+    },
+    {
+        "question": "The genotypic ratio observed in incomplete dominance is different from the genotypic ratio observed in complete dominance",
+        "incorrect answers": [
+            "True"
+        ],
+        "correct_answer": "False",
+        "explanation": "Complete dominance refers to the Mendelian pattern of inheritance. Both incomplete and complete dominance produce offsprings that have the same genotypic ratios. The two processes differ in the phenotypic ratios."
+    },
+    {
+        "question": "In the case of incomplete dominance, which zygosity expresses the blending of characters?",
+        "incorrect answers": [
+            "Homozygosity",
+            "Hemizgosity",
+            "Nullizygosity"
+        ],
+        "correct_answer": "Heterozygosity",
+        "explanation": "The blending of characters is the characteristic feature of incomplete dominance. This requires the presence of two factors in the organism. Hence it occurs only in the heterozygous state."
+    },
+    {
+        "question": "What holds the information for a particular trait?",
+        "incorrect answers": [
+            "Genome",
+            "Exon",
+            "Intron"
+        ],
+        "correct_answer": "Gene",
+        "explanation": "The factors hypothesized by Mendel encode for traits that are expressed. These are now called genes. Genes are fragments of DNA that code for a functional protein. In eukaryotes, genes are composed of two elements namely, exons and introns. Exons code for an mRNA transcript, while the introns are non-coding elements and are removed out by a spliceosomal complex."
+    },
+    {
+        "question": "Which of the following fill not be the nature of enzyme encoded by a recessive gene?",
+        "incorrect answers": [
+            "Less efficient enzyme",
+            "No function observed for the enzyme",
+            "Abnormal function of the enzyme"
+        ],
+        "correct_answer": "More efficient enzyme",
+        "explanation": "Recessive alleles lose the capability to encode because of the presence of a better functioning allele. Hence a more efficient enzyme is highly unlikely to be encoded by a recessive gene."
+    },
+    {
+        "question": "The flower color in Snapdragon exhibits _______",
+        "incorrect answers": [
+            "complete dominance",
+            "codominance",
+            "multiple allelism"
+        ],
+        "correct_answer": "incomplete dominance",
+        "explanation": "The Snapdragon produces pink flowers after the mating of red-flowered and white-flowered plants. Thus, there is a blending of characters. This is called incomplete dominance."
+    },
+    {
+        "question": "In what mode of inheritance, the F1 progeny exhibit characteristics of both the parents?",
+        "incorrect answers": [
+            "Complete dominance",
+            "Incomplete dominance",
+            "Multiple allelism"
+        ],
+        "correct_answer": "Codominance",
+        "explanation": "Codominance refers to the equal likelihood of both alleles expressing. Thus, the progeny resembles both the parents."
+    },
+    {
+        "question": "Which of the following is an instance of codominance?",
+        "incorrect answers": [
+            "Flower color in garden peas",
+            "Flower color in snapdragon",
+            "Pod color in garden peas"
+        ],
+        "correct_answer": "Blood grouping in humans",
+        "explanation": "The ABO blood grouping in humans is an instance of codominance. Here the lack of both A and B alleles produces a new phenotype: The O blood group."
+    },
+    {
+        "question": "ABO blood grouping in humans is an instance of ___________",
+        "incorrect answers": [
+            "complete dominance",
+            "incomplete dominance",
+            "pseudoscience"
+        ],
+        "correct_answer": "codominance",
+        "explanation": "Codominance refers to the production of a new phenotype when both factors that give opposing traits are present. This is observed in ABO blood grouping in humans."
+    },
+    {
+        "question": "The ABO blood groups are determined by ______ present on RBCs",
+        "incorrect answers": [
+            "proteins",
+            "DNA",
+            "RNA"
+        ],
+        "correct_answer": "carbohydrates",
+        "explanation": "The ABO blood group is determined by the antigens present on the RBCs of a human. These antigens are sugar polymers."
+    },
+    {
+        "question": "The I gene which encodes for the blood group is a code for a sugar polymer",
+        "incorrect answers": [
+            "False"
+        ],
+        "correct_answer": "True",
+        "explanation": "The I gene is responsible for the blood group. In a complex pathway, the allele present at the locus of I gene determines the nature of the sugar polymer expressed by the RBCs. Thus indirectly, it codes for the sugar polymer."
+    },
+    {
+        "question": "Which allele of I gene does not result in the production of any sugar antigen?",
+        "incorrect answers": [
+            "IA",
+            "IB",
+            "IC"
+        ],
+        "correct_answer": "i",
+        "explanation": "The I gene codes for three antigens: IA, IB, and i. IA and IB code for sugar. The i allele does not code for any sugar."
+    },
+    {
+        "question": "The cattle coat color inheritance is an instance of _______",
+        "incorrect answers": [
+            "complete dominance",
+            "incomplete dominance",
+            "multiple allelism"
+        ],
+        "correct_answer": "codominance",
+        "explanation": "The cattle coat color is an instance of codominance. Here the coat color of the progeny of parents that have contrasting coat colors has patches. Thus, both the alleles express codominantly resulting in a new phenotype."
+    },
+    {
+        "question": "The alleles IA and IB code for the same sugar",
+        "incorrect answers": [
+            "True"
+        ],
+        "correct_answer": "False",
+        "explanation": "The genes IA and IB code for sugar. However, these sugars are slightly different. These differ in few monomers."
+    },
+    {
+        "question": "Which of the following allele is dominant over i?",
+        "incorrect answers": [
+            "Only IA",
+            "Only IB",
+            "Both IA and IB"
+        ],
+        "correct_answer": "IC",
+        "explanation": "The gene I has only three alleles. These are IA, IB, and i. There is no allele as IC. Also, the alleles IA and IB are dominant over i as it does not produce any sugar."
+    },
+    {
+        "question": "What will be the blood group of a person who has IAIB as the genotype?",
+        "incorrect answers": [
+            "A",
+            "B",
+            "O"
+        ],
+        "correct_answer": "AB",
+        "explanation": "The person has two alleles IA and IB. These are codominant alleles. Thus, both of them will produce their products. Hence the person will have the blood group AB."
+    },
+    {
+        "question": "What is the ability of both IA and IB alleles to express together called?",
+        "incorrect answers": [
+            "Complete dominance",
+            "Incomplete dominance",
+            "Multiple allelism"
+        ],
+        "correct_answer": "Codominance",
+        "explanation": "Codominance refers to the ability of both alleles to produce an effect even when the other is present. The alleles IA and IB are two such alleles."
+    },
+    {
+        "question": "A case was registered against the progeny being exchanged at the hospital",
+        "incorrect answers": [
+            "A",
+            "B",
+            "AB"
+        ],
+        "correct_answer": "O",
+        "explanation": "The progeny of these parents can have IAIA, IAIB, IAi, and IBi. Thus, the progeny can have either A, B, or AB blood groups. The progeny with O blood group will be the only case that can be solved simply based on blood groups."
+    },
+    {
+        "question": "The combinations of alleles of ABO system give rise to six phenotypes",
+        "incorrect answers": [
+            "True"
+        ],
+        "correct_answer": "False",
+        "explanation": "The ABO system has three alleles IA, IB, and i. The number of phenotypes produced by these alleles is only three."
+    },
+    {
+        "question": "The combinations of alleles of ABO system give rise to six genotypes",
+        "incorrect answers": [
+            "False"
+        ],
+        "correct_answer": "True",
+        "explanation": "ABO blood system is comprised of alleles IA, IB, and i. These alleles can pair up to produce up 6 combinations. This accounts for the 6 genotypes observed."
+    },
+    {
+        "question": "What mode of inheritance involves more than two forms of gene giving rise to a repertoire of phenotypes?",
+        "incorrect answers": [
+            "Complete dominance",
+            "Incomplete dominance",
+            "Codominance"
+        ],
+        "correct_answer": "Multiple allelism",
+        "explanation": "In multiple allelism, more than one allele can be present at a locus. This results in the production of many different phenotypes."
+    },
+    {
+        "question": "To discover multiple allelism, it is essential to study _______",
+        "incorrect answers": [
+            "cells from an individual",
+            "organs from an individual",
+            "tissues from an individual"
+        ],
+        "correct_answer": "population",
+        "explanation": "An individual can have a maximum of two alleles. Hence to study multiple allelism, it is essential to sample a large chunk of the population."
+    },
+    {
+        "question": "The mode of inheritance depends on _______",
+        "incorrect answers": [
+            "gene",
+            "genotype",
+            "organism"
+        ],
+        "correct_answer": "phenotype",
+        "explanation": "The mode of inheritance depends on the phenotype. A single gene can give rise to different phenotypes, with each phenotype showing a different mode of inheritance."
+    },
+    {
+        "question": "Which of the following is the only possible blood group of progeny obtained from parents that have IAIA and IBIB as their genotypes?",
+        "incorrect answers": [
+            "A",
+            "B",
+            "AB"
+        ],
+        "correct_answer": "O",
+        "explanation": "The only possible allele that can be produced by IAIA parent is IA. Similarly, the only possible allele that can be produced by IBIB parent is IB. The progeny produced will have the alleles IA and IB. Thus, their blood group will be AB."
+    },
+    {
+        "question": "What will be the blood group of a person who has ii as the genotype?",
+        "incorrect answers": [
+            "A",
+            "B",
+            "AB"
+        ],
+        "correct_answer": "O",
+        "explanation": "The present of ii as the genotype results in no sugar antigen being expressed by the RBC. Thus, the blood group of the progeny is O."
+    },
+    {
+        "question": "If the blood group of an offspring is O, which of the following is not the correct parental genotypes?",
+        "incorrect answers": [
+            "IAi, IAi",
+            "IAi, IBi",
+            "ii, ii"
+        ],
+        "correct_answer": "IAIA, IAIB",
+        "explanation": "The blood group O is encoded by ii. Thus, of the given options, only IAIA, IAIB parental pair cannot produce ii infants."
+    },
+    {
+        "question": "What is the blood group of the progeny if one parent donates IA allele while the other donates i?",
+        "incorrect answers": [
+            "B",
+            "AB",
+            "O"
+        ],
+        "correct_answer": "A",
+        "explanation": "The progeny has one copy of IA and one copy of i. IA is dominant over i. Thus, only IA will be expressed. This will result in A blood group."
+    },
+    {
+        "question": "In order to study the inheritance of two genes, the parents should be true-breeding for _______",
+        "incorrect answers": [
+            "a single contrasting characters",
+            "a pair of chromosomes",
+            "a single chromosome"
+        ],
+        "correct_answer": "a pair of contrasting characters",
+        "explanation": "With the plants that are true-breeding for two contrasting characters, Mendel performed crosses. Based on these, he devised results for the inheritance of two genes."
+    },
+    {
+        "question": "If round seed (RR) was dominant over wrinkled seed (rr) in a monohybrid cross, and yellow pod (YY) was dominant over brown pod (yy), what should be the starting genotype of parents in a dihybrid cross?",
+        "incorrect answers": [
+            "RRrr and YYyy",
+            "RRyy and YYrr",
+            "RrYy and RrYy"
+        ],
+        "correct_answer": "RRYY and rryy",
+        "explanation": "The dihybrid cross is used to the inheritance pattern of two contrasting characters. Hence, they should be true-breeding. One for both dominant traits and the other for both recessive traits."
+    },
+    {
+        "question": "What is the expected phenotype of F1 progeny of a dihybrid cross for inflated green pod plants and constricted yellow pod plants?",
+        "incorrect answers": [
+            "Inflated yellow pods",
+            "Constricted green pods",
+            "Constricted yellow pods"
+        ],
+        "correct_answer": "Inflated green pods",
+        "explanation": "The F1 progeny will be heterozygotes. Hence the dominant characters will be expressed. Thus, all the F1 progeny will have inflated green pods."
+    },
+    {
+        "question": "Given the genotype of parents as AABB and aabb, what is the expected genotype of F1 progeny?",
+        "incorrect answers": [
+            "AABB",
+            "AAbb",
+            "aaBB"
+        ],
+        "correct_answer": "AaBb",
+        "explanation": "AABB parent will only be able to produce AB gametes, and aabb parent will only be able to produce ab gametes. Thus, the only possible genotype for the progeny is AaBb, a heterozygote."
+    },
+    {
+        "question": "What is the zygosity of the F1 progeny of a dihybrid cross?",
+        "incorrect answers": [
+            "Homozygosity",
+            "Hemizygostiy",
+            "Nullizygosity"
+        ],
+        "correct_answer": "Heterozygosity",
+        "explanation": "The F1 progeny of a dihybrid cross are formed by a cross between parents that are homozygous for two traits. Thus, they are all heterozygous."
+    },
+    {
+        "question": "All the progeny of F1 generation of a dihybrid cross are genotypically identical for the locus under study",
+        "incorrect answers": [
+            "False"
+        ],
+        "correct_answer": "True",
+        "explanation": "The dihybrid cross initiates with true-breeding parents who are homozygous for two traits. Thus, each of them can only produce a single type of gamete. Hence the offsprings in the F1 generation are all genetically identical."
+    },
+    {
+        "question": "What is the expected phenotype of F1 generation obtained by the cross between true-breeding round yellow seed plants and true-breeding wrinkled green seed plants?",
+        "incorrect answers": [
+            "Round yellow seeds",
+            "Wrinkled green seeds",
+            "Wrinkled yellow seeds"
+        ],
+        "correct_answer": "Round green seeds",
+        "explanation": "Round seeds are dominant over wrinkled seeds. Also, yellow seeds are dominant over the green seeds. Thus, the progeny of these parents will be heterozygotic resulting expression of only the dominant characters."
+    },
+    {
+        "question": "Which of the following phenotypes is not obtained in the F2 generation?",
+        "incorrect answers": [
+            "Round yellow seeds",
+            "Wrinkled green seeds",
+            "Round green seeds"
+        ],
+        "correct_answer": "Wrinkled round seeds",
+        "explanation": "In the F2 generation of a dihybrid cross, all possible phenotypes are observed. Wrinkled and round are encoded by the same locus. Hence, they cannot occur together."
+    },
+    {
+        "question": "For the cross of round green and wrinkled yellow seeds, which of the following is incorrect with regards to the F2 generation?",
+        "incorrect answers": [
+            "Round seeds were three times more abundant than yellow seeds",
+            "Green seeds were three times less abundant than wrinkled seeds",
+            "Round seeds were as abundant as the green seeds"
+        ],
+        "correct_answer": "Yellow seeds were three times more abundant than green seeds",
+        "explanation": "The roundness and greenness of the seeds are encoded by different genes. According to the law of independent assortment, these two should segregate independently of each other. Thus in the F2 generation, green seeds: yellow seeds = 3:1, round seeds: wrinkled seeds = 3:1. From this, we can have, green seeds: wrinkled seeds = 3:1, green seeds: round seeds = 1:1, yellow seeds: round seeds = 1:3, yellow seeds: wrinkled seeds = 1:1."
+    },
+    {
+        "question": "A cross involving variation in two different traits is called _______",
+        "incorrect answers": [
+            "dihybrid cross",
+            "bihybrid cross",
+            "polyhybrid cross"
+        ],
+        "correct_answer": "monohybrid cross",
+        "explanation": "A dihybrid cross is the one where the partners involved are similar except for two traits under consideration. These were studied for the first time using true-breeding lines by Mendel."
+    },
+    {
+        "question": "The dihybrid cross was used by Mendel to derive the law of dominance",
+        "incorrect answers": [
+            "True"
+        ],
+        "correct_answer": "False",
+        "explanation": "Mendel used the monohybrid cross to arrive at the laws of dominance and segregation. For the law of independent assortment, he did the dihybrid crosses."
+    },
+    {
+        "question": "For the cross of axial violet and terminal white flowers, which of the following is incorrect with regards to the F2 generation?",
+        "incorrect answers": [
+            "Axial violet are nine times more abundant than white flowers",
+            "Axial white flowers are as abundant as terminal violet flowers",
+            "Terminal violet flowers are three times more abundant than terminal white flowers"
+        ],
+        "correct_answer": "Terminal white flowers are thrice abundant than the axial white flowers",
+        "explanation": "This is a dihybrid cross. The genetics is Mendelian since the traits are present on different chromosomes and do not exhibit linkage. Thus, the expected phenotypic ratio is 9 axial violet: 3 axial white: 3 terminal violet: 1 terminal white. Hence axial violet flowers are nine times more abundant than white flowers; axial white flowers are as abundant as terminal violet flowers; terminal white flowers are 1/3rd as abundant as axial white flowers and terminal violet flowers are thrice abundant than terminal white flowers."
+    },
+    {
+        "question": "What is the phenotypic ratio of F2 generation in a dihybrid cross?",
+        "incorrect answers": [
+            "3:1",
+            "1:2:1",
+            "9:3:1"
+        ],
+        "correct_answer": "9:3:3:1",
+        "explanation": "The F2 generation in a dihybrid cross produces all possible phenotypes. The ratio obtained for it is 9:3:3:1."
+    },
+    {
+        "question": "In Mendel\u2019s experiments on garden pea plants, he performed a dihybrid cross of round yellow and green wrinkled seed plants",
+        "incorrect answers": [
+            "900 round green, 300 round yellow, 300 wrinkled yellow and 100 wrinkled green",
+            "900 wrinkled green, 300 round yellow, 300 wrinkled yellow and 100 round green",
+            "900 round green, 300 wrinkled green, 300 wrinkled yellow and 100 round yellow"
+        ],
+        "correct_answer": "900 round yellow, 300 round green, 300 wrinkled yellow and 100 wrinkled green",
+        "explanation": "The F2 progeny of a dihybrid Mendelian cross has a phenotypic ratio of 9:3:3:1. Thus of the 1600 plants sampled, 900 will be round yellow, 300 round green, 300 wrinkled yellow and 100 wrinkled green"
+    },
+    {
+        "question": "Which law was proposed by Mendel based on his dihybrid cross studies?",
+        "incorrect answers": [
+            "Law of Dominance",
+            "Law of Recessiveness",
+            "Law of Segregation"
+        ],
+        "correct_answer": "Law of Independent Assortment",
+        "explanation": "The first two laws of Mendel were based on his studies on monohybrid crosses. These were the law of dominance and the law of segregation. The dihybrid cross studies supported them, but also led to the formulation of a third law: the law of independent assortment."
+    },
+    {
+        "question": "What law talks about the segregation of two or more traits independent of one another?",
+        "incorrect answers": [
+            "Law of Dominance",
+            "Law of Recessiveness",
+            "Law of Segregation"
+        ],
+        "correct_answer": "Law of Independent Assortment",
+        "explanation": "The Law of Independent Assortment states the independent segregation of traits that are unrelated. Mendel drew this conclusion based on his studies on garden pea plants."
+    },
+    {
+        "question": "Which of the following is a correct interpretation of the law of independent assortment?",
+        "incorrect answers": [
+            "Factors exist in pairs",
+            "Factors segregate such that each gamete gets a single copy",
+            "For multiple traits under consideration, they segregate in a specific pattern"
+        ],
+        "correct_answer": "For multiple traits under consideration, each segregate independently of one another",
+        "explanation": "The law of independent assortment was the third law of Mendel. It states that when multiple traits are under consideration, each trait segregates independently of the other."
+    },
+    {
+        "question": "The law of independent assortment states that a dihybrid heterozygote would produce four types of gametes",
+        "incorrect answers": [
+            "False"
+        ],
+        "correct_answer": "True",
+        "explanation": "The law of independent assortment states that the segregation of traits is independent of one another in a dihybrid cross. Thus, a heterozygote AaBb will produce four types of gametes: AB, Ab, aB, and ab."
+    },
+    {
+        "question": "Which of the following are the correct gametes produced by TtYy?",
+        "incorrect answers": [
+            "Tt, Yy, TY, ty",
+            "TY, ty, Tt, Yt",
+            "YT, yt, yY, tT"
+        ],
+        "correct_answer": "Yt, yt, YT, yT",
+        "explanation": "TtYy is a dihybrid heterozygote. The independent law of assortment applies to it. Thus, it will produce four types of gametes. These will be TY, Ty, tY, and ty."
+    },
+    {
+        "question": "For a dihybrid cross, the number of squares is 16 in a Punnett square of F2 generation",
+        "incorrect answers": [
+            "False"
+        ],
+        "correct_answer": "True",
+        "explanation": "For a dihybrid cross, four types of gametes are produced by the heterozygotic generation. This gives rise to 4*4=16 combinations. Hence 16 squares are required in the Punnett square."
+    }
+]
