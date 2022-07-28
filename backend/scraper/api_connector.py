@@ -5,6 +5,7 @@ import random
 import requests
 from django.conf import settings
 
+API_BASE_URL = settings.API_BASE_URL
 
 class JsonConnector:
     """
@@ -49,10 +50,10 @@ class ApiConnector:
     3. Push Data to the database using the Create Question endpoint.
     """
 
-    def __init__(self, api_base_url, directory, token, category=1):
+    def __init__(self, directory, token, category=1, api_base_url=API_BASE_URL):
         self.api_base_url = api_base_url
         self.headers = {'Accept': '*/*', 'Authorization': f"Bearer {token}"}
-        self.directory = f"{os.path.dirname(os.path.abspath(__file__))}\{directory}"
+        self.directory = directory
         self.file_extension = '.json'
         self.category = category
 
@@ -118,11 +119,10 @@ class ApiConnector:
             return "success"
         return "failed"
 
-API_BASE_URL = "http://127.0.0.1:8000/api/v1/"
-DIRECTORY = "data\chemistry"
+DIRECTORY = f"{os.path.dirname(os.path.abspath(__file__))}\data\microbiology"
 token = settings.ADMIN_TOKEN
 def main():
-    api = ApiConnector(API_BASE_URL, DIRECTORY, token)
+    api = ApiConnector(DIRECTORY, token)
     api.run()
 
 

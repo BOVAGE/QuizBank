@@ -31,6 +31,7 @@ INSTALLED_APPS = [
     'authentication',
     'quiz',
     'feedback',
+    'scraper',
     
     #third party packages
     'rest_framework',
@@ -159,3 +160,4 @@ CORS_ALLOWED_ORIGINS = [
 ]
 
 ADMIN_TOKEN = config('TEST_TOKEN')
+API_BASE_URL = config("API_BASE_URL")
