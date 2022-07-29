@@ -92,7 +92,7 @@ class ChangePasswordSerializer(serializers.Serializer):
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ['id','username', 'first_name', 'last_name', 'bio', 'avatar']
+        fields = ['id','username', 'first_name', 'last_name', 'bio', 'avatar', 'is_staff']
 
     def update(self, instance, validated_data):
         #bulk update the only fields that are supplied using the key
