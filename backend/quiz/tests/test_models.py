@@ -35,14 +35,14 @@ class QuestionModelTests(TestCase):
         password="12345678", email="bovage@gmail.com", is_verified=True)
         self.category = Category.objects.create(name="Test")
         self.question_1 = Question.objects.create(
-            question="Are you old?", difficulty="eazy", type="True / False",
+            question="Are you old?", difficulty="easy", type="True / False",
             created_by=self.user, correct_answer="True", explanation="cause I'm old",
             category=self.category
         )
 
     def test_question_fields(self):
         self.assertEqual("Are you old?", self.question_1.question)
-        self.assertEqual("eazy", self.question_1.difficulty)
+        self.assertEqual("easy", self.question_1.difficulty)
         self.assertEqual("True / False", self.question_1.type)
         self.assertEqual(self.user, self.question_1.created_by)
         self.assertEqual("True", self.question_1.correct_answer)
@@ -99,12 +99,12 @@ class IncorrectAnswerModelTests(TestCase):
         password="12345678", email="bovage@gmail.com", is_verified=True)
         self.category = Category.objects.create(name="Test")
         self.question_1 = Question.objects.create(
-            question="Are you old?", difficulty="eazy", type="True / False",
+            question="Are you old?", difficulty="easy", type="True / False",
             created_by=self.user, correct_answer="True", explanation="cause I'm old",
             category=self.category
         )
         self.question_2 = Question.objects.create(
-            question="Are you old?", difficulty="eazy", type="multiple-choice",
+            question="Are you old?", difficulty="easy", type="multiple-choice",
             created_by=self.user, correct_answer="True", explanation="cause I'm old",
             category=self.category
         )

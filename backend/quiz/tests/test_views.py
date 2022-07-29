@@ -21,7 +21,7 @@ class PublicQuestionListTest(APITestCase):
         password="dave1234", email="d@gmail.com", is_verified=True)
         self.category = Category.objects.create(name="Test")
         self.question_1 = Question.objects.create(
-            question="Are you old?", difficulty="eazy", type="True / False",
+            question="Are you old?", difficulty="easy", type="True / False",
             created_by=self.verified_user, correct_answer="True", explanation="cause I'm old",
             category=self.category
         )
@@ -47,7 +47,7 @@ class PublicQuestionListTest(APITestCase):
             questions.
         """
         question = Question.objects.create(
-            question="Are you old?", difficulty="eazy", type="True / False",
+            question="Are you old?", difficulty="easy", type="True / False",
             created_by=self.verified_user, correct_answer="True", explanation="cause I'm old",
             category=self.category
         )
@@ -69,7 +69,7 @@ class PublicQuestionListTest(APITestCase):
         """
         for i in range(LIMIT+2):
             question = Question.objects.create(
-            question=f"{i} Are you old?", difficulty="eazy", type="True / False",
+            question=f"{i} Are you old?", difficulty="easy", type="True / False",
             created_by=self.verified_user, correct_answer="True", explanation="cause I'm old",
             category=self.category
             )
@@ -90,7 +90,7 @@ class PublicQuestionListTest(APITestCase):
         """
         for i in range(LIMIT+2):
             question = Question.objects.create(
-            question=f"{i} Are you old?", difficulty="eazy", type="True / False",
+            question=f"{i} Are you old?", difficulty="easy", type="True / False",
             created_by=self.verified_user, correct_answer="True", explanation="cause I'm old",
             category=self.category
             )
@@ -153,7 +153,7 @@ class QuestionListFullViewTest(APITestCase):
         password="dave1234", email="admin@gmail.com", is_verified=True)
         self.category = Category.objects.create(name="Test")
         self.question_1 = Question.objects.create(
-            question="Are you old?", difficulty="eazy", type="True / False",
+            question="Are you old?", difficulty="easy", type="True / False",
             created_by=self.verified_user, correct_answer="True", explanation="cause I'm old",
             category=self.category
         )
@@ -223,7 +223,7 @@ class QuestionVerificationTest(APITestCase):
         password="dave1234", email="admin@gmail.com", is_verified=True)
         self.category = Category.objects.create(name="Test")
         self.question_1 = Question.objects.create(
-            question="Are you old?", difficulty="eazy", type="True / False",
+            question="Are you old?", difficulty="easy", type="True / False",
             created_by=self.admin_user, correct_answer="True", explanation="cause I'm old",
             category=self.category
         )
@@ -298,7 +298,7 @@ class StatisticsViewTest(APITestCase):
         password="dave1234", email="admin@gmail.com", is_verified=True)
         self.category = Category.objects.create(name="Test")
         self.question_1 = Question.objects.create(
-            question="Are you old?", difficulty="eazy", type="True / False",
+            question="Are you old?", difficulty="easy", type="True / False",
             created_by=self.verified_user, correct_answer="True", explanation="cause I'm old",
             category=self.category
         )

@@ -30,7 +30,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('question', models.TextField()),
-                ('difficulty', models.CharField(choices=[('eazy', 'Eazy'), ('medium', 'Medium'), ('hard', 'Hard')], db_index=True, max_length=100)),
+                ('difficulty', models.CharField(choices=[('easy', 'Easy'), ('medium', 'Medium'), ('hard', 'Hard')], db_index=True, max_length=100)),
                 ('type', models.CharField(choices=[('multiple-choice', 'Multiple Choice'), ('True / False', 'True / False')], db_index=True, max_length=100)),
                 ('correct_answer', models.CharField(max_length=200)),
                 ('explanation', models.CharField(blank=True, max_length=1000)),

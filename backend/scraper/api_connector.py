@@ -90,7 +90,7 @@ class ApiConnector:
         else:
             formatted_data = {
                 'question': data.get('question'),
-                'difficulty': random.choice(['eazy', 'medium', 'hard']),
+                'difficulty': random.choice(['easy', 'medium', 'hard']),
                 'type': type,
                 'category': self.category,
                 'correct_answer': data.get('correct_answer'),

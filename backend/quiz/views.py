@@ -154,7 +154,7 @@ class StatisticsView(APIView):
             "unverified_questions": Question.no_of_unverified_questions()
         }
         difficulty = {
-            "eazy": Question.no_of_easy_questions(),
+            "easy": Question.no_of_easy_questions(),
             "medium": Question.no_of_medium_questions(),
             "hard": Question.no_of_hard_questions()
         }

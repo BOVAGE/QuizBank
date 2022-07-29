@@ -10,7 +10,7 @@ from django.utils.text import slugify
 
 User = get_user_model()
 DIFFICULTY_CHOICES = [
-    ('eazy','Eazy'),
+    ('easy','Easy'),
     ('medium', 'Medium'),
     ('hard', 'Hard')
 ]
@@ -137,7 +137,7 @@ class Question(models.Model):
 
     @staticmethod
     def no_of_easy_questions() -> int:
-        return Question.objects.filter(difficulty='eazy').count()
+        return Question.objects.filter(difficulty='easy').count()
 
     @staticmethod
     def no_of_medium_questions() -> int:
