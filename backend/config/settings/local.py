@@ -16,3 +16,6 @@ DATABASES = {
 
 # EMAIL SENDING CONFIG
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+
+# CELERY CONFIG
+CELERY_BROKER_URL = config("CELERY_BROKER_URL")
