@@ -12,7 +12,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework_simplejwt.authentication import JWTAuthentication
 from rest_framework_simplejwt.views import TokenRefreshView
-from utils.email import send_email
+from .tasks import send_email_task 
 
 from .serializers import (AdminUserSerializer, ChangePasswordSerializer,
                           EmailPasswordResetSerialiazer, LoginSerializer,
@@ -52,7 +52,7 @@ class RegisterView(generics.GenericAPIView):
         # send account activation email
         activation_link = request.build_absolute_uri(reverse_lazy("authentication:email-verify"))
         activation_link += f'?token={user.get_tokens_for_user()["access"]}'
-        send_email('authentication/activate_mail.html', email_address, activation_link, 'QuizBank')
+        send_email_task.delay('authentication/activate_mail.html', email_address, activation_link, 'QuizBank')
         return Response(data, status=status.HTTP_201_CREATED)
 
 class EmailVerificationView(APIView):
@@ -234,7 +234,7 @@ class UserStaff(APIView):
         user.is_staff = True
         user.save()
         # send `you are now a staff` email
-        send_email('authentication/now_staff_mail.html', user.email, link="", site_name='QuizBank')
+        send_email_task.delay('authentication/now_staff_mail.html', user.email, link="", site_name='QuizBank')
         data = {
             "status": "success",
             "message": f"{user.username} has been made a staff and an email has been sent to {user.email}",
@@ -251,7 +251,7 @@ class UserStaff(APIView):
             user.is_staff = False
             user.save()
             # send `you are no longer a staff` email
-            send_email('authentication/no_longer_staff_mail.html', user.email, link="", site_name='QuizBank')
+            send_email_task.delay('authentication/no_longer_staff_mail.html', user.email, link="", site_name='QuizBank')
             data = {
                 "status": "success",
                 "message": f"{user.username} is no longer a staff and an email has been sent to {user.email}",

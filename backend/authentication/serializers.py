@@ -5,7 +5,7 @@ from django.utils.encoding import smart_bytes, smart_str
 from django.utils.http import urlsafe_base64_decode, urlsafe_base64_encode
 from rest_framework import serializers
 from rest_framework.exceptions import AuthenticationFailed, NotFound
-from utils.email import send_email
+from .tasks import send_email_task
 
 User = get_user_model()
 
@@ -67,7 +67,7 @@ class ResendEmailSerialiazer(serializers.Serializer):
             activation_link = self.context['request'].build_absolute_uri(reverse_lazy("authentication:email-verify"))
             activation_link += f'?token={user.get_tokens_for_user()["access"]}'
             print("sending mail")
-            send_email('authentication/activate_mail.html', email_address, activation_link, 'QuizBank')
+            send_email_task.delay('authentication/activate_mail.html', email_address, activation_link, 'QuizBank')
 
 
 class ChangePasswordSerializer(serializers.Serializer):
@@ -120,7 +120,7 @@ class EmailPasswordResetSerialiazer(serializers.Serializer):
             token = PasswordResetTokenGenerator().make_token(user)
             reset_link = self.context['request'].build_absolute_uri(
                 reverse_lazy("authentication:verify-password-token", args=(uidb64, token)))
-            send_email('authentication/resetpw_mail.html', email_address, reset_link, "QuizBank")
+            send_email_task.delay('authentication/resetpw_mail.html', email_address, reset_link, "QuizBank")
 
 
 class NewPasswordSerializer(serializers.Serializer):
