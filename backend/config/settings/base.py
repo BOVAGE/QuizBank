@@ -15,8 +15,6 @@ SECRET_KEY = config("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config("DEBUG", cast=bool)
 
-ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -72,17 +70,6 @@ WSGI_APPLICATION = "config.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DATABASES = {
-    "default": {
-        "ENGINE": "django_psdb_engine",
-        "NAME": config("DB_NAME"),
-        "HOST": config("DB_HOST"),
-        "PORT": config("DB_PORT"),
-        "USER": config("DB_USER"),
-        "PASSWORD": config("DB_PASSWORD"),
-        "OPTIONS": {"charset": "utf8mb4"},
-    }
-}
 AUTH_USER_MODEL = "authentication.User"
 AUTHENTICATION_BACKENDS = [
     "django.contrib.auth.backends.ModelBackend",
@@ -133,9 +120,6 @@ FILE_UPLOAD_PERMISSION = 0o64
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
-
-# EMAIL SENDING CONFIG
-EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
 SIMPLE_JWT = {
     "ACCESS_TOKEN_LIFETIME": timedelta(days=1),
