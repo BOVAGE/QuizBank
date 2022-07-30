@@ -50,7 +50,9 @@ class RegisterView(generics.GenericAPIView):
             "data": serializer.data
         }
         # send account activation email
-        activation_link = request.build_absolute_uri(reverse_lazy("authentication:email-verify"))
+        # activation_link = request.build_absolute_uri(reverse_lazy("authentication:email-verify"))
+        # change to frontend url for verification
+        activation_link = f"{settings.FRONTEND_URL}/auth/verify"
         activation_link += f'?token={user.get_tokens_for_user()["access"]}'
         send_email_task.delay('authentication/activate_mail.html', email_address, activation_link, 'QuizBank')
         return Response(data, status=status.HTTP_201_CREATED)

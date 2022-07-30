@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.contrib.auth import authenticate, get_user_model
 from django.contrib.auth.tokens import PasswordResetTokenGenerator
 from django.urls import reverse_lazy
@@ -5,6 +6,7 @@ from django.utils.encoding import smart_bytes, smart_str
 from django.utils.http import urlsafe_base64_decode, urlsafe_base64_encode
 from rest_framework import serializers
 from rest_framework.exceptions import AuthenticationFailed, NotFound
+
 from .tasks import send_email_task
 
 User = get_user_model()
@@ -64,7 +66,8 @@ class ResendEmailSerialiazer(serializers.Serializer):
         email_address = self.validated_data.get('email')
         user = User.objects.get(email=email_address)
         if not user.is_verified:
-            activation_link = self.context['request'].build_absolute_uri(reverse_lazy("authentication:email-verify"))
+            # activation_link = self.context['request'].build_absolute_uri(reverse_lazy("authentication:email-verify"))
+            activation_link = f"{settings.FRONTEND_URL}/auth/verify"
             activation_link += f'?token={user.get_tokens_for_user()["access"]}'
             print("sending mail")
             send_email_task.delay('authentication/activate_mail.html', email_address, activation_link, 'QuizBank')
