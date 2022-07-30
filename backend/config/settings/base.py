@@ -159,9 +159,7 @@ REST_FRAMEWORK = {
 }
 
 #CORS
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
-]
+CORS_ALLOW_ALL_ORIGINS = True
 
 ADMIN_TOKEN = config('TEST_TOKEN')
 API_BASE_URL = config("API_BASE_URL")
