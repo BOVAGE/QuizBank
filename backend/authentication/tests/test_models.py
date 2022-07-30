@@ -5,15 +5,18 @@ from django.db import IntegrityError
 from django.test import TestCase
 
 User = get_user_model()
-SIGNING_KEY = settings.SIMPLE_JWT['SIGNING_KEY']
-ALGORITHM = settings.SIMPLE_JWT['ALGORITHM']
+SIGNING_KEY = settings.SIMPLE_JWT["SIGNING_KEY"]
+ALGORITHM = settings.SIMPLE_JWT["ALGORITHM"]
+
+
 class UserModelTests(TestCase):
-    
     def setUp(self):
-        self.user = User.objects.create_user(username="bovage", 
-        password="12345678", email="bovage@gmail.com")
-        self.superuser = User.objects.create_superuser(username="suser", 
-        password="s1234567", email="suser@gmail.com")
+        self.user = User.objects.create_user(
+            username="bovage", password="12345678", email="bovage@gmail.com"
+        )
+        self.superuser = User.objects.create_superuser(
+            username="suser", password="s1234567", email="suser@gmail.com"
+        )
         print("setting up")
         print(self.user.id, "ou in setUp")
         print(self.superuser.id, "su in setUp")
@@ -32,7 +35,7 @@ class UserModelTests(TestCase):
         self.assertFalse(ordinary_user.is_superuser)
         self.assertFalse(ordinary_user.is_verified)
         self.assertTrue(ordinary_user.is_active)
-    
+
     def test_super_user(self):
         super_user = User.objects.get(username="suser")
         print(super_user.id, "su")
@@ -52,10 +55,10 @@ class UserModelTests(TestCase):
         self.assertIsInstance(dict_token, dict)
         self.assertIn("refresh", dict_token)
         self.assertIn("access", dict_token)
-        access_token = dict_token['access']
-        id_from_token = jwt.decode(access_token, SIGNING_KEY, [ALGORITHM])['user_id']
+        access_token = dict_token["access"]
+        id_from_token = jwt.decode(access_token, SIGNING_KEY, [ALGORITHM])["user_id"]
         self.assertEqual(self.user.id, id_from_token)
-    
+
     def test_user_question(self):
         total_questions = self.user.get_number_of_questions()
         total_verified_questions = self.user.get_number_of_verified_questions()
@@ -76,12 +79,12 @@ class UserModelTests(TestCase):
 
     def test_default_user_avatar(self):
         """
-            to test the default image.
+        to test the default image.
         """
         self.assertIsNotNone(self.user.avatar)
 
     def test_user_creation_validation(self):
         with self.assertRaises(IntegrityError):
-            User.objects.create_user(username="bovage", 
-            password="12345678", email="bovage@gmail.com")
-
+            User.objects.create_user(
+                username="bovage", password="12345678", email="bovage@gmail.com"
+            )

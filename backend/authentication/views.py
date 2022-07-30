@@ -12,14 +12,21 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework_simplejwt.authentication import JWTAuthentication
 from rest_framework_simplejwt.views import TokenRefreshView
-from .tasks import send_email_task 
+from .tasks import send_email_task
 
-from .serializers import (AdminUserSerializer, ChangePasswordSerializer,
-                          EmailPasswordResetSerialiazer, LoginSerializer,
-                          NewPasswordSerializer, RegisterSerializer,
-                          ResendEmailSerialiazer, UserSerializer)
+from .serializers import (
+    AdminUserSerializer,
+    ChangePasswordSerializer,
+    EmailPasswordResetSerialiazer,
+    LoginSerializer,
+    NewPasswordSerializer,
+    RegisterSerializer,
+    ResendEmailSerialiazer,
+    UserSerializer,
+)
 
 User = get_user_model()
+
 
 class LoginView(generics.GenericAPIView):
     serializer_class = LoginSerializer
@@ -31,7 +38,7 @@ class LoginView(generics.GenericAPIView):
         data = {
             "status": "success",
             "message": "Login credentials are  valid",
-            "data": {**serializer.data, **tokens}
+            "data": {**serializer.data, **tokens},
         }
         return Response(data, status=status.HTTP_200_OK)
 
@@ -43,29 +50,34 @@ class RegisterView(generics.GenericAPIView):
         serializer = RegisterSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         user = serializer.save()
-        email_address = serializer.data['email']
+        email_address = serializer.data["email"]
         data = {
             "status": "success",
             "message": "An email activation link has been to your email address",
-            "data": serializer.data
+            "data": serializer.data,
         }
         # send account activation email
         # activation_link = request.build_absolute_uri(reverse_lazy("authentication:email-verify"))
         # change to frontend url for verification
         activation_link = f"{settings.FRONTEND_URL}/auth/verify"
         activation_link += f'?token={user.get_tokens_for_user()["access"]}'
-        send_email_task.delay('authentication/activate_mail.html', email_address, activation_link, 'QuizBank')
+        send_email_task.delay(
+            "authentication/activate_mail.html",
+            email_address,
+            activation_link,
+            "QuizBank",
+        )
         return Response(data, status=status.HTTP_201_CREATED)
 
+
 class EmailVerificationView(APIView):
-    
     def get(self, request):
-        token = request.GET.get('token')
-        ALGORITHM = settings.SIMPLE_JWT['ALGORITHM']
-        SIGNING_KEY = settings.SIMPLE_JWT['SIGNING_KEY']
+        token = request.GET.get("token")
+        ALGORITHM = settings.SIMPLE_JWT["ALGORITHM"]
+        SIGNING_KEY = settings.SIMPLE_JWT["SIGNING_KEY"]
         try:
             payload = jwt.decode(token, SIGNING_KEY, algorithms=[ALGORITHM])
-            user = User.objects.get(id=payload.get('user_id'))
+            user = User.objects.get(id=payload.get("user_id"))
         except (jwt.DecodeError, User.DoesNotExist) as e:
             raise exceptions.AuthenticationFailed("Your token is invalid")
         except jwt.ExpiredSignatureError:
@@ -77,13 +89,13 @@ class EmailVerificationView(APIView):
                 data = {
                     "status": "success",
                     "message": "Account has been verified successfully",
-                    "data": []
+                    "data": [],
                 }
                 return Response(data, status=status.HTTP_200_OK)
             data = {
                 "status": "failed",
                 "message": "Account has has been verified previously",
-                "data": []
+                "data": [],
             }
             return Response(data, status=status.HTTP_400_BAD_REQUEST)
 
@@ -92,15 +104,18 @@ class ResendEmailVerificationView(generics.GenericAPIView):
     serializer_class = ResendEmailSerialiazer
 
     def post(self, request):
-        serializer = self.serializer_class(data=request.data, context={"request": request})
+        serializer = self.serializer_class(
+            data=request.data, context={"request": request}
+        )
         serializer.is_valid(raise_exception=True)
         serializer.save()
         data = {
-            'status': 'success',
-            'message': 'Email account verification mail sent',
-            'data': serializer.data,
+            "status": "success",
+            "message": "Email account verification mail sent",
+            "data": serializer.data,
         }
         return Response(data, status.HTTP_200_OK)
+
 
 class ChangePasswordView(generics.GenericAPIView):
     serializer_class = ChangePasswordSerializer
@@ -113,17 +128,18 @@ class ChangePasswordView(generics.GenericAPIView):
         serializer.is_valid(raise_exception=True)
         serializer.save()
         data = {
-            'status': 'success',
-            'message': 'Password Updated Successfully',
-            'data': []
+            "status": "success",
+            "message": "Password Updated Successfully",
+            "data": [],
         }
         return Response(data, status.HTTP_200_OK)
 
 
 class UserView(generics.GenericAPIView):
     """
-        get user authenticated user profile and update it.
+    get user authenticated user profile and update it.
     """
+
     serializer_class = UserSerializer
     authentication_classes = [JWTAuthentication]
     permission_classes = [IsAuthenticated]
@@ -131,21 +147,22 @@ class UserView(generics.GenericAPIView):
     def get(self, request):
         serializer = self.serializer_class(request.user)
         data = {
-            'status': 'success',
-            'message': 'Authenticated User Profile',
-            'data': serializer.data,
+            "status": "success",
+            "message": "Authenticated User Profile",
+            "data": serializer.data,
         }
         return Response(data, status.HTTP_200_OK)
 
-
     def patch(self, request):
-        serializer = self.serializer_class(request.user, data=request.data, partial=True)
+        serializer = self.serializer_class(
+            request.user, data=request.data, partial=True
+        )
         serializer.is_valid(raise_exception=True)
         serializer.save()
         data = {
-            'status': 'success',
-            'message': 'Profile Updated Successfully',
-            'data': serializer.data,
+            "status": "success",
+            "message": "Profile Updated Successfully",
+            "data": serializer.data,
         }
         return Response(data, status.HTTP_200_OK)
 
@@ -154,53 +171,40 @@ class ResetPasswordView(generics.GenericAPIView):
     serializer_class = EmailPasswordResetSerialiazer
 
     def post(self, request):
-        serializer = self.serializer_class(data=request.data, context={"request": request})
+        serializer = self.serializer_class(
+            data=request.data, context={"request": request}
+        )
         serializer.is_valid(raise_exception=True)
         serializer.save()
         data = {
-            'status': 'success',
-            'message': 'Password reset mail sent',
-            'data': serializer.data
+            "status": "success",
+            "message": "Password reset mail sent",
+            "data": serializer.data,
         }
         return Response(data, status.HTTP_200_OK)
 
 
 class VerifyPasswordTokenView(APIView):
-    
-    def get(self,request, uidb64, token):
+    def get(self, request, uidb64, token):
         try:
             id = int(smart_str(urlsafe_base64_decode(uidb64)))
             user = User.objects.get(id=id)
         except ValueError:
-            data = {
-                "status": "failed",
-                "message": "This token is invalid",
-                "data": []
-            }
+            data = {"status": "failed", "message": "This token is invalid", "data": []}
             return Response(data, status=status.HTTP_401_UNAUTHORIZED)
         except User.DoesNotExist:
-            data = {
-                "status": "failed",
-                "message": "User does not exist",
-                "data": []
-            }
+            data = {"status": "failed", "message": "User does not exist", "data": []}
             return Response(data, status=status.HTTP_404_NOT_FOUND)
         if not PasswordResetTokenGenerator().check_token(user, token):
-            data = {
-                "status": "failed",
-                "message": "This token is invalid",
-                "data": []
-            }
+            data = {"status": "failed", "message": "This token is invalid", "data": []}
             return Response(data, status=status.HTTP_401_UNAUTHORIZED)
         data = {
-            'status': 'success',
-            'message': 'Token is valid',
-            'data': {
-                'token': token,
-                'uidb64': uidb64
-            }
+            "status": "success",
+            "message": "Token is valid",
+            "data": {"token": token, "uidb64": uidb64},
         }
         return Response(data, status.HTTP_200_OK)
+
 
 class SetNewPasswordView(generics.GenericAPIView):
     serializer_class = NewPasswordSerializer
@@ -212,7 +216,7 @@ class SetNewPasswordView(generics.GenericAPIView):
         data = {
             "status": "success",
             "message": "Password Reset Done successfully",
-            "data": []
+            "data": [],
         }
         return Response(data, status.HTTP_200_OK)
 
@@ -223,47 +227,57 @@ class UserStaff(APIView):
 
     def post(self, request, id):
         """
-            make a user whose ID is passed in URL a staff
+        make a user whose ID is passed in URL a staff
         """
         user = get_object_or_404(User, id=id)
         if user.is_staff:
             data = {
                 "status": "failed",
                 "message": f"{user.username} is a staff user",
-                "data": []
+                "data": [],
             }
             return Response(data, status=status.HTTP_400_BAD_REQUEST)
         user.is_staff = True
         user.save()
         # send `you are now a staff` email
-        send_email_task.delay('authentication/now_staff_mail.html', user.email, link="", site_name='QuizBank')
+        send_email_task.delay(
+            "authentication/now_staff_mail.html",
+            user.email,
+            link="",
+            site_name="QuizBank",
+        )
         data = {
             "status": "success",
             "message": f"{user.username} has been made a staff and an email has been sent to {user.email}",
-            "data": []
+            "data": [],
         }
         return Response(data, status=status.HTTP_200_OK)
 
     def delete(self, request, id):
         """
-            make a user whose ID is passed in URL a non-staff
+        make a user whose ID is passed in URL a non-staff
         """
         user = get_object_or_404(User, id=id)
         if user.is_staff:
             user.is_staff = False
             user.save()
             # send `you are no longer a staff` email
-            send_email_task.delay('authentication/no_longer_staff_mail.html', user.email, link="", site_name='QuizBank')
+            send_email_task.delay(
+                "authentication/no_longer_staff_mail.html",
+                user.email,
+                link="",
+                site_name="QuizBank",
+            )
             data = {
                 "status": "success",
                 "message": f"{user.username} is no longer a staff and an email has been sent to {user.email}",
-                "data": []
+                "data": [],
             }
             return Response(data, status=status.HTTP_200_OK)
         data = {
             "status": "success",
             "message": f"{user.username} is not a staff",
-            "data": []
+            "data": [],
         }
         return Response(data, status=status.HTTP_400_BAD_REQUEST)
 
@@ -276,22 +290,13 @@ class UserListView(generics.ListAPIView):
 
     def list(self, request, *args, **kwargs):
         data = super().list(request, *args, **kwargs).data
-        data = {
-            "status": "success",
-            "message": "Details about all users",
-            'data': data
-        }
+        data = {"status": "success", "message": "Details about all users", "data": data}
         return Response(data, status=status.HTTP_200_OK)
 
 
 class CustomTokenRefreshView(TokenRefreshView):
-    
     def post(self, request, *args, **kwargs):
         data = super().post(request, *args, **kwargs).data
-        data = {
-            "status": "success",
-            "message": "New access token",
-            "data": data
-        }
+        data = {"status": "success", "message": "New access token", "data": data}
 
         return Response(data, status=status.HTTP_200_OK)

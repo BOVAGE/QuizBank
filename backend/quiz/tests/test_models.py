@@ -9,10 +9,11 @@ from ..models import Category, InCorrectAnswer, Question
 
 User = get_user_model()
 
+
 class CategoryModelTests(TestCase):
     def setUp(self):
         self.category = Category.objects.create(name="Test")
-    
+
     def test_category_name(self):
         self.assertEqual("Test", self.category.name)
 
@@ -21,23 +22,31 @@ class CategoryModelTests(TestCase):
 
     def test_category_stat(self):
         """
-            confirms the category statistics is right.
+        confirms the category statistics is right.
         """
         self.assertIsInstance(Category.questions_count_category(), dict)
-    
+
     def test_string_representation(self):
         self.assertEqual(str(self.category), self.category.name)
 
 
 class QuestionModelTests(TestCase):
     def setUp(self):
-        self.user = User.objects.create_user(username="bovage", 
-        password="12345678", email="bovage@gmail.com", is_verified=True)
+        self.user = User.objects.create_user(
+            username="bovage",
+            password="12345678",
+            email="bovage@gmail.com",
+            is_verified=True,
+        )
         self.category = Category.objects.create(name="Test")
         self.question_1 = Question.objects.create(
-            question="Are you old?", difficulty="easy", type="True / False",
-            created_by=self.user, correct_answer="True", explanation="cause I'm old",
-            category=self.category
+            question="Are you old?",
+            difficulty="easy",
+            type="True / False",
+            created_by=self.user,
+            correct_answer="True",
+            explanation="cause I'm old",
+            category=self.category,
         )
 
     def test_question_fields(self):
@@ -67,7 +76,6 @@ class QuestionModelTests(TestCase):
             self.question_1.save()
         self.question_1.date_verified = timezone.now()
         self.question_1.save()
-       
 
     def test_question_unverification(self):
         self.question_1.unverify()
@@ -75,13 +83,13 @@ class QuestionModelTests(TestCase):
         self.assertIsNone(self.question_1.verified_by)
         self.assertIsNone(self.question_1.date_verified)
         self.assertNotIsInstance(self.question_1.date_verified, datetime)
-    
+
     def test_string_representation(self):
         self.assertEqual(str(self.question_1), self.question_1.question)
 
     def test_question_stat(self):
         """
-            confirms the questions statistics is right.
+        confirms the questions statistics is right.
         """
         total_questions = Question.objects.count()
         self.assertIsInstance(Question.no_of_all_questions(), int)
@@ -95,30 +103,44 @@ class QuestionModelTests(TestCase):
 
 class IncorrectAnswerModelTests(TestCase):
     def setUp(self):
-        self.user = User.objects.create_user(username="bovage", 
-        password="12345678", email="bovage@gmail.com", is_verified=True)
+        self.user = User.objects.create_user(
+            username="bovage",
+            password="12345678",
+            email="bovage@gmail.com",
+            is_verified=True,
+        )
         self.category = Category.objects.create(name="Test")
         self.question_1 = Question.objects.create(
-            question="Are you old?", difficulty="easy", type="True / False",
-            created_by=self.user, correct_answer="True", explanation="cause I'm old",
-            category=self.category
+            question="Are you old?",
+            difficulty="easy",
+            type="True / False",
+            created_by=self.user,
+            correct_answer="True",
+            explanation="cause I'm old",
+            category=self.category,
         )
         self.question_2 = Question.objects.create(
-            question="Are you old?", difficulty="easy", type="multiple-choice",
-            created_by=self.user, correct_answer="True", explanation="cause I'm old",
-            category=self.category
+            question="Are you old?",
+            difficulty="easy",
+            type="multiple-choice",
+            created_by=self.user,
+            correct_answer="True",
+            explanation="cause I'm old",
+            category=self.category,
         )
-        self.incorrect_answer = InCorrectAnswer.objects.create(question=self.question_1, option="False")
+        self.incorrect_answer = InCorrectAnswer.objects.create(
+            question=self.question_1, option="False"
+        )
 
     def test_trueorfalse_validation(self):
         with self.assertRaises(ValidationError):
             InCorrectAnswer.objects.create(question=self.question_1, option="fail")
         self.assertEqual(self.question_1.incorrect_answers.count(), 1)
-    
+
     def test_multiple_choice_no_error(self):
         InCorrectAnswer.objects.create(question=self.question_2, option="Maybe")
         InCorrectAnswer.objects.create(question=self.question_2, option="Yes")
         InCorrectAnswer.objects.create(question=self.question_2, option="I don't Know")
-    
+
     def test_string_representation(self):
         self.assertEqual(str(self.incorrect_answer), self.incorrect_answer.option)

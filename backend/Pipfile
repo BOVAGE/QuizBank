@@ -17,6 +17,7 @@ django-cors-headers = "*"
 mysqlclient = "*"
 celery = "*"
 redis = "*"
+black = "*"
 
 [dev-packages]
 notebook = "*"

@@ -3,32 +3,41 @@ from django.contrib.auth import get_user_model
 from django.db.models import Q
 from django.shortcuts import get_object_or_404
 from rest_framework import generics, status
-from rest_framework.permissions import (IsAdminUser, IsAuthenticated,
-                                        IsAuthenticatedOrReadOnly)
+from rest_framework.permissions import (
+    IsAdminUser,
+    IsAuthenticated,
+    IsAuthenticatedOrReadOnly,
+)
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework_simplejwt.authentication import JWTAuthentication
 
 from .models import Category, Question
-from .serializers import (CategorySerializer, QuestionDetailSerializer,
-                          QuestionPublicSerializer)
+from .serializers import (
+    CategorySerializer,
+    QuestionDetailSerializer,
+    QuestionPublicSerializer,
+)
 
 User = get_user_model()
+
+
 class QuestionListCreateView(generics.GenericAPIView):
-    """ 
-        Public questions endpoint
     """
+    Public questions endpoint
+    """
+
     serializer_class = QuestionPublicSerializer
     authentication_classes = [JWTAuthentication]
     permission_classes = [IsAuthenticatedOrReadOnly]
 
     def get_queryset(self):
         queryset = Question.verified.random_all()
-        limit = self.request.query_params.get('limit')
-        category = self.request.query_params.get('category')
-        difficulty = self.request.query_params.get('difficulty')
-        type = self.request.query_params.get('type')
-        search = self.request.query_params.get('search')
+        limit = self.request.query_params.get("limit")
+        category = self.request.query_params.get("category")
+        difficulty = self.request.query_params.get("difficulty")
+        type = self.request.query_params.get("type")
+        search = self.request.query_params.get("search")
         if category is not None:
             print("category", category)
             queryset = queryset.filter(category__slug=category)
@@ -46,7 +55,9 @@ class QuestionListCreateView(generics.GenericAPIView):
             except ValueError:
                 pass
         if search is not None:
-            search_query = Q(question__icontains=search) | Q(explanation__icontains=search)
+            search_query = Q(question__icontains=search) | Q(
+                explanation__icontains=search
+            )
             search_queryset = Question.verified.filter(search_query)
             return search_queryset
         return queryset[:50]
@@ -56,7 +67,7 @@ class QuestionListCreateView(generics.GenericAPIView):
         data = {
             "status": "success",
             "message": "Question fetched successfully",
-            "data": serializer.data
+            "data": serializer.data,
         }
         return Response(data, status.HTTP_200_OK)
 
@@ -67,7 +78,7 @@ class QuestionListCreateView(generics.GenericAPIView):
         data = {
             "status": "success",
             "message": "Question created successfully",
-            "data": serializer.data
+            "data": serializer.data,
         }
         return Response(data, status.HTTP_201_CREATED)
 
@@ -83,7 +94,7 @@ class QuestionListFullView(generics.ListAPIView):
         data = {
             "status": "success",
             "message": "All Questions fetched successfully",
-            "data": data
+            "data": data,
         }
         return Response(data, status=status.HTTP_200_OK)
 
@@ -99,64 +110,65 @@ class UnverifiedQuestionListFullView(generics.ListAPIView):
         data = {
             "status": "success",
             "message": "All Unverified Questions fetched successfully",
-            "data": data
+            "data": data,
         }
         return Response(data, status=status.HTTP_200_OK)
 
 
 class QuestionVerification(APIView):
     """
-        verify or unverify the question whose ID was passed in the URL
+    verify or unverify the question whose ID was passed in the URL
     """
+
     permission_classes = [IsAdminUser]
     authentication_classes = [JWTAuthentication]
 
     def post(self, request, id):
         """
-            verifies the question whose ID was passed in the URL
+        verifies the question whose ID was passed in the URL
         """
         question = get_object_or_404(Question, id=id)
         question.verify(request.user)
         data = {
             "status": "success",
             "message": f"{request.user} verifies question-{question.id}: {question}",
-            "data": []
+            "data": [],
         }
         return Response(data, status=status.HTTP_200_OK)
 
     def delete(self, request, id):
         """
-            unverifies the question whose ID was passed in the URL
+        unverifies the question whose ID was passed in the URL
         """
         question = get_object_or_404(Question, id=id)
         question.unverify()
         data = {
             "status": "success",
             "message": f"{request.user} unverifies question-{question.id}: {question}",
-            "data": []
+            "data": [],
         }
         return Response(data, status=status.HTTP_200_OK)
 
 
 class StatisticsView(APIView):
-    """ 
-        returns information about questions, categories
-        and activity about the quiz app.
+    """
+    returns information about questions, categories
+    and activity about the quiz app.
 
-        Optianally return a shorter response by filtering against
-        an `on` query parameter in the URL.
+    Optianally return a shorter response by filtering against
+    an `on` query parameter in the URL.
     """
 
     def get(self, request):
         questions = {
             "all_questions": Question.no_of_all_questions(),
             "verified_questions": Question.no_of_verified_questions(),
-            "unverified_questions": Question.no_of_unverified_questions()
+            "unverified_questions": Question.no_of_unverified_questions(),
         }
         difficulty = {
             "easy": Question.no_of_easy_questions(),
             "medium": Question.no_of_medium_questions(),
-            "hard": Question.no_of_hard_questions()
+            "hard": Question.no_of_hard_questions(),
         }
         users = {
             "Total Users": User.total_user(),
@@ -174,20 +186,21 @@ class StatisticsView(APIView):
                 "difficulty": difficulty,
                 "category": Category.questions_count_category(),
                 "users": users,
-                "activity": activity, 
-            }
+                "activity": activity,
+            },
         }
-        info_on = request.query_params.get('on')
-        info_list = ['category', 'difficulty', 'question', 'users', 'activity']
+        info_on = request.query_params.get("on")
+        info_list = ["category", "difficulty", "question", "users", "activity"]
         if info_on is not None and info_on in info_list:
             data = {
-            "status": "success",
-            "message": f"Statistics on {info_on}",
-            "data": {
-                info_on: data.get("data")[info_on], 
+                "status": "success",
+                "message": f"Statistics on {info_on}",
+                "data": {
+                    info_on: data.get("data")[info_on],
+                },
             }
-        }
         return Response(data, status=status.HTTP_200_OK)
+
 
 class CategoryListCreateView(generics.ListCreateAPIView):
     serializer_class = CategorySerializer
@@ -200,15 +213,16 @@ class CategoryListCreateView(generics.ListCreateAPIView):
         data = {
             "status": "success",
             "message": "All Categories fetched successfully",
-            "data": data
+            "data": data,
         }
         return Response(data, status=status.HTTP_200_OK)
+
     def create(self, request, *args, **kwargs):
         data = super().create(request, *args, **kwargs).data
         data = {
             "status": "success",
             "message": f"Category - {data.get('name')} created successfully",
-            "data": data
+            "data": data,
         }
         return Response(data, status=status.HTTP_201_CREATED)
 
@@ -225,16 +239,16 @@ class CategoryDetailView(generics.RetrieveUpdateDestroyAPIView):
         data = {
             "status": "success",
             "message": f"Category - {data.get('name')} retrieved successfully",
-            "data": data
+            "data": data,
         }
         return Response(data, status=status.HTTP_200_OK)
-    
+
     def update(self, request, *args, **kwargs):
         data = super().update(request, *args, **kwargs).data
         data = {
             "status": "success",
             "message": f"Category - {data.get('name')} updated successfully",
-            "data": data
+            "data": data,
         }
         return Response(data, status=status.HTTP_200_OK)
 
@@ -243,7 +257,7 @@ class CategoryDetailView(generics.RetrieveUpdateDestroyAPIView):
         data = {
             "status": "success",
             "message": f"Category deleted successfully",
-            "data": data
+            "data": data,
         }
         return Response(data, status=status.HTTP_204_NO_CONTENT)
 
@@ -254,7 +268,7 @@ class UserQuestionListView(generics.ListAPIView):
     permission_classes = [IsAuthenticated]
 
     def get_queryset(self):
-        id = self.kwargs['id']
+        id = self.kwargs["id"]
         user = get_object_or_404(User, id=id)
         return user.questions.all()
 
@@ -263,13 +277,12 @@ class UserQuestionListView(generics.ListAPIView):
         data = {
             "status": "success",
             "message": "Questions created by the user whose ID is passed in the URL fetched successfully",
-            "data": data
+            "data": data,
         }
         return Response(data, status=status.HTTP_200_OK)
-    
+
 
 class UserQuestionStatView(APIView):
-
     def get(self, request, id):
         user = get_object_or_404(User, id=id)
         data = {
@@ -278,8 +291,8 @@ class UserQuestionStatView(APIView):
             "data": {
                 "all_question": user.get_number_of_questions(),
                 "verified_questions": user.get_number_of_verified_questions(),
-                "unverified_questions": user.get_number_of_unverified_questions(), 
-            }
+                "unverified_questions": user.get_number_of_unverified_questions(),
+            },
         }
         return Response(data, status=status.HTTP_200_OK)
 
@@ -289,23 +302,23 @@ class QuestionDetailView(generics.RetrieveUpdateDestroyAPIView):
     permission_classes = [IsAdminUser]
     authentication_classes = [JWTAuthentication]
     queryset = Question.objects.all()
-    lookup_field = "id"   
+    lookup_field = "id"
 
     def retrieve(self, request, *args, **kwargs):
         data = super().retrieve(request, *args, **kwargs).data
         data = {
             "status": "success",
             "message": f"Question - {data.get('id')} retrieved successfully",
-            "data": data
+            "data": data,
         }
         return Response(data, status=status.HTTP_200_OK)
-    
+
     def update(self, request, *args, **kwargs):
         data = super().update(request, *args, **kwargs).data
         data = {
             "status": "success",
             "message": f"Question - {data.get('id')} updated successfully",
-            "data": data
+            "data": data,
         }
         return Response(data, status=status.HTTP_200_OK)
 
@@ -314,7 +327,7 @@ class QuestionDetailView(generics.RetrieveUpdateDestroyAPIView):
         data = {
             "status": "success",
             "message": f"Question deleted successfully",
-            "data": data
+            "data": data,
         }
         return Response(data, status=status.HTTP_204_NO_CONTENT)
 

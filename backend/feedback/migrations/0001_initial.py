@@ -9,23 +9,53 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ('authentication', '0001_initial'),
-        ('quiz', '0001_initial'),
+        ("authentication", "0001_initial"),
+        ("quiz", "0001_initial"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='Feedback',
+            name="Feedback",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('issue', models.CharField(max_length=1000)),
-                ('explanation', models.CharField(max_length=1000)),
-                ('date_created', models.DateTimeField(auto_now_add=True)),
-                ('is_resolved', models.BooleanField(default=False)),
-                ('date_resolved', models.DateTimeField(blank=True, null=True)),
-                ('created_by', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='feedbacks', to='authentication.user')),
-                ('question', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='feedbacks', to='quiz.question')),
-                ('resolved_by', models.ForeignKey(null=True, on_delete=django.db.models.deletion.SET_NULL, related_name='resolved_feedbacks', to='authentication.user')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("issue", models.CharField(max_length=1000)),
+                ("explanation", models.CharField(max_length=1000)),
+                ("date_created", models.DateTimeField(auto_now_add=True)),
+                ("is_resolved", models.BooleanField(default=False)),
+                ("date_resolved", models.DateTimeField(blank=True, null=True)),
+                (
+                    "created_by",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name="feedbacks",
+                        to="authentication.user",
+                    ),
+                ),
+                (
+                    "question",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name="feedbacks",
+                        to="quiz.question",
+                    ),
+                ),
+                (
+                    "resolved_by",
+                    models.ForeignKey(
+                        null=True,
+                        on_delete=django.db.models.deletion.SET_NULL,
+                        related_name="resolved_feedbacks",
+                        to="authentication.user",
+                    ),
+                ),
             ],
         ),
     ]

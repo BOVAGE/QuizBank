@@ -19,7 +19,7 @@ class FeedbackListView(generics.ListCreateAPIView):
         data = {
             "status": "success",
             "message": "All feedback fetched successfully",
-            "data": data
+            "data": data,
         }
         return Response(data, status=status.HTTP_200_OK)
 
@@ -31,7 +31,7 @@ class FeedbackListView(generics.ListCreateAPIView):
         data = {
             "status": "success",
             "message": "Feedback created successfully",
-            "data": data
+            "data": data,
         }
         return Response(data, status=status.HTTP_201_CREATED)
 
@@ -48,16 +48,16 @@ class FeedbackDetailView(generics.RetrieveUpdateDestroyAPIView):
         data = {
             "status": "success",
             "message": f"Feedback retrieved successfully",
-            "data": data
+            "data": data,
         }
         return Response(data, status=status.HTTP_200_OK)
-    
+
     def update(self, request, *args, **kwargs):
         data = super().update(request, *args, **kwargs).data
         data = {
             "status": "success",
             "message": "Feedback updated successfully",
-            "data": data
+            "data": data,
         }
         return Response(data, status=status.HTTP_200_OK)
 
@@ -66,6 +66,6 @@ class FeedbackDetailView(generics.RetrieveUpdateDestroyAPIView):
         data = {
             "status": "success",
             "message": f"Feedback deleted successfully",
-            "data": data
+            "data": data,
         }
         return Response(data, status=status.HTTP_204_NO_CONTENT)

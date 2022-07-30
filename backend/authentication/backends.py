@@ -2,10 +2,12 @@ from django.contrib.auth import get_user_model
 
 User = get_user_model()
 
+
 class EmailAuthBackend(object):
     """
     Authenticate using an e-mail address.
     """
+
     def authenticate(self, request, username=None, password=None):
         try:
             user = User.objects.get(email=username)
