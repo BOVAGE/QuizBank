@@ -35,13 +35,13 @@ Built for [Hashnode](https://hasnode.com) x [PlanetScale](https://planetscale.co
 
 
 ## Contributors
-[Fayemi Boluwatife]() - Backend Developer
+[Boluwatife Fayemi](https://GitHub.com/bovage) - Backend Developer
 
-[John Adeyemi]() - Frontend Developer
+[John Daniels Adeyemi](https://github.com/John-Daniels) - Frontend Developer
+     
+[Godwin Daniel Olele](https://github.com/Godwindaniel10)  - Frontend Developer
 
-[Godwin]()  - Frontend Developer
-
-[Ogunniran Olamidotun]() - UI|UX designer
+[Olamidotun Ogunniran](https://behance.net/Ogunniran) - UI|UX designer
 
 
 ## 🔐 License
