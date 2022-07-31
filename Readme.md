@@ -22,7 +22,7 @@ To view, click this [link](https://quizzybank.vercel.app/)
 ![Landing Page](preview.jpg)
 
 ## Blog Post
-To know more about this project, you can read this [launch article]()
+To know more about this project, you can read this [launch article](https://bovage.hashnode.dev/introducing-quizbank-api-easily-embed-a-quiz-or-create-a-practice-test-using-our-api)
 
 ## Technologies Used:
 - React
