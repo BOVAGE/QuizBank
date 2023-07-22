@@ -18,9 +18,10 @@ celery = "*"
 redis = "*"
 black = "*"
 gunicorn = "*"
+psycopg2 = "*"
 
 [dev-packages]
 notebook = "*"
 
 [requires]
-python_version = "3.9"
+python_version = "3.10"
