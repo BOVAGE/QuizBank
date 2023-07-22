@@ -14,6 +14,10 @@ DATABASES = {
     }
 }
 
+# CORS
+CORS_ALLOWED_ORIGINS = ["http://quizzybank.vercel.app"]
+
+
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST = "smtp.gmail.com"
 EMAIL_PORT = 465

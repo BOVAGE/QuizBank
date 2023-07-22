@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     "quiz",
     "feedback",
     "scraper",
+    "common",
     # third party packages
     "rest_framework",
     "corsheaders",
@@ -137,10 +138,15 @@ REST_FRAMEWORK = {
     "PAGE_SIZE": 10,
 }
 
-# CORS
-CORS_ALLOW_ALL_ORIGINS = True
 
 ADMIN_TOKEN = config("TEST_TOKEN")
 API_BASE_URL = config("API_BASE_URL")
 FRONTEND_URL = config("FRONTEND_URL")
-
+EXTERNAL_API_PATHS = [
+    "/api/v1/questions/",
+    "/api/v1/questions",
+    "/api/v1/categories/",
+    "/api/v1/categories",
+    "/api/v1/statistics/",
+    "/api/v1/statistics",
+]
